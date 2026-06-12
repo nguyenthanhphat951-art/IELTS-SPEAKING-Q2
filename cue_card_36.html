@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cue Card 36: Describe a perfect job you would like to have in the future – IELTS Speaking Part 2</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+:root{--accent:#795548;--al:#795548L;--am:#795548M}
+body{font-family:'Segoe UI',Arial,sans-serif;background:#f0f2f8;font-size:18px}
+.topnav{background:var(--accent);display:flex;align-items:center;justify-content:space-between;padding:14px 24px;position:sticky;top:0;z-index:200;box-shadow:0 2px 12px rgba(0,0,0,.2);gap:8px;flex-wrap:wrap}
+.topnav a{color:#fff;text-decoration:none;font-size:17px;font-weight:700;padding:7px 16px;border-radius:8px;background:rgba(255,255,255,.2);transition:background .2s;white-space:nowrap}
+.topnav a:hover{background:rgba(255,255,255,.35)}
+.ttitle{font-size:18px;font-weight:900;color:#fff;text-align:center;flex:1;line-height:1.3}
+.hero{background:linear-gradient(135deg,var(--accent) 0%,#79554899 100%);color:#fff;padding:28px 24px 20px;text-align:center}
+.tnum{font-size:16px;font-weight:700;letter-spacing:2px;text-transform:uppercase;opacity:.8}
+.hero h1{font-size:34px;font-weight:900;margin:6px 0 10px;line-height:1.3}
+.stats{display:flex;justify-content:center;gap:16px;flex-wrap:wrap}
+.stat{background:rgba(255,255,255,.2);border-radius:10px;padding:6px 18px;font-size:17px;font-weight:600}
+.slide-dots-wrap{background:#fff;border-bottom:2px solid #e0e0e0;padding:14px 20px;display:flex;align-items:center;gap:8px;overflow-x:auto;justify-content:center;flex-wrap:wrap}
+.dot-btn{background:#e0e0e0;color:#555;border:none;font-size:15px;font-weight:700;padding:7px 16px;border-radius:20px;cursor:pointer;transition:all .2s;white-space:nowrap}
+.dot-btn.active{background:var(--accent);color:#fff;transform:scale(1.08)}
+.dot-btn:hover:not(.active){background:var(--am);color:#fff}
+.slide{display:none;animation:fadeIn .35s ease}
+.slide.active{display:block}
+@keyframes fadeIn{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:translateY(0)}}
+.slide-inner{max-width:900px;margin:30px auto;padding:0 20px 30px}
+.slide-header{display:flex;align-items:center;gap:12px;margin-bottom:18px;flex-wrap:wrap}
+.slide-badge{background:var(--accent);color:#fff;font-size:17px;font-weight:800;padding:6px 18px;border-radius:20px}
+.q-type-badge{background:var(--al);color:var(--accent);font-size:15px;font-weight:700;padding:5px 14px;border-radius:20px;border:1.5px solid var(--am)}
+/* TASK CARD */
+.task-card{background:#fff;border-radius:18px;padding:28px 32px;margin-bottom:22px;box-shadow:0 3px 16px rgba(0,0,0,.08);border-left:6px solid var(--accent)}
+.task-title{font-size:26px;font-weight:900;color:#1a1a2e;margin-bottom:16px;line-height:1.3}
+.task-prompt{font-size:18px;font-weight:700;color:#555;margin-bottom:12px;text-transform:uppercase;letter-spacing:.5px}
+.bullet-list{list-style:none;padding:0}
+.bullet-list li{font-size:22px;color:#1a1a2e;padding:8px 0 8px 32px;position:relative;border-bottom:1px solid #f0f0f0;line-height:1.4}
+.bullet-list li:last-child{border-bottom:none}
+.bullet-list li::before{content:"→";position:absolute;left:0;color:var(--accent);font-weight:900;font-size:20px}
+/* OUTLINE */
+.outline-card{background:var(--al);border-radius:14px;padding:22px 26px;margin-bottom:22px}
+.outline-title{font-size:18px;font-weight:800;color:var(--accent);margin-bottom:14px;text-transform:uppercase;letter-spacing:.5px}
+.outline-step{display:flex;gap:14px;margin-bottom:12px;align-items:flex-start}
+.outline-step:last-child{margin-bottom:0}
+.step-badge{background:var(--accent);color:#fff;font-size:14px;font-weight:800;padding:4px 12px;border-radius:20px;white-space:nowrap;flex-shrink:0}
+.step-text{font-size:19px;color:#1a1a2e;line-height:1.5}
+/* VOCAB */
+.vocab-card{background:#fff;border-radius:14px;padding:22px 26px;margin-bottom:22px;box-shadow:0 2px 10px rgba(0,0,0,.07)}
+.vocab-title{font-size:18px;font-weight:800;color:#555;margin-bottom:14px;text-transform:uppercase;letter-spacing:.5px}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.vocab-chip{font-size:18px;font-weight:700;padding:8px 16px;border-radius:20px;transition:transform .15s;cursor:default}
+.vocab-chip:hover{transform:scale(1.06)}
+.pv-chip{background:#e3f2fd;color:#1565c0;border:1.5px solid #90caf9}
+.col-chip{background:#fce4ec;color:#c62828;border:1.5px solid #f48fb1}
+.vocab-chip-gen{background:var(--al);color:var(--accent);border:1.5px solid var(--am)}
+/* SPEECH */
+.show-speech-btn{background:var(--accent);color:#fff;border:none;font-size:20px;font-weight:700;padding:14px 30px;border-radius:12px;cursor:pointer;transition:opacity .2s,transform .15s}
+.show-speech-btn:hover{opacity:.88;transform:scale(1.02)}
+.speech-box{background:#f1fff3;border:2px solid #a5d6a7;border-radius:14px;padding:24px;margin-top:16px}
+.speech-label{font-size:16px;font-weight:800;color:#2e7d32;margin-bottom:10px}
+.speech-text{font-size:21px;line-height:1.8;color:#1a1a2e}
+/* TIMER */
+.timer-card{background:#fff;border-radius:14px;padding:22px 26px;margin-bottom:22px;box-shadow:0 2px 10px rgba(0,0,0,.07);text-align:center}
+.timer-title{font-size:18px;font-weight:800;color:#555;margin-bottom:16px;text-transform:uppercase;letter-spacing:.5px}
+.timer-display{font-size:64px;font-weight:900;color:var(--accent);font-variant-numeric:tabular-nums;margin-bottom:16px}
+.timer-btns{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+.timer-btn{background:var(--accent);color:#fff;border:none;font-size:18px;font-weight:700;padding:12px 26px;border-radius:12px;cursor:pointer;transition:opacity .2s}
+.timer-btn:hover{opacity:.85}
+.timer-btn.grey{background:#888}
+.timer-btn.red{background:#e53935}
+.timer-hint{font-size:16px;color:#888;margin-top:12px}
+/* FLASHCARD */
+.flashcard-wrap{display:flex;flex-direction:column;align-items:center;gap:18px}
+.progress-bar-wrap{width:100%;max-width:560px;background:#e0e0e0;border-radius:10px;height:10px;overflow:hidden}
+.progress-bar{height:100%;background:var(--accent);border-radius:10px;transition:width .4s}
+.flashcard{width:100%;max-width:560px;min-height:200px;perspective:1000px;cursor:pointer}
+.flashcard-inner{width:100%;height:100%;position:relative;transform-style:preserve-3d;transition:transform .55s;min-height:200px}
+.flashcard.flipped .flashcard-inner{transform:rotateY(180deg)}
+.flashcard-front,.flashcard-back{position:absolute;width:100%;min-height:200px;backface-visibility:hidden;border-radius:20px;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:28px 24px;text-align:center;gap:10px}
+.flashcard-front{background:var(--accent);color:#fff}
+.fc-label{font-size:15px;font-weight:700;opacity:.75;text-transform:uppercase;letter-spacing:1.5px;background:rgba(255,255,255,.2);padding:4px 14px;border-radius:20px}
+.fc-term{font-size:30px;font-weight:900;line-height:1.2}
+.fc-hint-tap{font-size:16px;opacity:.7;margin-top:6px}
+.flashcard-back{background:#fff;border:3px solid var(--accent);transform:rotateY(180deg);color:#1a1a2e;justify-content:flex-start;padding-top:24px}
+.fc-back-label{font-size:14px;font-weight:700;color:var(--accent);text-transform:uppercase;letter-spacing:1px;background:var(--al);padding:4px 14px;border-radius:20px;align-self:center}
+.fc-back-term{font-size:24px;font-weight:900;color:var(--accent);text-align:center;align-self:center}
+.fc-example{font-size:17px;color:#555;font-style:italic;line-height:1.5;text-align:center;padding:10px 8px 0;border-top:1.5px solid #eee;width:100%}
+.fc-controls{display:flex;gap:14px;flex-wrap:wrap;justify-content:center;align-items:center}
+.fc-btn{background:var(--accent);color:#fff;border:none;font-size:18px;font-weight:700;padding:12px 26px;border-radius:12px;cursor:pointer;transition:opacity .2s}
+.fc-btn:hover{opacity:.85}
+.fc-btn.secondary{background:#ddd;color:#333}
+.fc-progress{font-size:19px;font-weight:800;color:#555}
+.shuffle-btn{background:#555}
+/* NAV */
+.slide-nav{display:flex;justify-content:space-between;align-items:center;max-width:900px;margin:0 auto 40px;padding:0 20px;gap:12px}
+.nav-btn{background:var(--accent);color:#fff;border:none;font-size:20px;font-weight:800;padding:14px 32px;border-radius:14px;cursor:pointer;transition:opacity .2s,transform .15s}
+.nav-btn:hover{opacity:.85;transform:scale(1.03)}
+.nav-btn:disabled{background:#ccc;cursor:default;transform:none}
+.slide-counter{font-size:20px;font-weight:800;color:#555;text-align:center}
+.ex-desc{font-size:19px;color:#555;margin-bottom:22px;line-height:1.5}
+</style>
+</head>
+<body>
+<div class="topnav">
+  <a href="cue_card_35.html">← CC35</a>
+  <div class="ttitle">Cue Card 36: Describe a perfect job you would like to have in the future</div>
+  <a href="cue_card_37.html">CC37 →</a>
+</div>
+<div class="hero">
+  <div class="tnum">IELTS Speaking Part 2 · Cue Card 36 of 53</div>
+  <h1>🗣 Describe a perfect job you would like to have in the future</h1>
+  <div class="stats">
+    <div class="stat">📋 Opinion / Aspiration</div>
+    <div class="stat">📖 21 Vocab Items</div>
+  </div>
+</div>
+<div class="slide-dots-wrap"><button class="dot-btn active" onclick="goToSlide(0)" id="dot-0">📋 Task</button><button class="dot-btn" onclick="goToSlide(1)" id="dot-1">📝 Outline</button><button class="dot-btn" onclick="goToSlide(2)" id="dot-2">📖 Vocab</button><button class="dot-btn" onclick="goToSlide(3)" id="dot-3">🃏 Cards</button><button class="dot-btn" onclick="goToSlide(4)" id="dot-4">🎤 Speech</button></div>
+<div class="slides-container">
+
+<div class="slide" id="slide-0">
+  <div class="slide-inner">
+    <div class="slide-header">
+      <span class="slide-badge">Cue Card 36</span>
+      <span class="q-type-badge">Opinion / Aspiration</span>
+    </div>
+    <div class="task-card">
+      <div class="task-title">Describe a perfect job you would like to have in the future</div>
+      <div class="task-prompt">You should say:</div>
+      <ul class="bullet-list"><li>What it is</li><li>How you knew it</li><li>What you need to learn to get this job</li><li>And explain why you think it is a perfect job for you</li></ul>
+    </div>
+    <div class="timer-card">
+      <div class="timer-title">⏱ Preparation Timer (1 minute)</div>
+      <div class="timer-display" id="timer-display">00:00</div>
+      <div class="timer-btns">
+        <button class="timer-btn" onclick="startTimer()">▶ Start</button>
+        <button class="timer-btn grey" onclick="pauseTimer()">⏸ Pause</button>
+        <button class="timer-btn red" onclick="resetTimer()">↺ Reset</button>
+      </div>
+      <div class="timer-hint">🟡 Yellow at 2:00 · 🔴 Red at 3:00 (speak for 1–2 minutes)</div>
+    </div>
+  </div>
+</div>
+
+<div class="slide" id="slide-1">
+  <div class="slide-inner">
+    <div class="slide-header"><span class="slide-badge">📝 Speech Outline</span></div>
+    <div class="outline-card">
+      <div class="outline-title">🗺 How to Structure Your Answer</div>
+      <div class="outline-step"><span class="step-badge">Intro</span><div class="step-text">Name the job and state why it appeals to you.</div></div><div class="outline-step"><span class="step-badge">Background Info</span><div class="step-text">Describe how you first became interested in this career.</div></div><div class="outline-step"><span class="step-badge">Main Info</span><div class="step-text">Explain what the job involves and what skills or qualifications you would need.</div></div><div class="outline-step"><span class="step-badge">Reflection</span><div class="step-text">Explain why this is your ideal job and how it aligns with your values.</div></div>
+    </div>
+    <div class="timer-card">
+      <div class="timer-title">⏱ Speaking Timer</div>
+      <div class="timer-display" id="timer-display2">00:00</div>
+      <div class="timer-btns">
+        <button class="timer-btn" onclick="startTimer2()">▶ Start Speaking</button>
+        <button class="timer-btn grey" onclick="pauseTimer2()">⏸ Pause</button>
+        <button class="timer-btn red" onclick="resetTimer2()">↺ Reset</button>
+      </div>
+      <div class="timer-hint">🟡 Yellow at 2:00 · 🔴 Red at 3:00 (aim for 1:30–2:00)</div>
+    </div>
+  </div>
+</div>
+
+<div class="slide" id="slide-2">
+  <div class="slide-inner">
+    <div class="slide-header"><span class="slide-badge">📖 Key Vocabulary</span></div>
+    <div class="vocab-card">
+      <div class="vocab-title">🔗 Phrasal Verbs &amp; Collocations (21 items)</div>
+      <div class="chips"><span class="vocab-chip vocab-chip-gen">aspire to</span><span class="vocab-chip vocab-chip-gen">work towards</span><span class="vocab-chip vocab-chip-gen">set one&#x27;s sights on</span><span class="vocab-chip vocab-chip-gen">build up (skills)</span><span class="vocab-chip vocab-chip-gen">look forward to</span><span class="vocab-chip vocab-chip-gen">make a difference in</span><span class="vocab-chip vocab-chip-gen">pursue a career in</span><span class="vocab-chip vocab-chip-gen">develop expertise in</span><span class="vocab-chip vocab-chip-gen">take on (responsibilities)</span><span class="vocab-chip vocab-chip-gen">stand out from</span><span class="vocab-chip vocab-chip-gen">carry on learning</span><span class="vocab-chip vocab-chip-gen">dream career</span><span class="vocab-chip vocab-chip-gen">professional fulfilment</span><span class="vocab-chip vocab-chip-gen">career aspiration</span><span class="vocab-chip vocab-chip-gen">skill development</span><span class="vocab-chip vocab-chip-gen">ideal workplace</span><span class="vocab-chip vocab-chip-gen">work-life balance</span><span class="vocab-chip vocab-chip-gen">meaningful work</span><span class="vocab-chip vocab-chip-gen">career progression</span><span class="vocab-chip vocab-chip-gen">professional growth</span><span class="vocab-chip vocab-chip-gen">job satisfaction</span></div>
+    </div>
+  </div>
+</div>
+
+<div class="slide" id="slide-3">
+  <div class="slide-inner">
+    <div class="slide-header"><span class="slide-badge">🃏 Vocabulary Flashcards</span></div>
+    <p class="ex-desc">Click the card to flip it. Practice using each term in your speech.</p>
+    <div class="flashcard-wrap">
+      <div class="progress-bar-wrap"><div class="progress-bar" id="fc-progress-bar" style="width:0%"></div></div>
+      <div class="flashcard" id="flashcard" onclick="flipCard()">
+        <div class="flashcard-inner">
+          <div class="flashcard-front">
+            <div class="fc-label" id="fc-label">Vocabulary</div>
+            <div class="fc-term" id="fc-term">Loading...</div>
+            <div class="fc-hint-tap">Tap to see usage tip →</div>
+          </div>
+          <div class="flashcard-back">
+            <div class="fc-back-label" id="fc-back-label">Vocabulary</div>
+            <div class="fc-back-term" id="fc-back-term"></div>
+            <div class="fc-example" id="fc-example"></div>
+          </div>
+        </div>
+      </div>
+      <div class="fc-controls">
+        <button class="fc-btn secondary" onclick="prevCard()">← Prev</button>
+        <span class="fc-progress" id="fc-progress">1 / 21</span>
+        <button class="fc-btn" onclick="nextCard()">Next →</button>
+      </div>
+      <button class="fc-btn shuffle-btn" onclick="shuffleCards()">🔀 Shuffle</button>
+    </div>
+  </div>
+</div>
+
+<div class="slide" id="slide-4">
+  <div class="slide-inner">
+    <div class="slide-header"><span class="slide-badge">🎤 Sample Speech</span></div>
+    <div style="margin-bottom:16px">
+      <button class="show-speech-btn" onclick="toggleSpeech(this)">🎤 Show Sample Speech (Band 7+)</button>
+      <div class="speech-box" style="display:none">
+        <div class="speech-label">✅ Band 7+ Sample Speech (1.5–2 minutes)</div>
+        <p class="speech-text">The job I would consider perfect for me is working as a content strategist or creative director at an
+international media or technology company. I first became interested in this type of role through my current
+work in marketing, where I discovered that I am most energised by the intersection of creativity and strategy
+- developing compelling narratives, understanding audiences, and crafting content that genuinely
+resonates with people. To reach this level, I know I would need to develop several additional skills. I would
+need to deepen my expertise in data analytics to better understand audience behaviour, improve my
+leadership and project management abilities to oversee creative teams, and potentially pursue a
+postgraduate qualification in communications or business. I would also benefit from gaining experience
+across different types of media and markets. What makes this job feel perfect for me is that it combines the
+aspects of work I find most fulfilling - creative problem-solving, storytelling, collaboration, and continuous
+learning - in a role that has genuine impact. I also value the international dimension; working with diverse
+teams and audiences from different cultural backgrounds is something I find deeply stimulating. I believe
+that meaningful work is work that challenges you, allows you to grow, and contributes something of value to
+the world. This career path, I think, offers all of those things.</p>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+<div class="slide-nav">
+  <button class="nav-btn" id="btn-prev" onclick="prevSlide()" disabled>← Previous</button>
+  <div class="slide-counter" id="slide-counter">Slide 1 / 5</div>
+  <button class="nav-btn" id="btn-next" onclick="nextSlide()">Next →</button>
+</div>
+<script>
+const TOTAL=5;
+let cur=0;
+function goToSlide(n){
+  document.querySelectorAll('.slide').forEach(s=>s.classList.remove('active'));
+  document.querySelectorAll('.dot-btn').forEach(b=>b.classList.remove('active'));
+  document.getElementById('slide-'+n).classList.add('active');
+  const dot=document.getElementById('dot-'+n);
+  dot.classList.add('active');
+  dot.scrollIntoView({behavior:'smooth',block:'nearest',inline:'center'});
+  cur=n;
+  document.getElementById('btn-prev').disabled=(n===0);
+  document.getElementById('btn-next').disabled=(n===TOTAL-1);
+  document.getElementById('slide-counter').textContent='Slide '+(n+1)+' / '+TOTAL;
+  window.scrollTo({top:0,behavior:'smooth'});
+}
+function nextSlide(){if(cur<TOTAL-1)goToSlide(cur+1);}
+function prevSlide(){if(cur>0)goToSlide(cur-1);}
+document.addEventListener('keydown',e=>{
+  if(e.key==='ArrowRight'||e.key==='ArrowDown')nextSlide();
+  if(e.key==='ArrowLeft'||e.key==='ArrowUp')prevSlide();
+});
+goToSlide(0);
+
+function toggleSpeech(btn){
+  const box=btn.nextElementSibling;
+  if(box.style.display==='none'){box.style.display='block';btn.textContent='🙈 Hide Sample Speech';}
+  else{box.style.display='none';btn.textContent='🎤 Show Sample Speech (Band 7+)';}
+}
+
+// TIMER
+let timerInterval=null, timerSeconds=0, timerRunning=false;
+function formatTime(s){const m=Math.floor(s/60);return String(m).padStart(2,'0')+':'+String(s%60).padStart(2,'0');}
+function updateTimerDisplay(){const el=document.getElementById('timer-display');if(el)el.textContent=formatTime(timerSeconds);}
+function startTimer(){
+  if(timerRunning)return;
+  timerRunning=true;
+  timerInterval=setInterval(()=>{
+    timerSeconds++;
+    updateTimerDisplay();
+    const el=document.getElementById('timer-display');
+    if(el){
+      if(timerSeconds>=120&&timerSeconds<180)el.style.color='#ff9800';
+      else if(timerSeconds>=180)el.style.color='#e53935';
+      else el.style.color='var(--accent)';
+    }
+  },1000);
+}
+function pauseTimer(){clearInterval(timerInterval);timerRunning=false;}
+function resetTimer(){pauseTimer();timerSeconds=0;updateTimerDisplay();const el=document.getElementById('timer-display');if(el)el.style.color='var(--accent)';}
+updateTimerDisplay();
+
+// FLASHCARDS
+const CARDS=[{"term": "aspire to", "type": "Vocabulary"}, {"term": "work towards", "type": "Vocabulary"}, {"term": "set one's sights on", "type": "Vocabulary"}, {"term": "build up (skills)", "type": "Vocabulary"}, {"term": "look forward to", "type": "Vocabulary"}, {"term": "make a difference in", "type": "Vocabulary"}, {"term": "pursue a career in", "type": "Vocabulary"}, {"term": "develop expertise in", "type": "Vocabulary"}, {"term": "take on (responsibilities)", "type": "Vocabulary"}, {"term": "stand out from", "type": "Vocabulary"}, {"term": "carry on learning", "type": "Vocabulary"}, {"term": "dream career", "type": "Vocabulary"}, {"term": "professional fulfilment", "type": "Vocabulary"}, {"term": "career aspiration", "type": "Vocabulary"}, {"term": "skill development", "type": "Vocabulary"}, {"term": "ideal workplace", "type": "Vocabulary"}, {"term": "work-life balance", "type": "Vocabulary"}, {"term": "meaningful work", "type": "Vocabulary"}, {"term": "career progression", "type": "Vocabulary"}, {"term": "professional growth", "type": "Vocabulary"}, {"term": "job satisfaction", "type": "Vocabulary"}];
+let fcIdx=0,fcList=[...CARDS];
+function updateCard(){
+  const card=document.getElementById('flashcard');
+  if(!card)return;
+  card.classList.remove('flipped');
+  const c=fcList[fcIdx];
+  document.getElementById('fc-label').textContent=c.type||'Vocabulary';
+  document.getElementById('fc-term').textContent=c.term;
+  document.getElementById('fc-back-label').textContent=c.type||'Vocabulary';
+  document.getElementById('fc-back-term').textContent=c.term;
+  document.getElementById('fc-example').textContent='💬 Use in your speech: "...'+c.term+'..."';
+  document.getElementById('fc-progress').textContent=(fcIdx+1)+' / '+fcList.length;
+  document.getElementById('fc-progress-bar').style.width=((fcIdx+1)/fcList.length*100).toFixed(0)+'%';
+}
+function flipCard(){document.getElementById('flashcard').classList.toggle('flipped');}
+function nextCard(){fcIdx=(fcIdx+1)%fcList.length;updateCard();}
+function prevCard(){fcIdx=(fcIdx-1+fcList.length)%fcList.length;updateCard();}
+function shuffleCards(){
+  for(let i=fcList.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[fcList[i],fcList[j]]=[fcList[j],fcList[i]];}
+  fcIdx=0;updateCard();
+}
+updateCard();
+
+let timerInterval2=null,timerSeconds2=0,timerRunning2=false;
+function startTimer2(){if(timerRunning2)return;timerRunning2=true;timerInterval2=setInterval(()=>{timerSeconds2++;const el=document.getElementById('timer-display2');if(el){el.textContent=formatTime(timerSeconds2);if(timerSeconds2>=120&&timerSeconds2<180)el.style.color='#ff9800';else if(timerSeconds2>=180)el.style.color='#e53935';else el.style.color='var(--accent)';}},1000);}
+function pauseTimer2(){clearInterval(timerInterval2);timerRunning2=false;}
+function resetTimer2(){pauseTimer2();timerSeconds2=0;const el=document.getElementById('timer-display2');if(el){el.textContent=formatTime(0);el.style.color='var(--accent)';}}
+</script>
+</body>
+</html>
