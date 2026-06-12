@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Part 3: Work, Careers &amp; Business – IELTS Speaking</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+:root{--accent:#33691E;--al:#33691EL;--am:#33691EM}
+body{font-family:'Segoe UI',Arial,sans-serif;background:#f0f2f8;font-size:18px}
+.topnav{background:var(--accent);display:flex;align-items:center;justify-content:space-between;padding:14px 24px;position:sticky;top:0;z-index:200;box-shadow:0 2px 12px rgba(0,0,0,.2);gap:8px;flex-wrap:wrap}
+.topnav a{color:#fff;text-decoration:none;font-size:17px;font-weight:700;padding:7px 16px;border-radius:8px;background:rgba(255,255,255,.2);transition:background .2s;white-space:nowrap}
+.topnav a:hover{background:rgba(255,255,255,.35)}
+.ttitle{font-size:20px;font-weight:900;color:#fff;text-align:center;flex:1}
+.hero{background:linear-gradient(135deg,var(--accent) 0%,#33691E99 100%);color:#fff;padding:28px 24px 20px;text-align:center}
+.tnum{font-size:16px;font-weight:700;letter-spacing:2px;text-transform:uppercase;opacity:.8}
+.hero h1{font-size:38px;font-weight:900;margin:6px 0 10px;line-height:1.3}
+.stats{display:flex;justify-content:center;gap:16px;flex-wrap:wrap}
+.stat{background:rgba(255,255,255,.2);border-radius:10px;padding:6px 18px;font-size:17px;font-weight:600}
+.slide-dots-wrap{background:#fff;border-bottom:2px solid #e0e0e0;padding:14px 20px;display:flex;align-items:center;gap:8px;overflow-x:auto;justify-content:center;flex-wrap:wrap}
+.dot-btn{background:#e0e0e0;color:#555;border:none;font-size:15px;font-weight:700;padding:7px 16px;border-radius:20px;cursor:pointer;transition:all .2s;white-space:nowrap}
+.dot-btn.active{background:var(--accent);color:#fff;transform:scale(1.08)}
+.dot-btn:hover:not(.active){background:var(--am);color:#fff}
+.slide{display:none;animation:fadeIn .35s ease}
+.slide.active{display:block}
+@keyframes fadeIn{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:translateY(0)}}
+.slide-inner{max-width:900px;margin:30px auto;padding:0 20px 30px}
+.slide-header{display:flex;align-items:center;gap:12px;margin-bottom:18px;flex-wrap:wrap}
+.slide-badge{background:var(--accent);color:#fff;font-size:17px;font-weight:800;padding:6px 18px;border-radius:20px}
+.q-type-badge{background:var(--al);color:var(--accent);font-size:15px;font-weight:700;padding:5px 14px;border-radius:20px;border:1.5px solid var(--am)}
+/* QUESTION BOX */
+.question-text{font-size:28px;font-weight:900;color:#1a1a2e;line-height:1.3;margin-bottom:20px;background:#fff;border-radius:16px;padding:24px 28px;box-shadow:0 3px 16px rgba(0,0,0,.08);border-left:6px solid var(--accent)}
+/* STRATEGY BOX */
+.strategy-box{background:#fff3e0;border:2px solid #ffb74d;border-radius:14px;padding:20px 24px;margin-bottom:18px}
+.strategy-title{font-size:16px;font-weight:800;color:#e65100;margin-bottom:12px;text-transform:uppercase;letter-spacing:.5px;display:flex;align-items:center;gap:8px}
+.strategy-list{list-style:none;padding:0}
+.strategy-list li{font-size:19px;color:#1a1a2e;padding:7px 0 7px 28px;position:relative;border-bottom:1px solid #ffe0b2;line-height:1.5}
+.strategy-list li:last-child{border-bottom:none}
+.strategy-list li::before{content:"✦";position:absolute;left:0;color:#ff9800;font-size:16px;top:10px}
+/* IDEAS BOX */
+.ideas-box{background:#e8f5e9;border:2px solid #81c784;border-radius:14px;padding:20px 24px;margin-bottom:18px}
+.ideas-title{font-size:16px;font-weight:800;color:#2e7d32;margin-bottom:12px;text-transform:uppercase;letter-spacing:.5px;display:flex;align-items:center;gap:8px}
+.ideas-list{list-style:none;padding:0}
+.ideas-list li{font-size:19px;color:#1a1a2e;padding:7px 0 7px 28px;position:relative;border-bottom:1px solid #c8e6c9;line-height:1.5}
+.ideas-list li:last-child{border-bottom:none}
+.ideas-list li::before{content:"💡";position:absolute;left:0;font-size:16px;top:8px}
+/* VOCAB CHIPS */
+.vocab-row{background:#fff;border-radius:14px;padding:18px 22px;margin-bottom:18px;box-shadow:0 2px 10px rgba(0,0,0,.07)}
+.vocab-row-title{font-size:15px;font-weight:800;color:#555;margin-bottom:10px;text-transform:uppercase;letter-spacing:.5px}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.vocab-chip{font-size:17px;font-weight:700;padding:7px 14px;border-radius:20px;cursor:default;transition:transform .15s}
+.vocab-chip:hover{transform:scale(1.05)}
+.pv-chip{background:#e3f2fd;color:#1565c0;border:1.5px solid #90caf9}
+.col-chip{background:#fce4ec;color:#c62828;border:1.5px solid #f48fb1}
+/* ANSWER */
+.show-answer-btn{background:var(--accent);color:#fff;border:none;font-size:20px;font-weight:700;padding:14px 30px;border-radius:12px;cursor:pointer;transition:opacity .2s,transform .15s}
+.show-answer-btn:hover{opacity:.88;transform:scale(1.02)}
+.answer-box{background:#f1fff3;border:2px solid #a5d6a7;border-radius:14px;padding:24px;margin-top:16px}
+.answer-label{font-size:16px;font-weight:800;color:#2e7d32;margin-bottom:10px}
+.answer-text{font-size:21px;line-height:1.8;color:#1a1a2e}
+/* NAV */
+.slide-nav{display:flex;justify-content:space-between;align-items:center;max-width:900px;margin:0 auto 40px;padding:0 20px;gap:12px}
+.nav-btn{background:var(--accent);color:#fff;border:none;font-size:20px;font-weight:800;padding:14px 32px;border-radius:14px;cursor:pointer;transition:opacity .2s,transform .15s}
+.nav-btn:hover{opacity:.85;transform:scale(1.03)}
+.nav-btn:disabled{background:#ccc;cursor:default;transform:none}
+.slide-counter{font-size:20px;font-weight:800;color:#555;text-align:center}
+</style>
+</head>
+<body>
+<div class="topnav">
+  <a href="part3_09.html">← Part 3 9</a>
+  <div class="ttitle">Part 3: Work, Careers &amp; Business</div>
+  <a href="part3_11.html">Part 3 11 →</a>
+</div>
+<div class="hero">
+  <div class="tnum">IELTS Speaking Part 3 · Topic 10 of 22</div>
+  <h1>💬 Work, Careers &amp; Business</h1>
+  <div class="stats">
+    <div class="stat">❓ 3 Discussion Questions</div>
+    <div class="stat">💡 Ideas + 🎯 Strategy + ✅ Band 7+ Answers</div>
+  </div>
+</div>
+<div class="slide-dots-wrap"><button class="dot-btn active" onclick="goToSlide(0)" id="dot-0">Q1</button><button class="dot-btn" onclick="goToSlide(1)" id="dot-1">Q2</button><button class="dot-btn" onclick="goToSlide(2)" id="dot-2">Q3</button></div>
+<div class="slides-container">
+<div class="slide" id="slide-0">
+  <div class="slide-inner">
+    <div class="slide-header">
+      <span class="slide-badge">Question 1 of 3</span>
+      <span class="q-type-badge">Opinion / Reason</span>
+    </div>
+    <div class="question-text">"Why do some people start their own business?"</div>
+    
+        <div class="strategy-box">
+          <div class="strategy-title">🎯 Answer Direction &amp; Strategy</div>
+          <ul class="strategy-list"><li>Offer multiple motivations: financial, personal, and social.</li><li>Mention both positive motivations and push factors.</li><li>Use a range of vocabulary related to entrepreneurship.</li></ul>
+        </div>
+    
+        <div class="ideas-box">
+          <div class="ideas-title">💡 Ideas to Use in Your Answer</div>
+          <ul class="ideas-list"><li>The desire for financial independence and the potential for greater earnings than employment can</li><li>The wish to pursue a personal passion or solve a problem they have identified in the market.</li><li>Dissatisfaction with traditional employment - lack of autonomy, limited career progression, or poor</li><li>The desire to create something meaningful and leave a lasting legacy.</li></ul>
+        </div>
+    
+        <div class="vocab-row">
+          <div class="vocab-row-title">🔗 Key Vocabulary</div>
+          <div class="chips"><span class="vocab-chip col-chip">set up (a business)</span><span class="vocab-chip col-chip">take a leap of faith</span><span class="vocab-chip col-chip">build up (from scratch)</span><span class="vocab-chip col-chip">deal with (risks)</span><span class="vocab-chip col-chip">carry on</span><span class="vocab-chip col-chip">stand out from</span><span class="vocab-chip col-chip">entrepreneurial motivation</span><span class="vocab-chip col-chip">financial independence</span><span class="vocab-chip col-chip">business opportunity</span><span class="vocab-chip col-chip">personal passion</span><span class="vocab-chip col-chip">risk-taking</span></div>
+        </div>
+    <button class="show-answer-btn" onclick="toggleAnswer(this)">👁 Show Band 7+ Answer</button>
+    <div class="answer-box" style="display:none">
+      <div class="answer-label">✅ Band 7+ Model Answer</div>
+      <p class="answer-text">People start businesses for a fascinating variety of reasons. For some, the primary motivation is financial -
+the desire for greater earning potential and financial independence than traditional employment can offer.
+For others, it is about pursuing a passion or solving a problem they have personally experienced and
+believe they can address better than existing solutions. There is also a significant push factor: many
+entrepreneurs start businesses because they are dissatisfied with traditional employment - frustrated by
+lack of autonomy, limited career progression, or a work culture that does not align with their values. And for
+some, particularly those who have achieved financial security, starting a business is about creating
+something meaningful, building a legacy, and making a positive contribution to their community or industry.
+The most successful entrepreneurs tend to be driven by a combination of these motivations rather than any
+single one.</p>
+    </div>
+  </div>
+</div>
+<div class="slide" id="slide-1">
+  <div class="slide-inner">
+    <div class="slide-header">
+      <span class="slide-badge">Question 2 of 3</span>
+      <span class="q-type-badge">Opinion / Analysis</span>
+    </div>
+    <div class="question-text">"What makes a business successful?"</div>
+    
+        <div class="strategy-box">
+          <div class="strategy-title">🎯 Answer Direction &amp; Strategy</div>
+          <ul class="strategy-list"><li>●  Give specific examples where possible.</li><li>Prioritise the most important factors.</li></ul>
+        </div>
+    
+        <div class="ideas-box">
+          <div class="ideas-title">💡 Ideas to Use in Your Answer</div>
+          <ul class="ideas-list"><li>A clear understanding of the target market and a product or service that genuinely meets their needs.</li><li>Strong leadership and a talented, motivated team.</li><li>Financial discipline - managing cash flow, controlling costs, and reinvesting profits wisely.</li><li>The ability to adapt to changing market conditions and customer needs.</li></ul>
+        </div>
+    
+        <div class="vocab-row">
+          <div class="vocab-row-title">🔗 Key Vocabulary</div>
+          <div class="chips"><span class="vocab-chip col-chip">build up</span><span class="vocab-chip col-chip">stand out from</span><span class="vocab-chip col-chip">carry out (strategy)</span><span class="vocab-chip col-chip">deal with (challenges)</span><span class="vocab-chip col-chip">look into</span><span class="vocab-chip col-chip">come up with</span><span class="vocab-chip col-chip">business success</span><span class="vocab-chip col-chip">market understanding</span><span class="vocab-chip col-chip">leadership quality</span><span class="vocab-chip col-chip">financial management</span><span class="vocab-chip col-chip">competitive advantage</span></div>
+        </div>
+    <button class="show-answer-btn" onclick="toggleAnswer(this)">👁 Show Band 7+ Answer</button>
+    <div class="answer-box" style="display:none">
+      <div class="answer-label">✅ Band 7+ Model Answer</div>
+      <p class="answer-text">Business success is multifactorial, but I think a few elements are particularly critical. First and foremost, a
+successful business must offer something that genuinely meets a real need or desire in the market - no
+amount of marketing or operational excellence can compensate for a product or service that people do not
+actually want. Second, strong leadership is essential: the ability to inspire and retain talented people, make
+sound strategic decisions, and navigate challenges with resilience and creativity. Third, financial discipline
+- understanding cash flow, managing costs, and making wise investment decisions - is often what
+separates businesses that survive from those that fail, even when the underlying idea is good. And finally,
+adaptability: the ability to respond to changing market conditions, customer feedback, and competitive
+pressures is increasingly important in a rapidly evolving business environment.</p>
+    </div>
+  </div>
+</div>
+<div class="slide" id="slide-2">
+  <div class="slide-inner">
+    <div class="slide-header">
+      <span class="slide-badge">Question 3 of 3</span>
+      <span class="q-type-badge">Opinion / Argument</span>
+    </div>
+    <div class="question-text">"Should governments provide financial support to start-ups?"</div>
+    
+        <div class="strategy-box">
+          <div class="strategy-title">🎯 Answer Direction &amp; Strategy</div>
+          <ul class="strategy-list"><li>State your position and give reasons.</li><li>Acknowledge the counterargument.</li><li>Consider the conditions under which government support is most appropriate.</li></ul>
+        </div>
+    
+        <div class="ideas-box">
+          <div class="ideas-title">💡 Ideas to Use in Your Answer</div>
+          <ul class="ideas-list"><li>Start-ups drive innovation, create jobs, and contribute to economic growth, making them worthy of</li><li>Many start-ups fail not because of bad ideas but because of lack of access to capital, particularly in</li><li>However, government support should be targeted and conditional to avoid wasting public funds on</li><li>Alternative forms of support - mentorship, regulatory simplification, tax incentives - may be more</li></ul>
+        </div>
+    
+        <div class="vocab-row">
+          <div class="vocab-row-title">🔗 Key Vocabulary</div>
+          <div class="chips"><span class="vocab-chip col-chip">invest in</span><span class="vocab-chip col-chip">support financially</span><span class="vocab-chip col-chip">carry out (due diligence)</span><span class="vocab-chip col-chip">deal with (risk)</span><span class="vocab-chip col-chip">stand up for</span><span class="vocab-chip col-chip">build on</span><span class="vocab-chip col-chip">government support</span><span class="vocab-chip col-chip">start-up ecosystem</span><span class="vocab-chip col-chip">economic development</span><span class="vocab-chip col-chip">public funding</span><span class="vocab-chip col-chip">entrepreneurship policy</span></div>
+        </div>
+    <button class="show-answer-btn" onclick="toggleAnswer(this)">👁 Show Band 7+ Answer</button>
+    <div class="answer-box" style="display:none">
+      <div class="answer-label">✅ Band 7+ Model Answer</div>
+      <p class="answer-text">I think governments should provide some form of support to start-ups, but with important caveats. The
+case for support is strong: start-ups are engines of innovation and job creation, and many promising
+businesses fail not because of bad ideas but because of lack of access to capital in the critical early
+stages. Government support can help bridge this gap and create a more dynamic, innovative economy.
+However, I think direct financial grants should be targeted carefully and subject to rigorous evaluation to
+avoid wasting public funds on unviable businesses. In many cases, non-financial forms of support may be
+more effective: simplifying regulations for new businesses, providing mentorship and business
+development resources, offering tax incentives for early-stage investment, and creating ecosystems where
+start-ups can connect with experienced entrepreneurs and investors. The goal should be to create
+conditions in which good ideas can flourish, rather than simply writing cheques.</p>
+    </div>
+  </div>
+</div></div>
+<div class="slide-nav">
+  <button class="nav-btn" id="btn-prev" onclick="prevSlide()" disabled>← Previous</button>
+  <div class="slide-counter" id="slide-counter">Slide 1 / 3</div>
+  <button class="nav-btn" id="btn-next" onclick="nextSlide()">Next →</button>
+</div>
+<script>
+const TOTAL=3;
+let cur=0;
+function goToSlide(n){
+  document.querySelectorAll('.slide').forEach(s=>s.classList.remove('active'));
+  document.querySelectorAll('.dot-btn').forEach(b=>b.classList.remove('active'));
+  document.getElementById('slide-'+n).classList.add('active');
+  const dot=document.getElementById('dot-'+n);
+  dot.classList.add('active');
+  dot.scrollIntoView({behavior:'smooth',block:'nearest',inline:'center'});
+  cur=n;
+  document.getElementById('btn-prev').disabled=(n===0);
+  document.getElementById('btn-next').disabled=(n===TOTAL-1);
+  document.getElementById('slide-counter').textContent='Slide '+(n+1)+' / '+TOTAL;
+  window.scrollTo({top:0,behavior:'smooth'});
+}
+function nextSlide(){if(cur<TOTAL-1)goToSlide(cur+1);}
+function prevSlide(){if(cur>0)goToSlide(cur-1);}
+document.addEventListener('keydown',e=>{
+  if(e.key==='ArrowRight'||e.key==='ArrowDown')nextSlide();
+  if(e.key==='ArrowLeft'||e.key==='ArrowUp')prevSlide();
+});
+goToSlide(0);
+function toggleAnswer(btn){
+  const box=btn.nextElementSibling;
+  if(box.style.display==='none'){box.style.display='block';btn.textContent='🙈 Hide Answer';}
+  else{box.style.display='none';btn.textContent='👁 Show Band 7+ Answer';}
+}
+</script>
+</body>
+</html>

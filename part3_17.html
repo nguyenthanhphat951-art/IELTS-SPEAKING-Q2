@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Part 3: Museums, Heritage &amp; Cultural Preservation – IELTS Speaking</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+:root{--accent:#BF360C;--al:#BF360CL;--am:#BF360CM}
+body{font-family:'Segoe UI',Arial,sans-serif;background:#f0f2f8;font-size:18px}
+.topnav{background:var(--accent);display:flex;align-items:center;justify-content:space-between;padding:14px 24px;position:sticky;top:0;z-index:200;box-shadow:0 2px 12px rgba(0,0,0,.2);gap:8px;flex-wrap:wrap}
+.topnav a{color:#fff;text-decoration:none;font-size:17px;font-weight:700;padding:7px 16px;border-radius:8px;background:rgba(255,255,255,.2);transition:background .2s;white-space:nowrap}
+.topnav a:hover{background:rgba(255,255,255,.35)}
+.ttitle{font-size:20px;font-weight:900;color:#fff;text-align:center;flex:1}
+.hero{background:linear-gradient(135deg,var(--accent) 0%,#BF360C99 100%);color:#fff;padding:28px 24px 20px;text-align:center}
+.tnum{font-size:16px;font-weight:700;letter-spacing:2px;text-transform:uppercase;opacity:.8}
+.hero h1{font-size:38px;font-weight:900;margin:6px 0 10px;line-height:1.3}
+.stats{display:flex;justify-content:center;gap:16px;flex-wrap:wrap}
+.stat{background:rgba(255,255,255,.2);border-radius:10px;padding:6px 18px;font-size:17px;font-weight:600}
+.slide-dots-wrap{background:#fff;border-bottom:2px solid #e0e0e0;padding:14px 20px;display:flex;align-items:center;gap:8px;overflow-x:auto;justify-content:center;flex-wrap:wrap}
+.dot-btn{background:#e0e0e0;color:#555;border:none;font-size:15px;font-weight:700;padding:7px 16px;border-radius:20px;cursor:pointer;transition:all .2s;white-space:nowrap}
+.dot-btn.active{background:var(--accent);color:#fff;transform:scale(1.08)}
+.dot-btn:hover:not(.active){background:var(--am);color:#fff}
+.slide{display:none;animation:fadeIn .35s ease}
+.slide.active{display:block}
+@keyframes fadeIn{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:translateY(0)}}
+.slide-inner{max-width:900px;margin:30px auto;padding:0 20px 30px}
+.slide-header{display:flex;align-items:center;gap:12px;margin-bottom:18px;flex-wrap:wrap}
+.slide-badge{background:var(--accent);color:#fff;font-size:17px;font-weight:800;padding:6px 18px;border-radius:20px}
+.q-type-badge{background:var(--al);color:var(--accent);font-size:15px;font-weight:700;padding:5px 14px;border-radius:20px;border:1.5px solid var(--am)}
+/* QUESTION BOX */
+.question-text{font-size:28px;font-weight:900;color:#1a1a2e;line-height:1.3;margin-bottom:20px;background:#fff;border-radius:16px;padding:24px 28px;box-shadow:0 3px 16px rgba(0,0,0,.08);border-left:6px solid var(--accent)}
+/* STRATEGY BOX */
+.strategy-box{background:#fff3e0;border:2px solid #ffb74d;border-radius:14px;padding:20px 24px;margin-bottom:18px}
+.strategy-title{font-size:16px;font-weight:800;color:#e65100;margin-bottom:12px;text-transform:uppercase;letter-spacing:.5px;display:flex;align-items:center;gap:8px}
+.strategy-list{list-style:none;padding:0}
+.strategy-list li{font-size:19px;color:#1a1a2e;padding:7px 0 7px 28px;position:relative;border-bottom:1px solid #ffe0b2;line-height:1.5}
+.strategy-list li:last-child{border-bottom:none}
+.strategy-list li::before{content:"✦";position:absolute;left:0;color:#ff9800;font-size:16px;top:10px}
+/* IDEAS BOX */
+.ideas-box{background:#e8f5e9;border:2px solid #81c784;border-radius:14px;padding:20px 24px;margin-bottom:18px}
+.ideas-title{font-size:16px;font-weight:800;color:#2e7d32;margin-bottom:12px;text-transform:uppercase;letter-spacing:.5px;display:flex;align-items:center;gap:8px}
+.ideas-list{list-style:none;padding:0}
+.ideas-list li{font-size:19px;color:#1a1a2e;padding:7px 0 7px 28px;position:relative;border-bottom:1px solid #c8e6c9;line-height:1.5}
+.ideas-list li:last-child{border-bottom:none}
+.ideas-list li::before{content:"💡";position:absolute;left:0;font-size:16px;top:8px}
+/* VOCAB CHIPS */
+.vocab-row{background:#fff;border-radius:14px;padding:18px 22px;margin-bottom:18px;box-shadow:0 2px 10px rgba(0,0,0,.07)}
+.vocab-row-title{font-size:15px;font-weight:800;color:#555;margin-bottom:10px;text-transform:uppercase;letter-spacing:.5px}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.vocab-chip{font-size:17px;font-weight:700;padding:7px 14px;border-radius:20px;cursor:default;transition:transform .15s}
+.vocab-chip:hover{transform:scale(1.05)}
+.pv-chip{background:#e3f2fd;color:#1565c0;border:1.5px solid #90caf9}
+.col-chip{background:#fce4ec;color:#c62828;border:1.5px solid #f48fb1}
+/* ANSWER */
+.show-answer-btn{background:var(--accent);color:#fff;border:none;font-size:20px;font-weight:700;padding:14px 30px;border-radius:12px;cursor:pointer;transition:opacity .2s,transform .15s}
+.show-answer-btn:hover{opacity:.88;transform:scale(1.02)}
+.answer-box{background:#f1fff3;border:2px solid #a5d6a7;border-radius:14px;padding:24px;margin-top:16px}
+.answer-label{font-size:16px;font-weight:800;color:#2e7d32;margin-bottom:10px}
+.answer-text{font-size:21px;line-height:1.8;color:#1a1a2e}
+/* NAV */
+.slide-nav{display:flex;justify-content:space-between;align-items:center;max-width:900px;margin:0 auto 40px;padding:0 20px;gap:12px}
+.nav-btn{background:var(--accent);color:#fff;border:none;font-size:20px;font-weight:800;padding:14px 32px;border-radius:14px;cursor:pointer;transition:opacity .2s,transform .15s}
+.nav-btn:hover{opacity:.85;transform:scale(1.03)}
+.nav-btn:disabled{background:#ccc;cursor:default;transform:none}
+.slide-counter{font-size:20px;font-weight:800;color:#555;text-align:center}
+</style>
+</head>
+<body>
+<div class="topnav">
+  <a href="part3_16.html">← Part 3 16</a>
+  <div class="ttitle">Part 3: Museums, Heritage &amp; Cultural Preservation</div>
+  <a href="part3_18.html">Part 3 18 →</a>
+</div>
+<div class="hero">
+  <div class="tnum">IELTS Speaking Part 3 · Topic 17 of 22</div>
+  <h1>💬 Museums, Heritage &amp; Cultural Preservation</h1>
+  <div class="stats">
+    <div class="stat">❓ 2 Discussion Questions</div>
+    <div class="stat">💡 Ideas + 🎯 Strategy + ✅ Band 7+ Answers</div>
+  </div>
+</div>
+<div class="slide-dots-wrap"><button class="dot-btn active" onclick="goToSlide(0)" id="dot-0">Q1</button><button class="dot-btn" onclick="goToSlide(1)" id="dot-1">Q2</button></div>
+<div class="slides-container">
+<div class="slide" id="slide-0">
+  <div class="slide-inner">
+    <div class="slide-header">
+      <span class="slide-badge">Question 1 of 2</span>
+      <span class="q-type-badge">General Knowledge / Descriptive</span>
+    </div>
+    <div class="question-text">"What kinds of things are kept in museums?"</div>
+    
+        <div class="strategy-box">
+          <div class="strategy-title">🎯 Answer Direction &amp; Strategy</div>
+          <ul class="strategy-list"><li>Describe the range of objects and collections found in museums.</li><li>Mention different types of museums.</li><li>Explain why these things are preserved.</li></ul>
+        </div>
+    
+        <div class="ideas-box">
+          <div class="ideas-title">💡 Ideas to Use in Your Answer</div>
+          <ul class="ideas-list"><li>Historical artefacts: tools, weapons, clothing, and everyday objects from different historical periods.</li><li>Artworks: paintings, sculptures, and decorative arts from various cultures and periods.</li><li>Natural history specimens: fossils, minerals, taxidermied animals, and botanical collections.</li><li>Scientific instruments, technological innovations, and documents of historical significance.</li></ul>
+        </div>
+    
+        <div class="vocab-row">
+          <div class="vocab-row-title">🔗 Key Vocabulary</div>
+          <div class="chips"><span class="vocab-chip col-chip">preserve</span><span class="vocab-chip col-chip">display</span><span class="vocab-chip col-chip">look after</span><span class="vocab-chip col-chip">carry on (a tradition)</span><span class="vocab-chip col-chip">stand the test of time</span><span class="vocab-chip col-chip">be associated with</span><span class="vocab-chip col-chip">museum collection</span><span class="vocab-chip col-chip">historical artefact</span><span class="vocab-chip col-chip">cultural heritage</span><span class="vocab-chip col-chip">natural history</span><span class="vocab-chip col-chip">artistic legacy</span></div>
+        </div>
+    <button class="show-answer-btn" onclick="toggleAnswer(this)">👁 Show Band 7+ Answer</button>
+    <div class="answer-box" style="display:none">
+      <div class="answer-label">✅ Band 7+ Model Answer</div>
+      <p class="answer-text">Museums house an extraordinarily diverse range of objects, reflecting the breadth of human history,
+culture, and natural world. Historical museums typically contain artefacts from different periods and
+civilisations - tools, weapons, clothing, jewellery, coins, and everyday objects that illuminate how people
+lived in the past. Art museums house paintings, sculptures, prints, and decorative arts from various
+cultures and periods. Natural history museums preserve fossils, minerals, taxidermied animals, and
+botanical specimens that document the diversity of life on Earth. Science and technology museums display
+instruments, inventions, and innovations that trace the history of human ingenuity. And specialised
+museums focus on particular themes - war, fashion, music, cinema, or the history of specific cities or
+communities. What unites all of these collections is the fundamental purpose of preservation: ensuring
+that objects of historical, cultural, or scientific significance are protected and made accessible to future
+generations.</p>
+    </div>
+  </div>
+</div>
+<div class="slide" id="slide-1">
+  <div class="slide-inner">
+    <div class="slide-header">
+      <span class="slide-badge">Question 2 of 2</span>
+      <span class="q-type-badge">Opinion / Analysis</span>
+    </div>
+    <div class="question-text">"What is the influence of technology on museums?"</div>
+    
+        <div class="strategy-box">
+          <div class="strategy-title">🎯 Answer Direction &amp; Strategy</div>
+          <ul class="strategy-list"><li>Discuss both positive and negative influences of technology on museums.</li><li>Give specific examples of technological innovations in museums.</li><li>Consider the impact on visitor experience and accessibility.</li></ul>
+        </div>
+    
+        <div class="ideas-box">
+          <div class="ideas-title">💡 Ideas to Use in Your Answer</div>
+          <ul class="ideas-list"><li>Technology has enabled museums to create immersive, interactive experiences that engage visitors</li><li>Digital archives and virtual tours have made museum collections accessible to people who cannot visit</li><li>Technology has improved conservation techniques, helping to preserve fragile artefacts more</li><li>However, there is a risk that technology can overshadow the objects themselves, reducing the</li></ul>
+        </div>
+    
+        <div class="vocab-row">
+          <div class="vocab-row-title">🔗 Key Vocabulary</div>
+          <div class="chips"><span class="vocab-chip col-chip">make use of</span><span class="vocab-chip col-chip">carry on (innovating)</span><span class="vocab-chip col-chip">deal with (challenges)</span><span class="vocab-chip col-chip">build on</span><span class="vocab-chip col-chip">stand out from</span><span class="vocab-chip col-chip">look into</span><span class="vocab-chip col-chip">digital technology</span><span class="vocab-chip col-chip">interactive exhibit</span><span class="vocab-chip col-chip">virtual museum</span><span class="vocab-chip col-chip">conservation technology</span><span class="vocab-chip col-chip">visitor experience</span></div>
+        </div>
+    <button class="show-answer-btn" onclick="toggleAnswer(this)">👁 Show Band 7+ Answer</button>
+    <div class="answer-box" style="display:none">
+      <div class="answer-label">✅ Band 7+ Model Answer</div>
+      <p class="answer-text">Technology has had a profound and largely positive influence on museums. The most visible impact is on
+the visitor experience: interactive displays, augmented reality, and immersive installations have
+transformed many museums from passive viewing experiences into active, engaging encounters with
+history and culture. Digital audio guides and multilingual apps have made collections more accessible to
+diverse audiences. Perhaps most significantly, technology has enabled museums to reach people who
+cannot visit in person: virtual tours, digital archives, and online collections mean that the world&#x27;s great
+museum holdings are now accessible to anyone with an internet connection. Behind the scenes,
+technology has also revolutionised conservation, enabling more precise analysis and treatment of fragile
+artefacts. The one concern I would raise is that technology should enhance rather than replace the
+authentic encounter with real objects. There is something irreplaceable about standing in front of an actual
+historical artefact, and museums should be careful not to let technological spectacle overshadow the
+objects themselves.</p>
+    </div>
+  </div>
+</div></div>
+<div class="slide-nav">
+  <button class="nav-btn" id="btn-prev" onclick="prevSlide()" disabled>← Previous</button>
+  <div class="slide-counter" id="slide-counter">Slide 1 / 2</div>
+  <button class="nav-btn" id="btn-next" onclick="nextSlide()">Next →</button>
+</div>
+<script>
+const TOTAL=2;
+let cur=0;
+function goToSlide(n){
+  document.querySelectorAll('.slide').forEach(s=>s.classList.remove('active'));
+  document.querySelectorAll('.dot-btn').forEach(b=>b.classList.remove('active'));
+  document.getElementById('slide-'+n).classList.add('active');
+  const dot=document.getElementById('dot-'+n);
+  dot.classList.add('active');
+  dot.scrollIntoView({behavior:'smooth',block:'nearest',inline:'center'});
+  cur=n;
+  document.getElementById('btn-prev').disabled=(n===0);
+  document.getElementById('btn-next').disabled=(n===TOTAL-1);
+  document.getElementById('slide-counter').textContent='Slide '+(n+1)+' / '+TOTAL;
+  window.scrollTo({top:0,behavior:'smooth'});
+}
+function nextSlide(){if(cur<TOTAL-1)goToSlide(cur+1);}
+function prevSlide(){if(cur>0)goToSlide(cur-1);}
+document.addEventListener('keydown',e=>{
+  if(e.key==='ArrowRight'||e.key==='ArrowDown')nextSlide();
+  if(e.key==='ArrowLeft'||e.key==='ArrowUp')prevSlide();
+});
+goToSlide(0);
+function toggleAnswer(btn){
+  const box=btn.nextElementSibling;
+  if(box.style.display==='none'){box.style.display='block';btn.textContent='🙈 Hide Answer';}
+  else{box.style.display='none';btn.textContent='👁 Show Band 7+ Answer';}
+}
+</script>
+</body>
+</html>

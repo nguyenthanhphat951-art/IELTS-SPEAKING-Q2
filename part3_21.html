@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Part 3: Transport &amp; Environmental Impact – IELTS Speaking</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+:root{--accent:#E65100;--al:#E65100L;--am:#E65100M}
+body{font-family:'Segoe UI',Arial,sans-serif;background:#f0f2f8;font-size:18px}
+.topnav{background:var(--accent);display:flex;align-items:center;justify-content:space-between;padding:14px 24px;position:sticky;top:0;z-index:200;box-shadow:0 2px 12px rgba(0,0,0,.2);gap:8px;flex-wrap:wrap}
+.topnav a{color:#fff;text-decoration:none;font-size:17px;font-weight:700;padding:7px 16px;border-radius:8px;background:rgba(255,255,255,.2);transition:background .2s;white-space:nowrap}
+.topnav a:hover{background:rgba(255,255,255,.35)}
+.ttitle{font-size:20px;font-weight:900;color:#fff;text-align:center;flex:1}
+.hero{background:linear-gradient(135deg,var(--accent) 0%,#E6510099 100%);color:#fff;padding:28px 24px 20px;text-align:center}
+.tnum{font-size:16px;font-weight:700;letter-spacing:2px;text-transform:uppercase;opacity:.8}
+.hero h1{font-size:38px;font-weight:900;margin:6px 0 10px;line-height:1.3}
+.stats{display:flex;justify-content:center;gap:16px;flex-wrap:wrap}
+.stat{background:rgba(255,255,255,.2);border-radius:10px;padding:6px 18px;font-size:17px;font-weight:600}
+.slide-dots-wrap{background:#fff;border-bottom:2px solid #e0e0e0;padding:14px 20px;display:flex;align-items:center;gap:8px;overflow-x:auto;justify-content:center;flex-wrap:wrap}
+.dot-btn{background:#e0e0e0;color:#555;border:none;font-size:15px;font-weight:700;padding:7px 16px;border-radius:20px;cursor:pointer;transition:all .2s;white-space:nowrap}
+.dot-btn.active{background:var(--accent);color:#fff;transform:scale(1.08)}
+.dot-btn:hover:not(.active){background:var(--am);color:#fff}
+.slide{display:none;animation:fadeIn .35s ease}
+.slide.active{display:block}
+@keyframes fadeIn{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:translateY(0)}}
+.slide-inner{max-width:900px;margin:30px auto;padding:0 20px 30px}
+.slide-header{display:flex;align-items:center;gap:12px;margin-bottom:18px;flex-wrap:wrap}
+.slide-badge{background:var(--accent);color:#fff;font-size:17px;font-weight:800;padding:6px 18px;border-radius:20px}
+.q-type-badge{background:var(--al);color:var(--accent);font-size:15px;font-weight:700;padding:5px 14px;border-radius:20px;border:1.5px solid var(--am)}
+/* QUESTION BOX */
+.question-text{font-size:28px;font-weight:900;color:#1a1a2e;line-height:1.3;margin-bottom:20px;background:#fff;border-radius:16px;padding:24px 28px;box-shadow:0 3px 16px rgba(0,0,0,.08);border-left:6px solid var(--accent)}
+/* STRATEGY BOX */
+.strategy-box{background:#fff3e0;border:2px solid #ffb74d;border-radius:14px;padding:20px 24px;margin-bottom:18px}
+.strategy-title{font-size:16px;font-weight:800;color:#e65100;margin-bottom:12px;text-transform:uppercase;letter-spacing:.5px;display:flex;align-items:center;gap:8px}
+.strategy-list{list-style:none;padding:0}
+.strategy-list li{font-size:19px;color:#1a1a2e;padding:7px 0 7px 28px;position:relative;border-bottom:1px solid #ffe0b2;line-height:1.5}
+.strategy-list li:last-child{border-bottom:none}
+.strategy-list li::before{content:"✦";position:absolute;left:0;color:#ff9800;font-size:16px;top:10px}
+/* IDEAS BOX */
+.ideas-box{background:#e8f5e9;border:2px solid #81c784;border-radius:14px;padding:20px 24px;margin-bottom:18px}
+.ideas-title{font-size:16px;font-weight:800;color:#2e7d32;margin-bottom:12px;text-transform:uppercase;letter-spacing:.5px;display:flex;align-items:center;gap:8px}
+.ideas-list{list-style:none;padding:0}
+.ideas-list li{font-size:19px;color:#1a1a2e;padding:7px 0 7px 28px;position:relative;border-bottom:1px solid #c8e6c9;line-height:1.5}
+.ideas-list li:last-child{border-bottom:none}
+.ideas-list li::before{content:"💡";position:absolute;left:0;font-size:16px;top:8px}
+/* VOCAB CHIPS */
+.vocab-row{background:#fff;border-radius:14px;padding:18px 22px;margin-bottom:18px;box-shadow:0 2px 10px rgba(0,0,0,.07)}
+.vocab-row-title{font-size:15px;font-weight:800;color:#555;margin-bottom:10px;text-transform:uppercase;letter-spacing:.5px}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.vocab-chip{font-size:17px;font-weight:700;padding:7px 14px;border-radius:20px;cursor:default;transition:transform .15s}
+.vocab-chip:hover{transform:scale(1.05)}
+.pv-chip{background:#e3f2fd;color:#1565c0;border:1.5px solid #90caf9}
+.col-chip{background:#fce4ec;color:#c62828;border:1.5px solid #f48fb1}
+/* ANSWER */
+.show-answer-btn{background:var(--accent);color:#fff;border:none;font-size:20px;font-weight:700;padding:14px 30px;border-radius:12px;cursor:pointer;transition:opacity .2s,transform .15s}
+.show-answer-btn:hover{opacity:.88;transform:scale(1.02)}
+.answer-box{background:#f1fff3;border:2px solid #a5d6a7;border-radius:14px;padding:24px;margin-top:16px}
+.answer-label{font-size:16px;font-weight:800;color:#2e7d32;margin-bottom:10px}
+.answer-text{font-size:21px;line-height:1.8;color:#1a1a2e}
+/* NAV */
+.slide-nav{display:flex;justify-content:space-between;align-items:center;max-width:900px;margin:0 auto 40px;padding:0 20px;gap:12px}
+.nav-btn{background:var(--accent);color:#fff;border:none;font-size:20px;font-weight:800;padding:14px 32px;border-radius:14px;cursor:pointer;transition:opacity .2s,transform .15s}
+.nav-btn:hover{opacity:.85;transform:scale(1.03)}
+.nav-btn:disabled{background:#ccc;cursor:default;transform:none}
+.slide-counter{font-size:20px;font-weight:800;color:#555;text-align:center}
+</style>
+</head>
+<body>
+<div class="topnav">
+  <a href="part3_20.html">← Part 3 20</a>
+  <div class="ttitle">Part 3: Transport &amp; Environmental Impact</div>
+  <a href="part3_22.html">Part 3 22 →</a>
+</div>
+<div class="hero">
+  <div class="tnum">IELTS Speaking Part 3 · Topic 21 of 22</div>
+  <h1>💬 Transport &amp; Environmental Impact</h1>
+  <div class="stats">
+    <div class="stat">❓ 2 Discussion Questions</div>
+    <div class="stat">💡 Ideas + 🎯 Strategy + ✅ Band 7+ Answers</div>
+  </div>
+</div>
+<div class="slide-dots-wrap"><button class="dot-btn active" onclick="goToSlide(0)" id="dot-0">Q1</button><button class="dot-btn" onclick="goToSlide(1)" id="dot-1">Q2</button></div>
+<div class="slides-container">
+<div class="slide" id="slide-0">
+  <div class="slide-inner">
+    <div class="slide-header">
+      <span class="slide-badge">Question 1 of 2</span>
+      <span class="q-type-badge">Opinion / Analysis</span>
+    </div>
+    <div class="question-text">"Do you think air pollution comes mostly from mobile vehicles?"</div>
+    
+        <div class="strategy-box">
+          <div class="strategy-title">🎯 Answer Direction &amp; Strategy</div>
+          <ul class="strategy-list"><li>State your opinion and give evidence.</li><li>Mention other significant sources of air pollution.</li><li>Discuss the relative contribution of different sources.</li></ul>
+        </div>
+    
+        <div class="ideas-box">
+          <div class="ideas-title">💡 Ideas to Use in Your Answer</div>
+          <ul class="ideas-list"><li>Mobile vehicles are a major source of air pollution, particularly in urban areas where traffic is dense.</li><li>However, industrial emissions, power generation, and agricultural activities are also significant</li><li>contributors. In many developing countries, coal-fired power plants and industrial facilities are the largest sources of air pollution.</li><li>The relative contribution of vehicles versus other sources varies significantly by location and context.</li></ul>
+        </div>
+    
+        <div class="vocab-row">
+          <div class="vocab-row-title">🔗 Key Vocabulary</div>
+          <div class="chips"><span class="vocab-chip col-chip">contribute to</span><span class="vocab-chip col-chip">deal with</span><span class="vocab-chip col-chip">carry on (polluting)</span><span class="vocab-chip col-chip">stand up for</span><span class="vocab-chip col-chip">build on</span><span class="vocab-chip col-chip">look into</span><span class="vocab-chip col-chip">air pollution</span><span class="vocab-chip col-chip">vehicle emissions</span><span class="vocab-chip col-chip">industrial pollution</span><span class="vocab-chip col-chip">environmental impact</span><span class="vocab-chip col-chip">carbon footprint</span></div>
+        </div>
+    <button class="show-answer-btn" onclick="toggleAnswer(this)">👁 Show Band 7+ Answer</button>
+    <div class="answer-box" style="display:none">
+      <div class="answer-label">✅ Band 7+ Model Answer</div>
+      <p class="answer-text">Mobile vehicles are certainly a major contributor to air pollution, particularly in urban areas where traffic
+density is high and the concentration of vehicle emissions is most acute. In cities like Hanoi or Ho Chi Minh
+City, the sheer volume of motorbikes and cars creates visible and measurable air quality problems.
+However, I would not say vehicles are the primary source of air pollution globally. Industrial emissions from
+factories and manufacturing plants, coal-fired power stations, and agricultural activities - particularly
+livestock farming and the burning of crop residues - are also enormously significant contributors. In many
+developing countries, coal-fired power generation is actually the largest single source of air pollution. The
+relative contribution of different sources varies significantly by location, level of industrialisation, and
+energy mix. A comprehensive approach to air quality improvement needs to address all of these sources,
+not just vehicle emissions.</p>
+    </div>
+  </div>
+</div>
+<div class="slide" id="slide-1">
+  <div class="slide-inner">
+    <div class="slide-header">
+      <span class="slide-badge">Question 2 of 2</span>
+      <span class="q-type-badge">Opinion</span>
+    </div>
+    <div class="question-text">"Do you think people need to change the way of transportation drastically to protect the"</div>
+    
+        <div class="strategy-box">
+          <div class="strategy-title">🎯 Answer Direction &amp; Strategy</div>
+          <ul class="strategy-list"><li>State your opinion and give reasons.</li><li>Discuss what changes are needed and how realistic they are.</li><li>Consider both individual and systemic changes.</li></ul>
+        </div>
+    
+        <div class="ideas-box">
+          <div class="ideas-title">💡 Ideas to Use in Your Answer</div>
+          <ul class="ideas-list"><li>Yes, significant changes to transportation are necessary to meet climate targets.</li><li>The transition to electric vehicles, powered by renewable energy, is essential.</li><li>Expanding public transport infrastructure and making it more convenient and affordable is crucial.</li><li>Urban planning that reduces the need for car travel - through mixed-use development and cycling</li></ul>
+        </div>
+    
+        <div class="vocab-row">
+          <div class="vocab-row-title">🔗 Key Vocabulary</div>
+          <div class="chips"><span class="vocab-chip col-chip">switch to</span><span class="vocab-chip col-chip">invest in</span><span class="vocab-chip col-chip">carry on (using)</span><span class="vocab-chip col-chip">deal with</span><span class="vocab-chip col-chip">build on</span><span class="vocab-chip col-chip">stand up for</span><span class="vocab-chip col-chip">sustainable transport</span><span class="vocab-chip col-chip">electric vehicle</span><span class="vocab-chip col-chip">public transport</span><span class="vocab-chip col-chip">carbon emissions</span><span class="vocab-chip col-chip">urban mobility</span></div>
+        </div>
+    <button class="show-answer-btn" onclick="toggleAnswer(this)">👁 Show Band 7+ Answer</button>
+    <div class="answer-box" style="display:none">
+      <div class="answer-label">✅ Band 7+ Model Answer</div>
+      <p class="answer-text">Yes, I think significant changes to transportation are both necessary and urgent. The transport sector is one
+of the largest contributors to greenhouse gas emissions globally, and meeting climate targets will require a
+fundamental transformation of how we move people and goods. The most important changes include the
+rapid transition to electric vehicles powered by renewable energy, which would dramatically reduce
+tailpipe emissions. But equally important is investing in high-quality public transport - trains, buses, and
+metro systems - that are convenient, affordable, and reliable enough to genuinely compete with private car
+use. Urban planning also has a crucial role: cities designed around walkability, cycling infrastructure, and
+mixed-use development reduce the need for car travel in the first place. These changes require significant
+investment and political will, but I think they are both achievable and essential. The question is not whether
+we need to change, but how quickly we can do so.</p>
+    </div>
+  </div>
+</div></div>
+<div class="slide-nav">
+  <button class="nav-btn" id="btn-prev" onclick="prevSlide()" disabled>← Previous</button>
+  <div class="slide-counter" id="slide-counter">Slide 1 / 2</div>
+  <button class="nav-btn" id="btn-next" onclick="nextSlide()">Next →</button>
+</div>
+<script>
+const TOTAL=2;
+let cur=0;
+function goToSlide(n){
+  document.querySelectorAll('.slide').forEach(s=>s.classList.remove('active'));
+  document.querySelectorAll('.dot-btn').forEach(b=>b.classList.remove('active'));
+  document.getElementById('slide-'+n).classList.add('active');
+  const dot=document.getElementById('dot-'+n);
+  dot.classList.add('active');
+  dot.scrollIntoView({behavior:'smooth',block:'nearest',inline:'center'});
+  cur=n;
+  document.getElementById('btn-prev').disabled=(n===0);
+  document.getElementById('btn-next').disabled=(n===TOTAL-1);
+  document.getElementById('slide-counter').textContent='Slide '+(n+1)+' / '+TOTAL;
+  window.scrollTo({top:0,behavior:'smooth'});
+}
+function nextSlide(){if(cur<TOTAL-1)goToSlide(cur+1);}
+function prevSlide(){if(cur>0)goToSlide(cur-1);}
+document.addEventListener('keydown',e=>{
+  if(e.key==='ArrowRight'||e.key==='ArrowDown')nextSlide();
+  if(e.key==='ArrowLeft'||e.key==='ArrowUp')prevSlide();
+});
+goToSlide(0);
+function toggleAnswer(btn){
+  const box=btn.nextElementSibling;
+  if(box.style.display==='none'){box.style.display='block';btn.textContent='🙈 Hide Answer';}
+  else{box.style.display='none';btn.textContent='👁 Show Band 7+ Answer';}
+}
+</script>
+</body>
+</html>

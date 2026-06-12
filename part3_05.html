@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Part 3: Travel &amp; Holidays – IELTS Speaking</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+:root{--accent:#1B5E20;--al:#1B5E20L;--am:#1B5E20M}
+body{font-family:'Segoe UI',Arial,sans-serif;background:#f0f2f8;font-size:18px}
+.topnav{background:var(--accent);display:flex;align-items:center;justify-content:space-between;padding:14px 24px;position:sticky;top:0;z-index:200;box-shadow:0 2px 12px rgba(0,0,0,.2);gap:8px;flex-wrap:wrap}
+.topnav a{color:#fff;text-decoration:none;font-size:17px;font-weight:700;padding:7px 16px;border-radius:8px;background:rgba(255,255,255,.2);transition:background .2s;white-space:nowrap}
+.topnav a:hover{background:rgba(255,255,255,.35)}
+.ttitle{font-size:20px;font-weight:900;color:#fff;text-align:center;flex:1}
+.hero{background:linear-gradient(135deg,var(--accent) 0%,#1B5E2099 100%);color:#fff;padding:28px 24px 20px;text-align:center}
+.tnum{font-size:16px;font-weight:700;letter-spacing:2px;text-transform:uppercase;opacity:.8}
+.hero h1{font-size:38px;font-weight:900;margin:6px 0 10px;line-height:1.3}
+.stats{display:flex;justify-content:center;gap:16px;flex-wrap:wrap}
+.stat{background:rgba(255,255,255,.2);border-radius:10px;padding:6px 18px;font-size:17px;font-weight:600}
+.slide-dots-wrap{background:#fff;border-bottom:2px solid #e0e0e0;padding:14px 20px;display:flex;align-items:center;gap:8px;overflow-x:auto;justify-content:center;flex-wrap:wrap}
+.dot-btn{background:#e0e0e0;color:#555;border:none;font-size:15px;font-weight:700;padding:7px 16px;border-radius:20px;cursor:pointer;transition:all .2s;white-space:nowrap}
+.dot-btn.active{background:var(--accent);color:#fff;transform:scale(1.08)}
+.dot-btn:hover:not(.active){background:var(--am);color:#fff}
+.slide{display:none;animation:fadeIn .35s ease}
+.slide.active{display:block}
+@keyframes fadeIn{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:translateY(0)}}
+.slide-inner{max-width:900px;margin:30px auto;padding:0 20px 30px}
+.slide-header{display:flex;align-items:center;gap:12px;margin-bottom:18px;flex-wrap:wrap}
+.slide-badge{background:var(--accent);color:#fff;font-size:17px;font-weight:800;padding:6px 18px;border-radius:20px}
+.q-type-badge{background:var(--al);color:var(--accent);font-size:15px;font-weight:700;padding:5px 14px;border-radius:20px;border:1.5px solid var(--am)}
+/* QUESTION BOX */
+.question-text{font-size:28px;font-weight:900;color:#1a1a2e;line-height:1.3;margin-bottom:20px;background:#fff;border-radius:16px;padding:24px 28px;box-shadow:0 3px 16px rgba(0,0,0,.08);border-left:6px solid var(--accent)}
+/* STRATEGY BOX */
+.strategy-box{background:#fff3e0;border:2px solid #ffb74d;border-radius:14px;padding:20px 24px;margin-bottom:18px}
+.strategy-title{font-size:16px;font-weight:800;color:#e65100;margin-bottom:12px;text-transform:uppercase;letter-spacing:.5px;display:flex;align-items:center;gap:8px}
+.strategy-list{list-style:none;padding:0}
+.strategy-list li{font-size:19px;color:#1a1a2e;padding:7px 0 7px 28px;position:relative;border-bottom:1px solid #ffe0b2;line-height:1.5}
+.strategy-list li:last-child{border-bottom:none}
+.strategy-list li::before{content:"✦";position:absolute;left:0;color:#ff9800;font-size:16px;top:10px}
+/* IDEAS BOX */
+.ideas-box{background:#e8f5e9;border:2px solid #81c784;border-radius:14px;padding:20px 24px;margin-bottom:18px}
+.ideas-title{font-size:16px;font-weight:800;color:#2e7d32;margin-bottom:12px;text-transform:uppercase;letter-spacing:.5px;display:flex;align-items:center;gap:8px}
+.ideas-list{list-style:none;padding:0}
+.ideas-list li{font-size:19px;color:#1a1a2e;padding:7px 0 7px 28px;position:relative;border-bottom:1px solid #c8e6c9;line-height:1.5}
+.ideas-list li:last-child{border-bottom:none}
+.ideas-list li::before{content:"💡";position:absolute;left:0;font-size:16px;top:8px}
+/* VOCAB CHIPS */
+.vocab-row{background:#fff;border-radius:14px;padding:18px 22px;margin-bottom:18px;box-shadow:0 2px 10px rgba(0,0,0,.07)}
+.vocab-row-title{font-size:15px;font-weight:800;color:#555;margin-bottom:10px;text-transform:uppercase;letter-spacing:.5px}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.vocab-chip{font-size:17px;font-weight:700;padding:7px 14px;border-radius:20px;cursor:default;transition:transform .15s}
+.vocab-chip:hover{transform:scale(1.05)}
+.pv-chip{background:#e3f2fd;color:#1565c0;border:1.5px solid #90caf9}
+.col-chip{background:#fce4ec;color:#c62828;border:1.5px solid #f48fb1}
+/* ANSWER */
+.show-answer-btn{background:var(--accent);color:#fff;border:none;font-size:20px;font-weight:700;padding:14px 30px;border-radius:12px;cursor:pointer;transition:opacity .2s,transform .15s}
+.show-answer-btn:hover{opacity:.88;transform:scale(1.02)}
+.answer-box{background:#f1fff3;border:2px solid #a5d6a7;border-radius:14px;padding:24px;margin-top:16px}
+.answer-label{font-size:16px;font-weight:800;color:#2e7d32;margin-bottom:10px}
+.answer-text{font-size:21px;line-height:1.8;color:#1a1a2e}
+/* NAV */
+.slide-nav{display:flex;justify-content:space-between;align-items:center;max-width:900px;margin:0 auto 40px;padding:0 20px;gap:12px}
+.nav-btn{background:var(--accent);color:#fff;border:none;font-size:20px;font-weight:800;padding:14px 32px;border-radius:14px;cursor:pointer;transition:opacity .2s,transform .15s}
+.nav-btn:hover{opacity:.85;transform:scale(1.03)}
+.nav-btn:disabled{background:#ccc;cursor:default;transform:none}
+.slide-counter{font-size:20px;font-weight:800;color:#555;text-align:center}
+</style>
+</head>
+<body>
+<div class="topnav">
+  <a href="part3_04.html">← Part 3 4</a>
+  <div class="ttitle">Part 3: Travel &amp; Holidays</div>
+  <a href="part3_06.html">Part 3 6 →</a>
+</div>
+<div class="hero">
+  <div class="tnum">IELTS Speaking Part 3 · Topic 5 of 22</div>
+  <h1>💬 Travel &amp; Holidays</h1>
+  <div class="stats">
+    <div class="stat">❓ 2 Discussion Questions</div>
+    <div class="stat">💡 Ideas + 🎯 Strategy + ✅ Band 7+ Answers</div>
+  </div>
+</div>
+<div class="slide-dots-wrap"><button class="dot-btn active" onclick="goToSlide(0)" id="dot-0">Q1</button><button class="dot-btn" onclick="goToSlide(1)" id="dot-1">Q2</button></div>
+<div class="slides-container">
+<div class="slide" id="slide-0">
+  <div class="slide-inner">
+    <div class="slide-header">
+      <span class="slide-badge">Question 1 of 2</span>
+      <span class="q-type-badge">General Knowledge / Descriptive</span>
+    </div>
+    <div class="question-text">"Where do people in your country often go for holidays?"</div>
+    
+        <div class="strategy-box">
+          <div class="strategy-title">🎯 Answer Direction &amp; Strategy</div>
+          <ul class="strategy-list"><li>Describe popular domestic and international holiday destinations.</li><li>Explain why these destinations are popular.</li><li>Mention any trends in holiday preferences.</li></ul>
+        </div>
+    
+        <div class="ideas-box">
+          <div class="ideas-title">💡 Ideas to Use in Your Answer</div>
+          <ul class="ideas-list"><li>Domestic destinations like Da Nang, Phu Quoc, and Ha Long Bay are extremely popular for beach</li><li>holidays. International destinations like Thailand, South Korea, and Japan have become increasingly popular as air travel has become more affordable.</li><li>City breaks to Ho Chi Minh City and Hanoi attract both domestic and international tourists.</li><li>There is a growing trend towards eco-tourism and adventure travel among younger Vietnamese</li></ul>
+        </div>
+    
+        <div class="vocab-row">
+          <div class="vocab-row-title">🔗 Key Vocabulary</div>
+          <div class="chips"><span class="vocab-chip col-chip">head off to</span><span class="vocab-chip col-chip">check in to</span><span class="vocab-chip col-chip">explore</span><span class="vocab-chip col-chip">take in (the sights)</span><span class="vocab-chip col-chip">get away from</span><span class="vocab-chip col-chip">look forward to</span><span class="vocab-chip col-chip">holiday destination</span><span class="vocab-chip col-chip">domestic travel</span><span class="vocab-chip col-chip">international tourism</span><span class="vocab-chip col-chip">travel trend</span><span class="vocab-chip col-chip">tourist attraction</span></div>
+        </div>
+    <button class="show-answer-btn" onclick="toggleAnswer(this)">👁 Show Band 7+ Answer</button>
+    <div class="answer-box" style="display:none">
+      <div class="answer-label">✅ Band 7+ Model Answer</div>
+      <p class="answer-text">Vietnamese people have a wide range of holiday preferences. For domestic travel, beach destinations are
+enormously popular - places like Da Nang, Phu Quoc, and Nha Trang attract millions of visitors every year,
+particularly during the summer months. Ha Long Bay is another iconic destination that draws both
+Vietnamese and international tourists. For international travel, Thailand has traditionally been the most
+popular destination due to its proximity and affordability, but South Korea and Japan have become
+increasingly popular in recent years, driven partly by the influence of Korean and Japanese pop culture.
+Among younger travellers, there is a growing interest in eco-tourism, adventure travel, and off-the-beaten-
+track destinations that offer more authentic cultural experiences.</p>
+    </div>
+  </div>
+</div>
+<div class="slide" id="slide-1">
+  <div class="slide-inner">
+    <div class="slide-header">
+      <span class="slide-badge">Question 2 of 2</span>
+      <span class="q-type-badge">Opinion</span>
+    </div>
+    <div class="question-text">"Is it important to plan a holiday?"</div>
+    
+        <div class="strategy-box">
+          <div class="strategy-title">🎯 Answer Direction &amp; Strategy</div>
+          <ul class="strategy-list"><li>State your opinion and give reasons.</li><li>Acknowledge the value of spontaneity.</li><li>Consider different types of travellers and trips.</li></ul>
+        </div>
+    
+        <div class="ideas-box">
+          <div class="ideas-title">💡 Ideas to Use in Your Answer</div>
+          <ul class="ideas-list"><li>Planning ensures you make the most of limited time and budget, particularly for international travel.</li><li>Booking accommodation and transport in advance can save significant money.</li><li>However, over-planning can remove the spontaneity and serendipity that make travel memorable.</li><li>The ideal approach depends on the type of trip and the traveller&#x27;s personality.</li></ul>
+        </div>
+    
+        <div class="vocab-row">
+          <div class="vocab-row-title">🔗 Key Vocabulary</div>
+          <div class="chips"><span class="vocab-chip col-chip">plan ahead</span><span class="vocab-chip col-chip">book in advance</span><span class="vocab-chip col-chip">make the most of</span><span class="vocab-chip col-chip">leave room for</span><span class="vocab-chip col-chip">deal with (unexpected situations)</span><span class="vocab-chip col-chip">carry on</span><span class="vocab-chip col-chip">travel planning</span><span class="vocab-chip col-chip">itinerary</span><span class="vocab-chip col-chip">spontaneous travel</span><span class="vocab-chip col-chip">budget management</span><span class="vocab-chip col-chip">travel experience</span></div>
+        </div>
+    <button class="show-answer-btn" onclick="toggleAnswer(this)">👁 Show Band 7+ Answer</button>
+    <div class="answer-box" style="display:none">
+      <div class="answer-label">✅ Band 7+ Model Answer</div>
+      <p class="answer-text">I think some degree of planning is important, particularly for international travel where logistics are more
+complex and the consequences of poor planning - missed flights, no accommodation, budget overruns -
+can be significant. Booking key elements like flights and accommodation in advance typically saves money
+and reduces stress. However, I am also a firm believer in leaving room for spontaneity. Some of the most
+memorable travel experiences I have had were completely unplanned - stumbling upon a local festival,
+following a recommendation from a stranger, or simply wandering without a destination in mind. I think the
+ideal approach is to plan the essentials - transport, accommodation, and one or two must-see experiences
+- while leaving the rest of the itinerary flexible enough to respond to whatever you discover along the way.</p>
+    </div>
+  </div>
+</div></div>
+<div class="slide-nav">
+  <button class="nav-btn" id="btn-prev" onclick="prevSlide()" disabled>← Previous</button>
+  <div class="slide-counter" id="slide-counter">Slide 1 / 2</div>
+  <button class="nav-btn" id="btn-next" onclick="nextSlide()">Next →</button>
+</div>
+<script>
+const TOTAL=2;
+let cur=0;
+function goToSlide(n){
+  document.querySelectorAll('.slide').forEach(s=>s.classList.remove('active'));
+  document.querySelectorAll('.dot-btn').forEach(b=>b.classList.remove('active'));
+  document.getElementById('slide-'+n).classList.add('active');
+  const dot=document.getElementById('dot-'+n);
+  dot.classList.add('active');
+  dot.scrollIntoView({behavior:'smooth',block:'nearest',inline:'center'});
+  cur=n;
+  document.getElementById('btn-prev').disabled=(n===0);
+  document.getElementById('btn-next').disabled=(n===TOTAL-1);
+  document.getElementById('slide-counter').textContent='Slide '+(n+1)+' / '+TOTAL;
+  window.scrollTo({top:0,behavior:'smooth'});
+}
+function nextSlide(){if(cur<TOTAL-1)goToSlide(cur+1);}
+function prevSlide(){if(cur>0)goToSlide(cur-1);}
+document.addEventListener('keydown',e=>{
+  if(e.key==='ArrowRight'||e.key==='ArrowDown')nextSlide();
+  if(e.key==='ArrowLeft'||e.key==='ArrowUp')prevSlide();
+});
+goToSlide(0);
+function toggleAnswer(btn){
+  const box=btn.nextElementSibling;
+  if(box.style.display==='none'){box.style.display='block';btn.textContent='🙈 Hide Answer';}
+  else{box.style.display='none';btn.textContent='👁 Show Band 7+ Answer';}
+}
+</script>
+</body>
+</html>

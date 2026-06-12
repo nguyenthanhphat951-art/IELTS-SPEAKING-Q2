@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Topic 2: Cars – IELTS Speaking Part 1</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+:root{--accent:#FF6584;--al:#FF6584L;--am:#FF6584M}
+body{font-family:'Segoe UI',Arial,sans-serif;background:#f0f2f8;font-size:18px}
+.topnav{background:var(--accent);display:flex;align-items:center;justify-content:space-between;padding:14px 24px;position:sticky;top:0;z-index:200;box-shadow:0 2px 12px rgba(0,0,0,.2);gap:8px;flex-wrap:wrap}
+.topnav a{color:#fff;text-decoration:none;font-size:17px;font-weight:700;padding:7px 16px;border-radius:8px;background:rgba(255,255,255,.2);transition:background .2s;white-space:nowrap}
+.topnav a:hover{background:rgba(255,255,255,.35)}
+.ttitle{font-size:20px;font-weight:900;color:#fff;text-align:center;flex:1}
+.hero{background:linear-gradient(135deg,var(--accent) 0%,#FF658499 100%);color:#fff;padding:28px 24px 20px;text-align:center}
+.tnum{font-size:16px;font-weight:700;letter-spacing:2px;text-transform:uppercase;opacity:.8}
+.hero h1{font-size:40px;font-weight:900;margin:6px 0 10px}
+.stats{display:flex;justify-content:center;gap:16px;flex-wrap:wrap}
+.stat{background:rgba(255,255,255,.2);border-radius:10px;padding:6px 18px;font-size:17px;font-weight:600}
+.slide-dots-wrap{background:#fff;border-bottom:2px solid #e0e0e0;padding:14px 20px;display:flex;align-items:center;gap:8px;overflow-x:auto;justify-content:center;flex-wrap:wrap}
+.dot-btn{background:#e0e0e0;color:#555;border:none;font-size:15px;font-weight:700;padding:7px 16px;border-radius:20px;cursor:pointer;transition:all .2s;white-space:nowrap}
+.dot-btn.active{background:var(--accent);color:#fff;transform:scale(1.08)}
+.dot-btn:hover:not(.active){background:var(--am);color:#fff}
+.slide{display:none;animation:fadeIn .35s ease}
+.slide.active{display:block}
+@keyframes fadeIn{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:translateY(0)}}
+.slide-inner{max-width:900px;margin:30px auto;padding:0 20px 30px}
+.slide-header{display:flex;align-items:center;gap:12px;margin-bottom:18px;flex-wrap:wrap}
+.slide-badge{background:var(--accent);color:#fff;font-size:17px;font-weight:800;padding:6px 18px;border-radius:20px}
+.q-type-badge{background:var(--al);color:var(--accent);font-size:15px;font-weight:700;padding:5px 14px;border-radius:20px;border:1.5px solid var(--am)}
+.question-text{font-size:30px;font-weight:900;color:#1a1a2e;line-height:1.3;margin-bottom:24px;background:#fff;border-radius:16px;padding:24px 28px;box-shadow:0 3px 16px rgba(0,0,0,.08);border-left:6px solid var(--accent)}
+.vocab-row{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-bottom:22px}
+@media(max-width:600px){.vocab-row{grid-template-columns:1fr}}
+.vocab-group{background:#fff;border-radius:14px;padding:20px;box-shadow:0 2px 10px rgba(0,0,0,.07)}
+.vocab-group-title{font-size:15px;font-weight:800;color:#555;margin-bottom:12px;text-transform:uppercase;letter-spacing:.5px}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.vocab-chip{font-size:18px;font-weight:700;padding:8px 16px;border-radius:20px;transition:transform .15s;cursor:default}
+.vocab-chip:hover{transform:scale(1.06)}
+.pv-chip{background:#e3f2fd;color:#1565c0;border:1.5px solid #90caf9}
+.col-chip{background:#fce4ec;color:#c62828;border:1.5px solid #f48fb1}
+.show-answer-btn{background:var(--accent);color:#fff;border:none;font-size:20px;font-weight:700;padding:14px 30px;border-radius:12px;cursor:pointer;transition:opacity .2s,transform .15s}
+.show-answer-btn:hover{opacity:.88;transform:scale(1.02)}
+.answer-box{background:#f1fff3;border:2px solid #a5d6a7;border-radius:14px;padding:24px;margin-top:16px}
+.answer-label{font-size:16px;font-weight:800;color:#2e7d32;margin-bottom:10px}
+.answer-text{font-size:21px;line-height:1.75;color:#1a1a2e}
+.vocab-overview-block{background:#fff;border-radius:16px;padding:26px;margin-bottom:20px;box-shadow:0 3px 14px rgba(0,0,0,.08)}
+.vocab-overview-title{font-size:24px;font-weight:900;color:var(--accent);margin-bottom:16px}
+.vocab-overview-block .vocab-chip{font-size:20px;padding:10px 20px}
+.slide-nav{display:flex;justify-content:space-between;align-items:center;max-width:900px;margin:0 auto 40px;padding:0 20px;gap:12px}
+.nav-btn{background:var(--accent);color:#fff;border:none;font-size:20px;font-weight:800;padding:14px 32px;border-radius:14px;cursor:pointer;transition:opacity .2s,transform .15s}
+.nav-btn:hover{opacity:.85;transform:scale(1.03)}
+.nav-btn:disabled{background:#ccc;cursor:default;transform:none}
+.slide-counter{font-size:20px;font-weight:800;color:#555;text-align:center}
+.ex-desc{font-size:19px;color:#555;margin-bottom:22px;line-height:1.5}
+.action-btn{background:var(--accent);color:#fff;border:none;font-size:18px;font-weight:700;padding:12px 26px;border-radius:12px;cursor:pointer;transition:opacity .2s}
+.action-btn:hover{opacity:.85}
+.action-btn.grey{background:#888}
+.flashcard-wrap{display:flex;flex-direction:column;align-items:center;gap:18px}
+.progress-bar-wrap{width:100%;max-width:560px;background:#e0e0e0;border-radius:10px;height:10px;overflow:hidden}
+.progress-bar{height:100%;background:var(--accent);border-radius:10px;transition:width .4s}
+.flashcard{width:100%;max-width:560px;min-height:240px;perspective:1000px;cursor:pointer}
+.flashcard-inner{width:100%;height:100%;position:relative;transform-style:preserve-3d;transition:transform .55s;min-height:240px}
+.flashcard.flipped .flashcard-inner{transform:rotateY(180deg)}
+.flashcard-front,.flashcard-back{position:absolute;width:100%;min-height:240px;backface-visibility:hidden;border-radius:20px;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:28px 24px;text-align:center;gap:10px}
+.flashcard-front{background:var(--accent);color:#fff}
+.fc-label{font-size:15px;font-weight:700;opacity:.75;text-transform:uppercase;letter-spacing:1.5px;background:rgba(255,255,255,.2);padding:4px 14px;border-radius:20px}
+.fc-term{font-size:34px;font-weight:900;line-height:1.2}
+.fc-hint-tap{font-size:16px;opacity:.7;margin-top:6px}
+.flashcard-back{background:#fff;border:3px solid var(--accent);transform:rotateY(180deg);color:#1a1a2e;justify-content:flex-start;padding-top:24px}
+.fc-back-label{font-size:14px;font-weight:700;color:var(--accent);text-transform:uppercase;letter-spacing:1px;background:var(--al);padding:4px 14px;border-radius:20px;align-self:center}
+.fc-back-term{font-size:26px;font-weight:900;color:var(--accent);text-align:center;align-self:center}
+.fc-meaning{font-size:19px;font-weight:600;color:#333;line-height:1.5;text-align:center;padding:0 8px}
+.fc-example{font-size:17px;color:#555;font-style:italic;line-height:1.5;text-align:center;padding:10px 8px 0;border-top:1.5px solid #eee;width:100%}
+.fc-controls{display:flex;gap:14px;flex-wrap:wrap;justify-content:center;align-items:center}
+.fc-btn{background:var(--accent);color:#fff;border:none;font-size:18px;font-weight:700;padding:12px 26px;border-radius:12px;cursor:pointer;transition:opacity .2s}
+.fc-btn:hover{opacity:.85}
+.fc-btn.secondary{background:#ddd;color:#333}
+.fc-progress{font-size:19px;font-weight:800;color:#555}
+.shuffle-btn{background:#555}
+.fill-item{background:var(--al);border-radius:14px;padding:18px 22px;margin-bottom:14px;display:flex;align-items:center;gap:12px;flex-wrap:wrap}
+.fill-stem{font-size:22px;font-weight:700;color:#1a1a2e}
+.fill-input{font-size:22px;font-weight:700;border:2.5px solid var(--accent);border-radius:8px;padding:6px 14px;width:160px;outline:none;color:#1a1a2e;background:#fff}
+.fill-input:focus{box-shadow:0 0 0 3px var(--am)}
+.fill-feedback{font-size:20px;font-weight:700;min-width:30px}
+.fill-score{font-size:24px;font-weight:900;color:var(--accent);margin-top:14px;display:none}
+.scramble-item{background:#fff;border-radius:14px;padding:20px 22px;margin-bottom:16px;box-shadow:0 2px 10px rgba(0,0,0,.07)}
+.scramble-num{font-size:16px;font-weight:800;color:var(--accent);margin-bottom:10px}
+.scramble-words{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:12px}
+.scramble-word{background:var(--accent);color:#fff;font-size:20px;font-weight:700;padding:8px 18px;border-radius:10px;cursor:pointer;user-select:none;transition:transform .15s,opacity .15s}
+.scramble-word:hover{transform:scale(1.05)}
+.scramble-word.used{opacity:.25;pointer-events:none}
+.scramble-answer-area{min-height:50px;background:var(--al);border:2.5px dashed var(--accent);border-radius:10px;padding:10px 14px;display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin-bottom:10px}
+.scramble-placed{background:#fff;border:2px solid var(--accent);color:var(--accent);font-size:20px;font-weight:700;padding:6px 16px;border-radius:10px;cursor:pointer}
+.scramble-feedback{font-size:20px;font-weight:700;min-height:28px;margin-bottom:8px}
+.scramble-btn{background:var(--accent);color:#fff;border:none;font-size:17px;font-weight:700;padding:10px 20px;border-radius:10px;cursor:pointer;margin-right:8px;transition:opacity .2s}
+.scramble-btn:hover{opacity:.85}
+.scramble-btn.reset{background:#888}
+</style>
+</head>
+<body>
+<div class="topnav">
+  <a href="topic_01.html">← Topic 1</a>
+  <div class="ttitle">Topic 2: Cars</div>
+  <a href="topic_03.html">Topic 3 →</a>
+</div>
+<div class="hero">
+  <div class="tnum">IELTS Speaking Part 1 · Topic 2 of 36</div>
+  <h1>📚 Cars</h1>
+  <div class="stats">
+    <div class="stat">🗣 3 Questions</div>
+    <div class="stat">🔗 12 Phrasal Verbs</div>
+    <div class="stat">💡 15 Collocations</div>
+  </div>
+</div>
+<div class="slide-dots-wrap" id="slide-dots"><button class="dot-btn active" onclick="goToSlide(0)" id="dot-0">Q1</button><button class="dot-btn" onclick="goToSlide(1)" id="dot-1">Q2</button><button class="dot-btn" onclick="goToSlide(2)" id="dot-2">Q3</button><button class="dot-btn" onclick="goToSlide(3)" id="dot-3">Vocab</button><button class="dot-btn" onclick="goToSlide(4)" id="dot-4">Cards</button><button class="dot-btn" onclick="goToSlide(5)" id="dot-5">Fill</button><button class="dot-btn" onclick="goToSlide(6)" id="dot-6">Scramble</button></div>
+<div class="slides-container">
+
+<div class="slide" id="slide-0">
+  <div class="slide-inner">
+    <div class="slide-header">
+      <span class="slide-badge">Question 1 of 3</span>
+      <span class="q-type-badge">Opinion</span>
+    </div>
+    <div class="question-text">"Do you think car colours are important?"</div>
+    <div class="vocab-row">
+      <div class="vocab-group">
+        <div class="vocab-group-title">🔗 Phrasal Verbs</div>
+        <div class="chips"><span class="vocab-chip pv-chip">stand out</span><span class="vocab-chip pv-chip">blend in</span><span class="vocab-chip pv-chip">go for</span><span class="vocab-chip pv-chip">opt for</span></div>
+      </div>
+      <div class="vocab-group">
+        <div class="vocab-group-title">💡 Collocations</div>
+        <div class="chips"><span class="vocab-chip col-chip">resale value</span><span class="vocab-chip col-chip">personal taste</span><span class="vocab-chip col-chip">colour preference</span><span class="vocab-chip col-chip">safety visibility</span><span class="vocab-chip col-chip">neutral colour</span></div>
+      </div>
+    </div>
+    <div class="answer-section">
+      <button class="show-answer-btn" onclick="toggleAnswer(this)">👁 Show Sample Answer (Band 7+)</button>
+      <div class="answer-box" style="display:none">
+        <div class="answer-label">✅ Band 7+ Sample Answer</div>
+        <p class="answer-text">To some extent, yes. I think colour matters both practically and personally. Neutral colours like white or
+silver tend to have better resale value because they appeal to a wider range of buyers. On a personal level,
+though, colour is a form of self-expression - some people go for bold reds or blues to reflect their
+personality. From a safety standpoint, brighter colours can also improve visibility on the road, which is a
+practical consideration many people overlook.</p>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="slide" id="slide-1">
+  <div class="slide-inner">
+    <div class="slide-header">
+      <span class="slide-badge">Question 2 of 3</span>
+      <span class="q-type-badge">Past Experience</span>
+    </div>
+    <div class="question-text">"Did you enjoy travelling by car when you were a kid?"</div>
+    <div class="vocab-row">
+      <div class="vocab-group">
+        <div class="vocab-group-title">🔗 Phrasal Verbs</div>
+        <div class="chips"><span class="vocab-chip pv-chip">look forward to</span><span class="vocab-chip pv-chip">set off</span><span class="vocab-chip pv-chip">pull over</span><span class="vocab-chip pv-chip">grow up</span></div>
+      </div>
+      <div class="vocab-group">
+        <div class="vocab-group-title">💡 Collocations</div>
+        <div class="chips"><span class="vocab-chip col-chip">road trip</span><span class="vocab-chip col-chip">family outing</span><span class="vocab-chip col-chip">long journey</span><span class="vocab-chip col-chip">car ride</span><span class="vocab-chip col-chip">scenic route</span></div>
+      </div>
+    </div>
+    <div class="answer-section">
+      <button class="show-answer-btn" onclick="toggleAnswer(this)">👁 Show Sample Answer (Band 7+)</button>
+      <div class="answer-box" style="display:none">
+        <div class="answer-label">✅ Band 7+ Sample Answer</div>
+        <p class="answer-text">Absolutely, I loved it. My family used to take long road trips during school holidays, and I always looked
+forward to setting off early in the morning. I remember pressing my face against the window and watching
+the scenery change as we drove through the countryside. My parents would play music, and we would sing
+along together. Those car journeys felt like adventures, and they are some of my fondest childhood
+memories.</p>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="slide" id="slide-2">
+  <div class="slide-inner">
+    <div class="slide-header">
+      <span class="slide-badge">Question 3 of 3</span>
+      <span class="q-type-badge">Preference</span>
+    </div>
+    <div class="question-text">"Do you prefer to be a driver or a passenger?"</div>
+    <div class="vocab-row">
+      <div class="vocab-group">
+        <div class="vocab-group-title">🔗 Phrasal Verbs</div>
+        <div class="chips"><span class="vocab-chip pv-chip">take the wheel</span><span class="vocab-chip pv-chip">sit back</span><span class="vocab-chip pv-chip">rely on</span><span class="vocab-chip pv-chip">focus on</span></div>
+      </div>
+      <div class="vocab-group">
+        <div class="vocab-group-title">💡 Collocations</div>
+        <div class="chips"><span class="vocab-chip col-chip">in control</span><span class="vocab-chip col-chip">sense of freedom</span><span class="vocab-chip col-chip">backseat driver</span><span class="vocab-chip col-chip">navigate traffic</span><span class="vocab-chip col-chip">enjoy the ride</span></div>
+      </div>
+    </div>
+    <div class="answer-section">
+      <button class="show-answer-btn" onclick="toggleAnswer(this)">👁 Show Sample Answer (Band 7+)</button>
+      <div class="answer-box" style="display:none">
+        <div class="answer-label">✅ Band 7+ Sample Answer</div>
+        <p class="answer-text">I would say I prefer being a passenger, honestly. When someone else is driving, I can sit back, look out the
+window, and actually enjoy the scenery without having to focus on navigating traffic. I find driving in busy
+city conditions quite stressful, so being a passenger lets me relax and arrive at my destination feeling
+refreshed. That said, on open roads or during road trips, I do enjoy taking the wheel - there is a real sense of
+freedom in that.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="slide" id="slide-3">
+  <div class="slide-inner">
+    <div class="slide-header"><span class="slide-badge">📖 All Vocabulary</span></div>
+    <div class="vocab-overview-block">
+      <div class="vocab-overview-title">🔗 Phrasal Verbs (12)</div>
+      <div class="chips"><span class="vocab-chip pv-chip">stand out</span><span class="vocab-chip pv-chip">blend in</span><span class="vocab-chip pv-chip">go for</span><span class="vocab-chip pv-chip">opt for</span><span class="vocab-chip pv-chip">look forward to</span><span class="vocab-chip pv-chip">set off</span><span class="vocab-chip pv-chip">pull over</span><span class="vocab-chip pv-chip">grow up</span><span class="vocab-chip pv-chip">take the wheel</span><span class="vocab-chip pv-chip">sit back</span><span class="vocab-chip pv-chip">rely on</span><span class="vocab-chip pv-chip">focus on</span></div>
+    </div>
+    <div class="vocab-overview-block">
+      <div class="vocab-overview-title">💡 Collocations (15)</div>
+      <div class="chips"><span class="vocab-chip col-chip">resale value</span><span class="vocab-chip col-chip">personal taste</span><span class="vocab-chip col-chip">colour preference</span><span class="vocab-chip col-chip">safety visibility</span><span class="vocab-chip col-chip">neutral colour</span><span class="vocab-chip col-chip">road trip</span><span class="vocab-chip col-chip">family outing</span><span class="vocab-chip col-chip">long journey</span><span class="vocab-chip col-chip">car ride</span><span class="vocab-chip col-chip">scenic route</span><span class="vocab-chip col-chip">in control</span><span class="vocab-chip col-chip">sense of freedom</span><span class="vocab-chip col-chip">backseat driver</span><span class="vocab-chip col-chip">navigate traffic</span><span class="vocab-chip col-chip">enjoy the ride</span></div>
+    </div>
+  </div>
+</div>
+
+<div class="slide" id="slide-4">
+  <div class="slide-inner">
+    <div class="slide-header"><span class="slide-badge">🃏 Flashcard Drill</span></div>
+    <p class="ex-desc">Click the card to reveal its <strong>meaning</strong> and an <strong>example sentence</strong>. Use buttons or ← → keys to navigate.</p>
+    <div class="flashcard-wrap">
+      <div class="progress-bar-wrap"><div class="progress-bar" id="fc-progress-bar" style="width:0%"></div></div>
+      <div class="flashcard" id="flashcard" onclick="flipCard()">
+        <div class="flashcard-inner">
+          <div class="flashcard-front">
+            <div class="fc-label" id="fc-label">Phrasal Verb</div>
+            <div class="fc-term" id="fc-term">Loading...</div>
+            <div class="fc-hint-tap">Tap to reveal meaning &amp; example →</div>
+          </div>
+          <div class="flashcard-back">
+            <div class="fc-back-label" id="fc-back-label">Phrasal Verb</div>
+            <div class="fc-back-term" id="fc-back-term"></div>
+            <div class="fc-meaning" id="fc-meaning"></div>
+            <div class="fc-example" id="fc-example"></div>
+          </div>
+        </div>
+      </div>
+      <div class="fc-controls">
+        <button class="fc-btn secondary" onclick="prevCard()">← Prev</button>
+        <span class="fc-progress" id="fc-progress">1 / 27</span>
+        <button class="fc-btn" onclick="nextCard()">Next →</button>
+      </div>
+      <button class="fc-btn shuffle-btn" onclick="shuffleCards()">🔀 Shuffle</button>
+    </div>
+  </div>
+</div>
+
+<div class="slide" id="slide-5">
+  <div class="slide-inner">
+    <div class="slide-header"><span class="slide-badge">✏️ Fill in the Blank</span></div>
+    <p class="ex-desc">Type the missing word to complete each collocation, then press <strong>Check Answers</strong>.</p>
+    <div id="fill-container"></div>
+    <div style="display:flex;gap:12px;flex-wrap:wrap;margin-top:16px">
+      <button class="action-btn" onclick="checkFill()">✅ Check Answers</button>
+      <button class="action-btn grey" onclick="resetFill()">🔄 Reset</button>
+    </div>
+    <div class="fill-score" id="fill-score"></div>
+  </div>
+</div>
+
+<div class="slide" id="slide-6">
+  <div class="slide-inner">
+    <div class="slide-header"><span class="slide-badge">🔀 Word Scramble</span></div>
+    <p class="ex-desc">Click the words in the correct order to rebuild each collocation.</p>
+    <div id="scramble-container"></div>
+  </div>
+</div>
+</div>
+<div class="slide-nav">
+  <button class="nav-btn" id="btn-prev" onclick="prevSlide()" disabled>← Previous</button>
+  <div class="slide-counter" id="slide-counter">Slide 1 / 7</div>
+  <button class="nav-btn" id="btn-next" onclick="nextSlide()">Next →</button>
+</div>
+<script>
+const TOTAL=7;
+let cur=0;
+function goToSlide(n){
+  document.querySelectorAll('.slide').forEach(s=>s.classList.remove('active'));
+  document.querySelectorAll('.dot-btn').forEach(b=>b.classList.remove('active'));
+  document.getElementById('slide-'+n).classList.add('active');
+  const dot=document.getElementById('dot-'+n);
+  dot.classList.add('active');
+  dot.scrollIntoView({behavior:'smooth',block:'nearest',inline:'center'});
+  cur=n;
+  document.getElementById('btn-prev').disabled=(n===0);
+  document.getElementById('btn-next').disabled=(n===TOTAL-1);
+  document.getElementById('slide-counter').textContent='Slide '+(n+1)+' / '+TOTAL;
+  window.scrollTo({top:0,behavior:'smooth'});
+}
+function nextSlide(){if(cur<TOTAL-1)goToSlide(cur+1);}
+function prevSlide(){if(cur>0)goToSlide(cur-1);}
+document.addEventListener('keydown',e=>{
+  if(e.key==='ArrowRight'||e.key==='ArrowDown')nextSlide();
+  if(e.key==='ArrowLeft'||e.key==='ArrowUp')prevSlide();
+});
+goToSlide(0);
+
+function toggleAnswer(btn){
+  const box=btn.nextElementSibling;
+  if(box.style.display==='none'){box.style.display='block';btn.textContent='🙈 Hide Sample Answer';}
+  else{box.style.display='none';btn.textContent='👁 Show Sample Answer (Band 7+)';}
+}
+
+// FLASHCARDS
+const CARDS=[{"type": "Phrasal Verb", "term": "stand out", "meaning": "to be noticeably different or impressive", "example": "A bold red car really stands out on the road."}, {"type": "Phrasal Verb", "term": "blend in", "meaning": "to look similar to the surroundings; not stand out", "example": "Neutral car colours tend to blend in with everyday traffic."}, {"type": "Phrasal Verb", "term": "go for", "meaning": "to choose or prefer something", "example": "Most buyers go for white or silver cars because of resale value."}, {"type": "Phrasal Verb", "term": "opt for", "meaning": "to make a deliberate choice in favour of something", "example": "She opted for a bright blue car to reflect her personality."}, {"type": "Phrasal Verb", "term": "look forward to", "meaning": "to feel excited or happy about a future event", "example": "I always looked forward to our family road trips as a child."}, {"type": "Phrasal Verb", "term": "set off", "meaning": "to begin a journey", "example": "We set off early in the morning to beat the traffic."}, {"type": "Phrasal Verb", "term": "pull over", "meaning": "to move a vehicle to the side of the road and stop", "example": "The driver pulled over to check the directions on the map."}, {"type": "Phrasal Verb", "term": "grow up", "meaning": "to develop from a child into an adult", "example": "I grew up in a small coastal town with a very close community."}, {"type": "Phrasal Verb", "term": "take the wheel", "meaning": "to take the wheel — a key action related to this topic", "example": "Using \"take the wheel\" shows strong vocabulary in IELTS Speaking."}, {"type": "Phrasal Verb", "term": "sit back", "meaning": "to sit back — a key action related to this topic", "example": "When someone else is driving, I can sit back, look out the\nwindow, and actually enjoy the scenery without having to focus on navigating traffic."}, {"type": "Phrasal Verb", "term": "rely on", "meaning": "to depend on something or someone", "example": "I rely on my watch rather than my phone to check the time."}, {"type": "Phrasal Verb", "term": "focus on", "meaning": "to focus on — a key action related to this topic", "example": "When someone else is driving, I can sit back, look out the\nwindow, and actually enjoy the scenery without having to focus on navigating traffic."}, {"type": "Collocation", "term": "resale value", "meaning": "the price an item can be sold for after purchase", "example": "Neutral car colours tend to have a higher resale value."}, {"type": "Collocation", "term": "personal taste", "meaning": "an individual's own preferences and style", "example": "Car colour is largely a matter of personal taste."}, {"type": "Collocation", "term": "colour preference", "meaning": "a person's favourite or chosen colour", "example": "My colour preference for cars is dark blue or black."}, {"type": "Collocation", "term": "safety visibility", "meaning": "how easily something can be seen, especially on roads", "example": "Bright colours improve safety visibility on the road at night."}, {"type": "Collocation", "term": "neutral colour", "meaning": "a colour such as white, grey, or black that is not bold", "example": "Neutral colours like silver are popular choices for family cars."}, {"type": "Collocation", "term": "road trip", "meaning": "a long journey made by car", "example": "We went on a road trip along the coast last summer."}, {"type": "Collocation", "term": "family outing", "meaning": "a trip or activity done together as a family", "example": "Sunday drives were a regular family outing when I was young."}, {"type": "Collocation", "term": "long journey", "meaning": "a trip that takes a significant amount of time", "example": "I always bring snacks and music for a long journey."}, {"type": "Collocation", "term": "car ride", "meaning": "a trip taken in a car", "example": "The car ride to my grandmother's house took about three hours."}, {"type": "Collocation", "term": "scenic route", "meaning": "a road chosen for its beautiful views", "example": "We took the scenic route through the mountains on our holiday."}, {"type": "Collocation", "term": "in control", "meaning": "\"in control\" — a common expression used when discussing this topic", "example": "Using \"in control\" shows strong vocabulary in IELTS Speaking."}, {"type": "Collocation", "term": "sense of freedom", "meaning": "\"sense of freedom\" — a common expression used when discussing this topic", "example": "Using \"sense of freedom\" shows strong vocabulary in IELTS Speaking."}, {"type": "Collocation", "term": "backseat driver", "meaning": "\"backseat driver\" — a common expression used when discussing this topic", "example": "Using \"backseat driver\" shows strong vocabulary in IELTS Speaking."}, {"type": "Collocation", "term": "navigate traffic", "meaning": "\"navigate traffic\" — a common expression used when discussing this topic", "example": "Using \"navigate traffic\" shows strong vocabulary in IELTS Speaking."}, {"type": "Collocation", "term": "enjoy the ride", "meaning": "\"enjoy the ride\" — a common expression used when discussing this topic", "example": "Using \"enjoy the ride\" shows strong vocabulary in IELTS Speaking."}];
+let fcIdx=0,fcList=[...CARDS];
+function updateCard(){
+  const card=document.getElementById('flashcard');
+  if(!card)return;
+  card.classList.remove('flipped');
+  const c=fcList[fcIdx];
+  document.getElementById('fc-label').textContent=c.type;
+  document.getElementById('fc-term').textContent=c.term;
+  document.getElementById('fc-back-label').textContent=c.type;
+  document.getElementById('fc-back-term').textContent=c.term;
+  document.getElementById('fc-meaning').textContent='📖 '+c.meaning;
+  document.getElementById('fc-example').textContent='💬 "'+c.example+'"';
+  document.getElementById('fc-progress').textContent=(fcIdx+1)+' / '+fcList.length;
+  document.getElementById('fc-progress-bar').style.width=((fcIdx+1)/fcList.length*100).toFixed(0)+'%';
+}
+function flipCard(){document.getElementById('flashcard').classList.toggle('flipped');}
+function nextCard(){fcIdx=(fcIdx+1)%fcList.length;updateCard();}
+function prevCard(){fcIdx=(fcIdx-1+fcList.length)%fcList.length;updateCard();}
+function shuffleCards(){
+  for(let i=fcList.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[fcList[i],fcList[j]]=[fcList[j],fcList[i]];}
+  fcIdx=0;updateCard();
+}
+updateCard();
+
+// FILL IN BLANK
+const FILL=[{"phrase": "resale value", "stem": "resale", "blank": "value"}, {"phrase": "personal taste", "stem": "personal", "blank": "taste"}, {"phrase": "colour preference", "stem": "colour", "blank": "preference"}, {"phrase": "safety visibility", "stem": "safety", "blank": "visibility"}, {"phrase": "neutral colour", "stem": "neutral", "blank": "colour"}, {"phrase": "road trip", "stem": "road", "blank": "trip"}, {"phrase": "family outing", "stem": "family", "blank": "outing"}, {"phrase": "long journey", "stem": "long", "blank": "journey"}];
+function buildFill(){
+  const c=document.getElementById('fill-container');
+  if(!c)return;
+  c.innerHTML='';
+  FILL.forEach((item,i)=>{
+    const d=document.createElement('div');
+    d.className='fill-item';
+    d.innerHTML=`<span class="fill-stem">${item.stem}</span>
+      <input class="fill-input" id="fi-${i}" type="text" placeholder="..." autocomplete="off" spellcheck="false">
+      <span class="fill-feedback" id="ff-${i}"></span>`;
+    c.appendChild(d);
+  });
+}
+function checkFill(){
+  let ok=0;
+  FILL.forEach((item,i)=>{
+    const v=(document.getElementById('fi-'+i).value||'').trim().toLowerCase();
+    const fb=document.getElementById('ff-'+i);
+    if(v===item.blank.toLowerCase()){fb.textContent='✅';ok++;}
+    else{fb.textContent='❌ '+item.blank;}
+  });
+  const s=document.getElementById('fill-score');
+  s.style.display='block';
+  s.textContent='Score: '+ok+' / '+FILL.length+' 🎯';
+}
+function resetFill(){buildFill();const s=document.getElementById('fill-score');if(s)s.style.display='none';}
+buildFill();
+
+// WORD SCRAMBLE
+const SC_ITEMS=[{"original": "resale value", "shuffled": ["value", "resale"]}, {"original": "personal taste", "shuffled": ["taste", "personal"]}, {"original": "colour preference", "shuffled": ["preference", "colour"]}, {"original": "safety visibility", "shuffled": ["visibility", "safety"]}, {"original": "neutral colour", "shuffled": ["colour", "neutral"]}, {"original": "road trip", "shuffled": ["road", "trip"]}];
+let scState=SC_ITEMS.map(item=>({...item,placed:[],available:[...item.shuffled]}));
+function buildScramble(){
+  const c=document.getElementById('scramble-container');
+  if(!c)return;
+  c.innerHTML='';
+  scState.forEach((item,i)=>{
+    const d=document.createElement('div');
+    d.className='scramble-item';
+    d.innerHTML=`<div class="scramble-num">Collocation ${i+1}</div>
+      <div class="scramble-words" id="sw-${i}"></div>
+      <div class="scramble-answer-area" id="sa-${i}"></div>
+      <div class="scramble-feedback" id="sf-${i}"></div>
+      <button class="scramble-btn" onclick="checkSc(${i})">✅ Check</button>
+      <button class="scramble-btn reset" onclick="resetSc(${i})">🔄 Reset</button>`;
+    c.appendChild(d);
+    renderSc(i);
+  });
+}
+function renderSc(i){
+  const item=scState[i];
+  const we=document.getElementById('sw-'+i);
+  we.innerHTML='';
+  item.available.forEach((w,wi)=>{
+    const s=document.createElement('span');
+    s.className='scramble-word';s.textContent=w;
+    s.onclick=()=>placeW(i,wi);we.appendChild(s);
+  });
+  const ae=document.getElementById('sa-'+i);
+  ae.innerHTML='';
+  if(item.placed.length===0){ae.innerHTML='<span style="color:#aaa;font-size:18px">Click words above...</span>';}
+  else{item.placed.forEach((w,pi)=>{
+    const s=document.createElement('span');s.className='scramble-placed';s.textContent=w;
+    s.onclick=()=>unplaceW(i,pi);ae.appendChild(s);
+  });}
+}
+function placeW(i,wi){const item=scState[i];item.placed.push(item.available[wi]);item.available.splice(wi,1);document.getElementById('sf-'+i).textContent='';renderSc(i);}
+function unplaceW(i,pi){const item=scState[i];item.available.push(item.placed[pi]);item.placed.splice(pi,1);document.getElementById('sf-'+i).textContent='';renderSc(i);}
+function checkSc(i){
+  const item=scState[i];const fb=document.getElementById('sf-'+i);
+  if(item.placed.join(' ')===item.original){fb.textContent='✅ Correct! "'+item.original+'"';fb.style.color='#2e7d32';}
+  else{fb.textContent='❌ Try again! ('+item.original.split(' ').length+' words)';fb.style.color='#c62828';}
+}
+function resetSc(i){scState[i].placed=[];scState[i].available=[...SC_ITEMS[i].shuffled];document.getElementById('sf-'+i).textContent='';renderSc(i);}
+buildScramble();
+</script>
+</body>
+</html>

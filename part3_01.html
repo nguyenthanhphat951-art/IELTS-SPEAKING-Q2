@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Part 3: Food &amp; Special Occasions – IELTS Speaking</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+:root{--accent:#1565C0;--al:#1565C0L;--am:#1565C0M}
+body{font-family:'Segoe UI',Arial,sans-serif;background:#f0f2f8;font-size:18px}
+.topnav{background:var(--accent);display:flex;align-items:center;justify-content:space-between;padding:14px 24px;position:sticky;top:0;z-index:200;box-shadow:0 2px 12px rgba(0,0,0,.2);gap:8px;flex-wrap:wrap}
+.topnav a{color:#fff;text-decoration:none;font-size:17px;font-weight:700;padding:7px 16px;border-radius:8px;background:rgba(255,255,255,.2);transition:background .2s;white-space:nowrap}
+.topnav a:hover{background:rgba(255,255,255,.35)}
+.ttitle{font-size:20px;font-weight:900;color:#fff;text-align:center;flex:1}
+.hero{background:linear-gradient(135deg,var(--accent) 0%,#1565C099 100%);color:#fff;padding:28px 24px 20px;text-align:center}
+.tnum{font-size:16px;font-weight:700;letter-spacing:2px;text-transform:uppercase;opacity:.8}
+.hero h1{font-size:38px;font-weight:900;margin:6px 0 10px;line-height:1.3}
+.stats{display:flex;justify-content:center;gap:16px;flex-wrap:wrap}
+.stat{background:rgba(255,255,255,.2);border-radius:10px;padding:6px 18px;font-size:17px;font-weight:600}
+.slide-dots-wrap{background:#fff;border-bottom:2px solid #e0e0e0;padding:14px 20px;display:flex;align-items:center;gap:8px;overflow-x:auto;justify-content:center;flex-wrap:wrap}
+.dot-btn{background:#e0e0e0;color:#555;border:none;font-size:15px;font-weight:700;padding:7px 16px;border-radius:20px;cursor:pointer;transition:all .2s;white-space:nowrap}
+.dot-btn.active{background:var(--accent);color:#fff;transform:scale(1.08)}
+.dot-btn:hover:not(.active){background:var(--am);color:#fff}
+.slide{display:none;animation:fadeIn .35s ease}
+.slide.active{display:block}
+@keyframes fadeIn{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:translateY(0)}}
+.slide-inner{max-width:900px;margin:30px auto;padding:0 20px 30px}
+.slide-header{display:flex;align-items:center;gap:12px;margin-bottom:18px;flex-wrap:wrap}
+.slide-badge{background:var(--accent);color:#fff;font-size:17px;font-weight:800;padding:6px 18px;border-radius:20px}
+.q-type-badge{background:var(--al);color:var(--accent);font-size:15px;font-weight:700;padding:5px 14px;border-radius:20px;border:1.5px solid var(--am)}
+/* QUESTION BOX */
+.question-text{font-size:28px;font-weight:900;color:#1a1a2e;line-height:1.3;margin-bottom:20px;background:#fff;border-radius:16px;padding:24px 28px;box-shadow:0 3px 16px rgba(0,0,0,.08);border-left:6px solid var(--accent)}
+/* STRATEGY BOX */
+.strategy-box{background:#fff3e0;border:2px solid #ffb74d;border-radius:14px;padding:20px 24px;margin-bottom:18px}
+.strategy-title{font-size:16px;font-weight:800;color:#e65100;margin-bottom:12px;text-transform:uppercase;letter-spacing:.5px;display:flex;align-items:center;gap:8px}
+.strategy-list{list-style:none;padding:0}
+.strategy-list li{font-size:19px;color:#1a1a2e;padding:7px 0 7px 28px;position:relative;border-bottom:1px solid #ffe0b2;line-height:1.5}
+.strategy-list li:last-child{border-bottom:none}
+.strategy-list li::before{content:"✦";position:absolute;left:0;color:#ff9800;font-size:16px;top:10px}
+/* IDEAS BOX */
+.ideas-box{background:#e8f5e9;border:2px solid #81c784;border-radius:14px;padding:20px 24px;margin-bottom:18px}
+.ideas-title{font-size:16px;font-weight:800;color:#2e7d32;margin-bottom:12px;text-transform:uppercase;letter-spacing:.5px;display:flex;align-items:center;gap:8px}
+.ideas-list{list-style:none;padding:0}
+.ideas-list li{font-size:19px;color:#1a1a2e;padding:7px 0 7px 28px;position:relative;border-bottom:1px solid #c8e6c9;line-height:1.5}
+.ideas-list li:last-child{border-bottom:none}
+.ideas-list li::before{content:"💡";position:absolute;left:0;font-size:16px;top:8px}
+/* VOCAB CHIPS */
+.vocab-row{background:#fff;border-radius:14px;padding:18px 22px;margin-bottom:18px;box-shadow:0 2px 10px rgba(0,0,0,.07)}
+.vocab-row-title{font-size:15px;font-weight:800;color:#555;margin-bottom:10px;text-transform:uppercase;letter-spacing:.5px}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.vocab-chip{font-size:17px;font-weight:700;padding:7px 14px;border-radius:20px;cursor:default;transition:transform .15s}
+.vocab-chip:hover{transform:scale(1.05)}
+.pv-chip{background:#e3f2fd;color:#1565c0;border:1.5px solid #90caf9}
+.col-chip{background:#fce4ec;color:#c62828;border:1.5px solid #f48fb1}
+/* ANSWER */
+.show-answer-btn{background:var(--accent);color:#fff;border:none;font-size:20px;font-weight:700;padding:14px 30px;border-radius:12px;cursor:pointer;transition:opacity .2s,transform .15s}
+.show-answer-btn:hover{opacity:.88;transform:scale(1.02)}
+.answer-box{background:#f1fff3;border:2px solid #a5d6a7;border-radius:14px;padding:24px;margin-top:16px}
+.answer-label{font-size:16px;font-weight:800;color:#2e7d32;margin-bottom:10px}
+.answer-text{font-size:21px;line-height:1.8;color:#1a1a2e}
+/* NAV */
+.slide-nav{display:flex;justify-content:space-between;align-items:center;max-width:900px;margin:0 auto 40px;padding:0 20px;gap:12px}
+.nav-btn{background:var(--accent);color:#fff;border:none;font-size:20px;font-weight:800;padding:14px 32px;border-radius:14px;cursor:pointer;transition:opacity .2s,transform .15s}
+.nav-btn:hover{opacity:.85;transform:scale(1.03)}
+.nav-btn:disabled{background:#ccc;cursor:default;transform:none}
+.slide-counter{font-size:20px;font-weight:800;color:#555;text-align:center}
+</style>
+</head>
+<body>
+<div class="topnav">
+  <a href="index.html">← Home</a>
+  <div class="ttitle">Part 3: Food &amp; Special Occasions</div>
+  <a href="part3_02.html">Part 3 2 →</a>
+</div>
+<div class="hero">
+  <div class="tnum">IELTS Speaking Part 3 · Topic 1 of 22</div>
+  <h1>💬 Food &amp; Special Occasions</h1>
+  <div class="stats">
+    <div class="stat">❓ 4 Discussion Questions</div>
+    <div class="stat">💡 Ideas + 🎯 Strategy + ✅ Band 7+ Answers</div>
+  </div>
+</div>
+<div class="slide-dots-wrap"><button class="dot-btn active" onclick="goToSlide(0)" id="dot-0">Q1</button><button class="dot-btn" onclick="goToSlide(1)" id="dot-1">Q2</button><button class="dot-btn" onclick="goToSlide(2)" id="dot-2">Q3</button><button class="dot-btn" onclick="goToSlide(3)" id="dot-3">Q4</button></div>
+<div class="slides-container">
+<div class="slide" id="slide-0">
+  <div class="slide-inner">
+    <div class="slide-header">
+      <span class="slide-badge">Question 1 of 4</span>
+      <span class="q-type-badge">Comparison / Trend</span>
+    </div>
+    <div class="question-text">"In your country, do people nowadays cook at home as frequently as people did in the past?"</div>
+    
+        <div class="strategy-box">
+          <div class="strategy-title">🎯 Answer Direction &amp; Strategy</div>
+          <ul class="strategy-list"><li>Compare past and present cooking habits using specific evidence.</li><li>Mention factors that have driven the change (urbanisation, busy lifestyles, food delivery apps).</li><li>Use hedging language: &quot;It seems that...&quot;, &quot;From what I can observe...&quot;</li></ul>
+        </div>
+    
+        <div class="ideas-box">
+          <div class="ideas-title">💡 Ideas to Use in Your Answer</div>
+          <ul class="ideas-list"><li>Home cooking has declined due to busier work schedules and longer commuting times.</li><li>The rise of food delivery apps like GrabFood and Baemin has made eating out or ordering in far more</li><li>However, the COVID-19 pandemic sparked a renewed interest in home cooking among younger</li><li>Traditional families, particularly in rural areas, still maintain strong home-cooking habits.</li></ul>
+        </div>
+    
+        <div class="vocab-row">
+          <div class="vocab-row-title">🔗 Key Vocabulary</div>
+          <div class="chips"><span class="vocab-chip col-chip">cook from scratch</span><span class="vocab-chip col-chip">eat out</span><span class="vocab-chip col-chip">order in</span><span class="vocab-chip col-chip">keep up with</span><span class="vocab-chip col-chip">fall back on</span><span class="vocab-chip col-chip">carry on (traditions)</span><span class="vocab-chip col-chip">home-cooked meal</span><span class="vocab-chip col-chip">food delivery</span><span class="vocab-chip col-chip">culinary tradition</span><span class="vocab-chip col-chip">convenience culture</span><span class="vocab-chip col-chip">changing lifestyle</span></div>
+        </div>
+    <button class="show-answer-btn" onclick="toggleAnswer(this)">👁 Show Band 7+ Answer</button>
+    <div class="answer-box" style="display:none">
+      <div class="answer-label">✅ Band 7+ Model Answer</div>
+      <p class="answer-text">From what I can observe, home cooking has declined significantly compared to previous generations,
+particularly in urban areas. The main drivers are busier work schedules, longer commuting times, and the
+extraordinary convenience of food delivery apps, which have made it possible to have restaurant-quality
+food delivered to your door within thirty minutes. That said, I think the picture is more nuanced than a
+simple decline. The pandemic actually sparked a renewed interest in home cooking among younger
+people, many of whom discovered the satisfaction of preparing meals from scratch for the first time. And in
+rural areas and among older generations, home cooking remains very much the norm. So I would say the
+trend is towards less frequent home cooking overall, but with pockets of genuine revival.</p>
+    </div>
+  </div>
+</div>
+<div class="slide" id="slide-1">
+  <div class="slide-inner">
+    <div class="slide-header">
+      <span class="slide-badge">Question 2 of 4</span>
+      <span class="q-type-badge">Opinion / Social Behaviour</span>
+    </div>
+    <div class="question-text">"What do you think of people using their mobile phones during a meal?"</div>
+    
+        <div class="strategy-box">
+          <div class="strategy-title">🎯 Answer Direction &amp; Strategy</div>
+          <ul class="strategy-list"><li>State your opinion clearly and give reasons.</li><li>Consider both the social and psychological dimensions.</li><li>Acknowledge any exceptions or nuances.</li></ul>
+        </div>
+    
+        <div class="ideas-box">
+          <div class="ideas-title">💡 Ideas to Use in Your Answer</div>
+          <ul class="ideas-list"><li>Using phones during meals is generally considered rude and disrespectful to dining companions.</li><li>It prevents genuine conversation and connection, which is one of the main purposes of sharing a meal.</li><li>However, there are exceptions - checking an urgent message or using a phone for a legitimate reason is</li><li>The habit reflects a broader issue of digital addiction and difficulty being present in the moment.</li></ul>
+        </div>
+    
+        <div class="vocab-row">
+          <div class="vocab-row-title">🔗 Key Vocabulary</div>
+          <div class="chips"><span class="vocab-chip col-chip">put away</span><span class="vocab-chip col-chip">switch off</span><span class="vocab-chip col-chip">be present</span><span class="vocab-chip col-chip">pay attention to</span><span class="vocab-chip col-chip">get distracted by</span><span class="vocab-chip col-chip">look up from</span><span class="vocab-chip col-chip">social etiquette</span><span class="vocab-chip col-chip">digital distraction</span><span class="vocab-chip col-chip">mindful eating</span><span class="vocab-chip col-chip">face-to-face interaction</span><span class="vocab-chip col-chip">phone addiction</span></div>
+        </div>
+    <button class="show-answer-btn" onclick="toggleAnswer(this)">👁 Show Band 7+ Answer</button>
+    <div class="answer-box" style="display:none">
+      <div class="answer-label">✅ Band 7+ Model Answer</div>
+      <p class="answer-text">Personally, I find it quite rude and disheartening. Mealtimes are one of the few occasions in modern life
+when people naturally gather together, and using a phone during that time sends a clear message that
+whatever is on the screen is more important than the people you are with. Research has shown that even
+the presence of a phone on the table - even if it is face down and silent - reduces the quality of conversation
+and connection between people. That said, I think context matters. If someone is expecting an urgent call
+or needs to check something important, that is understandable. But habitual, mindless scrolling during a
+meal is something I think we should all make a conscious effort to avoid.</p>
+    </div>
+  </div>
+</div>
+<div class="slide" id="slide-2">
+  <div class="slide-inner">
+    <div class="slide-header">
+      <span class="slide-badge">Question 3 of 4</span>
+      <span class="q-type-badge">Opinion / Reason</span>
+    </div>
+    <div class="question-text">"Why are some people willing to spend a lot of money on meals on special days?"</div>
+    
+        <div class="strategy-box">
+          <div class="strategy-title">🎯 Answer Direction &amp; Strategy</div>
+          <ul class="strategy-list"><li>Offer two or three distinct reasons.</li><li>Consider psychological, social, and cultural motivations.</li><li>Use impersonal language to discuss general behaviour.</li></ul>
+        </div>
+    
+        <div class="ideas-box">
+          <div class="ideas-title">💡 Ideas to Use in Your Answer</div>
+          <ul class="ideas-list"><li>Special occasions are associated with celebration and indulgence, making people more willing to</li><li>An expensive meal signals the importance of the occasion and the people being celebrated.</li><li>Food is deeply tied to memory and emotion - a special meal creates lasting memories.</li><li>Social pressure and the desire to impress guests or family members also plays a role.</li></ul>
+        </div>
+    
+        <div class="vocab-row">
+          <div class="vocab-row-title">🔗 Key Vocabulary</div>
+          <div class="chips"><span class="vocab-chip col-chip">splash out on</span><span class="vocab-chip col-chip">treat oneself to</span><span class="vocab-chip col-chip">mark the occasion</span><span class="vocab-chip col-chip">go all out</span><span class="vocab-chip col-chip">look back on</span><span class="vocab-chip col-chip">special occasion</span><span class="vocab-chip col-chip">celebratory meal</span><span class="vocab-chip col-chip">fine dining</span><span class="vocab-chip col-chip">memorable experience</span><span class="vocab-chip col-chip">social expectation</span></div>
+        </div>
+    <button class="show-answer-btn" onclick="toggleAnswer(this)">👁 Show Band 7+ Answer</button>
+    <div class="answer-box" style="display:none">
+      <div class="answer-label">✅ Band 7+ Model Answer</div>
+      <p class="answer-text">I think there are several reasons. First, special occasions are inherently associated with celebration and
+indulgence - people feel that the day deserves something extraordinary, and a lavish meal is one of the
+most universal ways to mark that. Second, an expensive meal signals the importance of the occasion and
+the people being honoured. If you are celebrating a parent&#x27;s milestone birthday or a wedding anniversary,
+choosing a fine restaurant communicates how much you value that person and that moment. Third, and
+perhaps most importantly, food is deeply tied to memory and emotion. A truly exceptional meal creates a
+sensory experience that people remember for years, which makes the investment feel worthwhile. The
+meal becomes part of the story of the occasion.</p>
+    </div>
+  </div>
+</div>
+<div class="slide" id="slide-3">
+  <div class="slide-inner">
+    <div class="slide-header">
+      <span class="slide-badge">Question 4 of 4</span>
+      <span class="q-type-badge">Comparison / Cultural Knowledge</span>
+    </div>
+    <div class="question-text">"What are the differences between special food in Vietnam and other countries?"</div>
+    
+        <div class="strategy-box">
+          <div class="strategy-title">🎯 Answer Direction &amp; Strategy</div>
+          <ul class="strategy-list"><li>Compare Vietnamese special occasion food with that of other cultures.</li><li>Mention specific dishes and their cultural significance.</li><li>Use contrast language: &quot;whereas&quot;, &quot;unlike&quot;, &quot;in contrast to&quot;.</li></ul>
+        </div>
+    
+        <div class="ideas-box">
+          <div class="ideas-title">💡 Ideas to Use in Your Answer</div>
+          <ul class="ideas-list"><li>Vietnamese special food tends to be labour-intensive and communal, emphasising family participation</li><li>Western special occasion food (like Christmas turkey or birthday cake) is often more standardised and</li><li>Vietnamese festive food carries deep symbolic meaning - banh chung represents the earth, for</li><li>Many Asian cultures share a preference for communal dishes eaten together, unlike Western individual</li></ul>
+        </div>
+    
+        <div class="vocab-row">
+          <div class="vocab-row-title">🔗 Key Vocabulary</div>
+          <div class="chips"><span class="vocab-chip col-chip">be associated with</span><span class="vocab-chip col-chip">carry symbolic meaning</span><span class="vocab-chip col-chip">prepare from scratch</span><span class="vocab-chip col-chip">bring together</span><span class="vocab-chip col-chip">differ from</span><span class="vocab-chip col-chip">culinary tradition</span><span class="vocab-chip col-chip">cultural significance</span><span class="vocab-chip col-chip">festive food</span><span class="vocab-chip col-chip">symbolic dish</span><span class="vocab-chip col-chip">communal meal</span></div>
+        </div>
+    <button class="show-answer-btn" onclick="toggleAnswer(this)">👁 Show Band 7+ Answer</button>
+    <div class="answer-box" style="display:none">
+      <div class="answer-label">✅ Band 7+ Model Answer</div>
+      <p class="answer-text">There are some fascinating differences. Vietnamese special occasion food tends to be deeply symbolic
+and labour-intensive - dishes like banh chung for Tet or xoi gac for weddings carry specific cultural
+meanings and are often prepared by the whole family together, which makes the process itself part of the
+celebration. In contrast, special occasion food in many Western countries, while certainly festive, tends to
+be more standardised and commercially available - a Christmas turkey or a birthday cake can be
+purchased ready-made from a supermarket. Another difference is the communal nature of Vietnamese
+festive dining - dishes are placed in the centre of the table and shared by everyone, which reflects a
+collectivist cultural value, whereas Western dining often involves individual servings. Both approaches are
+beautiful in their own way, but they reflect quite different cultural values around food and celebration.</p>
+    </div>
+  </div>
+</div></div>
+<div class="slide-nav">
+  <button class="nav-btn" id="btn-prev" onclick="prevSlide()" disabled>← Previous</button>
+  <div class="slide-counter" id="slide-counter">Slide 1 / 4</div>
+  <button class="nav-btn" id="btn-next" onclick="nextSlide()">Next →</button>
+</div>
+<script>
+const TOTAL=4;
+let cur=0;
+function goToSlide(n){
+  document.querySelectorAll('.slide').forEach(s=>s.classList.remove('active'));
+  document.querySelectorAll('.dot-btn').forEach(b=>b.classList.remove('active'));
+  document.getElementById('slide-'+n).classList.add('active');
+  const dot=document.getElementById('dot-'+n);
+  dot.classList.add('active');
+  dot.scrollIntoView({behavior:'smooth',block:'nearest',inline:'center'});
+  cur=n;
+  document.getElementById('btn-prev').disabled=(n===0);
+  document.getElementById('btn-next').disabled=(n===TOTAL-1);
+  document.getElementById('slide-counter').textContent='Slide '+(n+1)+' / '+TOTAL;
+  window.scrollTo({top:0,behavior:'smooth'});
+}
+function nextSlide(){if(cur<TOTAL-1)goToSlide(cur+1);}
+function prevSlide(){if(cur>0)goToSlide(cur-1);}
+document.addEventListener('keydown',e=>{
+  if(e.key==='ArrowRight'||e.key==='ArrowDown')nextSlide();
+  if(e.key==='ArrowLeft'||e.key==='ArrowUp')prevSlide();
+});
+goToSlide(0);
+function toggleAnswer(btn){
+  const box=btn.nextElementSibling;
+  if(box.style.display==='none'){box.style.display='block';btn.textContent='🙈 Hide Answer';}
+  else{box.style.display='none';btn.textContent='👁 Show Band 7+ Answer';}
+}
+</script>
+</body>
+</html>

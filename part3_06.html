@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Part 3: Language Learning – IELTS Speaking</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+:root{--accent:#4A148C;--al:#4A148CL;--am:#4A148CM}
+body{font-family:'Segoe UI',Arial,sans-serif;background:#f0f2f8;font-size:18px}
+.topnav{background:var(--accent);display:flex;align-items:center;justify-content:space-between;padding:14px 24px;position:sticky;top:0;z-index:200;box-shadow:0 2px 12px rgba(0,0,0,.2);gap:8px;flex-wrap:wrap}
+.topnav a{color:#fff;text-decoration:none;font-size:17px;font-weight:700;padding:7px 16px;border-radius:8px;background:rgba(255,255,255,.2);transition:background .2s;white-space:nowrap}
+.topnav a:hover{background:rgba(255,255,255,.35)}
+.ttitle{font-size:20px;font-weight:900;color:#fff;text-align:center;flex:1}
+.hero{background:linear-gradient(135deg,var(--accent) 0%,#4A148C99 100%);color:#fff;padding:28px 24px 20px;text-align:center}
+.tnum{font-size:16px;font-weight:700;letter-spacing:2px;text-transform:uppercase;opacity:.8}
+.hero h1{font-size:38px;font-weight:900;margin:6px 0 10px;line-height:1.3}
+.stats{display:flex;justify-content:center;gap:16px;flex-wrap:wrap}
+.stat{background:rgba(255,255,255,.2);border-radius:10px;padding:6px 18px;font-size:17px;font-weight:600}
+.slide-dots-wrap{background:#fff;border-bottom:2px solid #e0e0e0;padding:14px 20px;display:flex;align-items:center;gap:8px;overflow-x:auto;justify-content:center;flex-wrap:wrap}
+.dot-btn{background:#e0e0e0;color:#555;border:none;font-size:15px;font-weight:700;padding:7px 16px;border-radius:20px;cursor:pointer;transition:all .2s;white-space:nowrap}
+.dot-btn.active{background:var(--accent);color:#fff;transform:scale(1.08)}
+.dot-btn:hover:not(.active){background:var(--am);color:#fff}
+.slide{display:none;animation:fadeIn .35s ease}
+.slide.active{display:block}
+@keyframes fadeIn{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:translateY(0)}}
+.slide-inner{max-width:900px;margin:30px auto;padding:0 20px 30px}
+.slide-header{display:flex;align-items:center;gap:12px;margin-bottom:18px;flex-wrap:wrap}
+.slide-badge{background:var(--accent);color:#fff;font-size:17px;font-weight:800;padding:6px 18px;border-radius:20px}
+.q-type-badge{background:var(--al);color:var(--accent);font-size:15px;font-weight:700;padding:5px 14px;border-radius:20px;border:1.5px solid var(--am)}
+/* QUESTION BOX */
+.question-text{font-size:28px;font-weight:900;color:#1a1a2e;line-height:1.3;margin-bottom:20px;background:#fff;border-radius:16px;padding:24px 28px;box-shadow:0 3px 16px rgba(0,0,0,.08);border-left:6px solid var(--accent)}
+/* STRATEGY BOX */
+.strategy-box{background:#fff3e0;border:2px solid #ffb74d;border-radius:14px;padding:20px 24px;margin-bottom:18px}
+.strategy-title{font-size:16px;font-weight:800;color:#e65100;margin-bottom:12px;text-transform:uppercase;letter-spacing:.5px;display:flex;align-items:center;gap:8px}
+.strategy-list{list-style:none;padding:0}
+.strategy-list li{font-size:19px;color:#1a1a2e;padding:7px 0 7px 28px;position:relative;border-bottom:1px solid #ffe0b2;line-height:1.5}
+.strategy-list li:last-child{border-bottom:none}
+.strategy-list li::before{content:"✦";position:absolute;left:0;color:#ff9800;font-size:16px;top:10px}
+/* IDEAS BOX */
+.ideas-box{background:#e8f5e9;border:2px solid #81c784;border-radius:14px;padding:20px 24px;margin-bottom:18px}
+.ideas-title{font-size:16px;font-weight:800;color:#2e7d32;margin-bottom:12px;text-transform:uppercase;letter-spacing:.5px;display:flex;align-items:center;gap:8px}
+.ideas-list{list-style:none;padding:0}
+.ideas-list li{font-size:19px;color:#1a1a2e;padding:7px 0 7px 28px;position:relative;border-bottom:1px solid #c8e6c9;line-height:1.5}
+.ideas-list li:last-child{border-bottom:none}
+.ideas-list li::before{content:"💡";position:absolute;left:0;font-size:16px;top:8px}
+/* VOCAB CHIPS */
+.vocab-row{background:#fff;border-radius:14px;padding:18px 22px;margin-bottom:18px;box-shadow:0 2px 10px rgba(0,0,0,.07)}
+.vocab-row-title{font-size:15px;font-weight:800;color:#555;margin-bottom:10px;text-transform:uppercase;letter-spacing:.5px}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.vocab-chip{font-size:17px;font-weight:700;padding:7px 14px;border-radius:20px;cursor:default;transition:transform .15s}
+.vocab-chip:hover{transform:scale(1.05)}
+.pv-chip{background:#e3f2fd;color:#1565c0;border:1.5px solid #90caf9}
+.col-chip{background:#fce4ec;color:#c62828;border:1.5px solid #f48fb1}
+/* ANSWER */
+.show-answer-btn{background:var(--accent);color:#fff;border:none;font-size:20px;font-weight:700;padding:14px 30px;border-radius:12px;cursor:pointer;transition:opacity .2s,transform .15s}
+.show-answer-btn:hover{opacity:.88;transform:scale(1.02)}
+.answer-box{background:#f1fff3;border:2px solid #a5d6a7;border-radius:14px;padding:24px;margin-top:16px}
+.answer-label{font-size:16px;font-weight:800;color:#2e7d32;margin-bottom:10px}
+.answer-text{font-size:21px;line-height:1.8;color:#1a1a2e}
+/* NAV */
+.slide-nav{display:flex;justify-content:space-between;align-items:center;max-width:900px;margin:0 auto 40px;padding:0 20px;gap:12px}
+.nav-btn{background:var(--accent);color:#fff;border:none;font-size:20px;font-weight:800;padding:14px 32px;border-radius:14px;cursor:pointer;transition:opacity .2s,transform .15s}
+.nav-btn:hover{opacity:.85;transform:scale(1.03)}
+.nav-btn:disabled{background:#ccc;cursor:default;transform:none}
+.slide-counter{font-size:20px;font-weight:800;color:#555;text-align:center}
+</style>
+</head>
+<body>
+<div class="topnav">
+  <a href="part3_05.html">← Part 3 5</a>
+  <div class="ttitle">Part 3: Language Learning</div>
+  <a href="part3_07.html">Part 3 7 →</a>
+</div>
+<div class="hero">
+  <div class="tnum">IELTS Speaking Part 3 · Topic 6 of 22</div>
+  <h1>💬 Language Learning</h1>
+  <div class="stats">
+    <div class="stat">❓ 3 Discussion Questions</div>
+    <div class="stat">💡 Ideas + 🎯 Strategy + ✅ Band 7+ Answers</div>
+  </div>
+</div>
+<div class="slide-dots-wrap"><button class="dot-btn active" onclick="goToSlide(0)" id="dot-0">Q1</button><button class="dot-btn" onclick="goToSlide(1)" id="dot-1">Q2</button><button class="dot-btn" onclick="goToSlide(2)" id="dot-2">Q3</button></div>
+<div class="slides-container">
+<div class="slide" id="slide-0">
+  <div class="slide-inner">
+    <div class="slide-header">
+      <span class="slide-badge">Question 1 of 3</span>
+      <span class="q-type-badge">General Knowledge / Opinion</span>
+    </div>
+    <div class="question-text">"Are there many people who can speak foreign languages in your country?"</div>
+    
+        <div class="strategy-box">
+          <div class="strategy-title">🎯 Answer Direction &amp; Strategy</div>
+          <ul class="strategy-list"><li>Describe the current state of foreign language ability in Vietnam.</li><li>Mention which languages are most commonly spoken.</li><li>Discuss trends and factors influencing language learning.</li></ul>
+        </div>
+    
+        <div class="ideas-box">
+          <div class="ideas-title">💡 Ideas to Use in Your Answer</div>
+          <ul class="ideas-list"><li>English proficiency has grown significantly in Vietnam, particularly among younger generations and</li><li>English is taught from primary school, which has increased the baseline level of exposure.</li><li>However, conversational fluency remains relatively low compared to some other Asian countries.</li><li>Other languages like Chinese, Japanese, and Korean are increasingly popular due to economic and</li></ul>
+        </div>
+    
+        <div class="vocab-row">
+          <div class="vocab-row-title">🔗 Key Vocabulary</div>
+          <div class="chips"><span class="vocab-chip col-chip">pick up (a language)</span><span class="vocab-chip col-chip">keep up with</span><span class="vocab-chip col-chip">get by in</span><span class="vocab-chip col-chip">carry on learning</span><span class="vocab-chip col-chip">stand out from</span><span class="vocab-chip col-chip">look up to</span><span class="vocab-chip col-chip">language proficiency</span><span class="vocab-chip col-chip">foreign language</span><span class="vocab-chip col-chip">English education</span><span class="vocab-chip col-chip">multilingual ability</span><span class="vocab-chip col-chip">language learning trend</span></div>
+        </div>
+    <button class="show-answer-btn" onclick="toggleAnswer(this)">👁 Show Band 7+ Answer</button>
+    <div class="answer-box" style="display:none">
+      <div class="answer-label">✅ Band 7+ Model Answer</div>
+      <p class="answer-text">The situation in Vietnam is improving rapidly, though there is still significant room for growth. English is by
+far the most widely studied foreign language, and it is now taught from primary school level, which means
+younger generations have much greater exposure than their parents did. In major cities like Hanoi and Ho
+Chi Minh City, you will find many young professionals who can communicate effectively in English.
+However, conversational fluency at a high level remains relatively uncommon outside of educated urban
+populations. Beyond English, there is growing interest in Chinese, Japanese, and Korean, driven by strong
+economic ties with China and Japan and the enormous cultural influence of Korean pop culture. I think
+Vietnam is on a positive trajectory in terms of foreign language ability, but there is still work to be done in
+improving the quality of language education, particularly in rural areas.</p>
+    </div>
+  </div>
+</div>
+<div class="slide" id="slide-1">
+  <div class="slide-inner">
+    <div class="slide-header">
+      <span class="slide-badge">Question 2 of 3</span>
+      <span class="q-type-badge">Opinion / Analysis</span>
+    </div>
+    <div class="question-text">"Why is it easier for children to learn new things than for adults?"</div>
+    
+        <div class="strategy-box">
+          <div class="strategy-title">🎯 Answer Direction &amp; Strategy</div>
+          <ul class="strategy-list"><li>Explain the neurological and psychological reasons.</li><li>Mention the concept of neuroplasticity.</li><li>Acknowledge that adults have some advantages too.</li></ul>
+        </div>
+    
+        <div class="ideas-box">
+          <div class="ideas-title">💡 Ideas to Use in Your Answer</div>
+          <ul class="ideas-list"><li>Children&#x27;s brains have greater neuroplasticity - they form new neural connections more easily and</li><li>Children are less inhibited by fear of failure or embarrassment, which allows them to take more risks in</li><li>Children have more time and fewer competing responsibilities, allowing for more immersive learning.</li><li>Adults, however, have advantages in motivation, metacognitive skills, and the ability to draw on prior</li></ul>
+        </div>
+    
+        <div class="vocab-row">
+          <div class="vocab-row-title">🔗 Key Vocabulary</div>
+          <div class="chips"><span class="vocab-chip col-chip">pick up</span><span class="vocab-chip col-chip">absorb information</span><span class="vocab-chip col-chip">take in</span><span class="vocab-chip col-chip">carry on learning</span><span class="vocab-chip col-chip">deal with (challenges)</span><span class="vocab-chip col-chip">build on</span><span class="vocab-chip col-chip">neuroplasticity</span><span class="vocab-chip col-chip">language acquisition</span><span class="vocab-chip col-chip">learning ability</span><span class="vocab-chip col-chip">cognitive development</span><span class="vocab-chip col-chip">fear of failure</span></div>
+        </div>
+    <button class="show-answer-btn" onclick="toggleAnswer(this)">👁 Show Band 7+ Answer</button>
+    <div class="answer-box" style="display:none">
+      <div class="answer-label">✅ Band 7+ Model Answer</div>
+      <p class="answer-text">There are several compelling reasons. From a neurological perspective, children&#x27;s brains have significantly
+greater plasticity - they form new neural connections more rapidly and efficiently than adult brains, which is
+why children can acquire languages and new skills with remarkable speed and naturalness.
+Psychologically, children are also far less inhibited by fear of failure or embarrassment. They are willing to
+make mistakes, try again, and experiment without the self-consciousness that often holds adults back.
+They also have fewer competing demands on their time and attention, which allows for more immersive,
+sustained learning. That said, adults are not without advantages. We have stronger metacognitive skills -
+we know how we learn best - and we can draw on a vast store of prior knowledge to contextualise new
+information. Adult motivation, when it is strong, can also be a powerful driver of learning. The key for adults
+is to approach learning with the same openness and willingness to make mistakes that children naturally
+possess.</p>
+    </div>
+  </div>
+</div>
+<div class="slide" id="slide-2">
+  <div class="slide-inner">
+    <div class="slide-header">
+      <span class="slide-badge">Question 3 of 3</span>
+      <span class="q-type-badge">Opinion / Argument</span>
+    </div>
+    <div class="question-text">"Some people think that technology has made it unnecessary to learn languages. What do you"</div>
+    
+        <div class="strategy-box">
+          <div class="strategy-title">🎯 Answer Direction &amp; Strategy</div>
+          <ul class="strategy-list"><li>State your position clearly.</li><li>Acknowledge the argument for technology as a substitute.</li><li>Argue for the irreplaceable value of genuine language learning.</li></ul>
+        </div>
+    
+        <div class="ideas-box">
+          <div class="ideas-title">💡 Ideas to Use in Your Answer</div>
+          <ul class="ideas-list"><li>Translation technology has improved dramatically and can handle many basic communication needs.</li><li>However, technology cannot replicate the cultural understanding and human connection that comes</li><li>Language learning develops cognitive skills - memory, attention, problem-solving - that have value</li><li>beyond communication. In professional and social contexts, the ability to communicate directly in another language remains a significant advantage.</li></ul>
+        </div>
+    
+        <div class="vocab-row">
+          <div class="vocab-row-title">🔗 Key Vocabulary</div>
+          <div class="chips"><span class="vocab-chip col-chip">rely on</span><span class="vocab-chip col-chip">make use of</span><span class="vocab-chip col-chip">get by with</span><span class="vocab-chip col-chip">stand up to</span><span class="vocab-chip col-chip">carry on learning</span><span class="vocab-chip col-chip">deal with</span><span class="vocab-chip col-chip">translation technology</span><span class="vocab-chip col-chip">language barrier</span><span class="vocab-chip col-chip">cultural understanding</span><span class="vocab-chip col-chip">cognitive benefit</span><span class="vocab-chip col-chip">human connection</span></div>
+        </div>
+    <button class="show-answer-btn" onclick="toggleAnswer(this)">👁 Show Band 7+ Answer</button>
+    <div class="answer-box" style="display:none">
+      <div class="answer-label">✅ Band 7+ Model Answer</div>
+      <p class="answer-text">I respectfully disagree with that view. While translation technology has improved dramatically and can
+certainly handle basic communication needs, I think it fundamentally misunderstands what language
+learning is about. Speaking someone&#x27;s language is not just about transmitting information - it is about
+accessing their culture, their humour, their way of seeing the world. When you speak to someone in their
+native language, even imperfectly, you create a human connection that no translation app can replicate.
+There is also the cognitive dimension: research consistently shows that learning a language develops
+memory, attention, and problem-solving skills that have value far beyond communication. And in
+professional contexts, the ability to communicate directly in another language remains a significant
+competitive advantage. Technology is a wonderful tool for language learners, but it is a supplement to
+language learning, not a substitute for it.</p>
+    </div>
+  </div>
+</div></div>
+<div class="slide-nav">
+  <button class="nav-btn" id="btn-prev" onclick="prevSlide()" disabled>← Previous</button>
+  <div class="slide-counter" id="slide-counter">Slide 1 / 3</div>
+  <button class="nav-btn" id="btn-next" onclick="nextSlide()">Next →</button>
+</div>
+<script>
+const TOTAL=3;
+let cur=0;
+function goToSlide(n){
+  document.querySelectorAll('.slide').forEach(s=>s.classList.remove('active'));
+  document.querySelectorAll('.dot-btn').forEach(b=>b.classList.remove('active'));
+  document.getElementById('slide-'+n).classList.add('active');
+  const dot=document.getElementById('dot-'+n);
+  dot.classList.add('active');
+  dot.scrollIntoView({behavior:'smooth',block:'nearest',inline:'center'});
+  cur=n;
+  document.getElementById('btn-prev').disabled=(n===0);
+  document.getElementById('btn-next').disabled=(n===TOTAL-1);
+  document.getElementById('slide-counter').textContent='Slide '+(n+1)+' / '+TOTAL;
+  window.scrollTo({top:0,behavior:'smooth'});
+}
+function nextSlide(){if(cur<TOTAL-1)goToSlide(cur+1);}
+function prevSlide(){if(cur>0)goToSlide(cur-1);}
+document.addEventListener('keydown',e=>{
+  if(e.key==='ArrowRight'||e.key==='ArrowDown')nextSlide();
+  if(e.key==='ArrowLeft'||e.key==='ArrowUp')prevSlide();
+});
+goToSlide(0);
+function toggleAnswer(btn){
+  const box=btn.nextElementSibling;
+  if(box.style.display==='none'){box.style.display='block';btn.textContent='🙈 Hide Answer';}
+  else{box.style.display='none';btn.textContent='👁 Show Band 7+ Answer';}
+}
+</script>
+</body>
+</html>

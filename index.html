@@ -1,0 +1,726 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>IELTS Speaking – Interactive Vocabulary Practice</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Segoe UI', Arial, sans-serif; background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%); min-height: 100vh; padding: 40px 20px; }
+  .header { text-align: center; color: #fff; margin-bottom: 50px; }
+  .header h1 { font-size: 42px; font-weight: 800; letter-spacing: 1px; text-shadow: 0 2px 10px rgba(0,0,0,0.3); }
+  .header p { font-size: 22px; color: #a0c4ff; margin-top: 10px; }
+  .badge { display: inline-block; background: #6C63FF; color: #fff; font-size: 16px; padding: 6px 18px; border-radius: 20px; margin-top: 14px; }
+  .section-header { color: #fff; margin: 50px auto 24px; max-width: 1300px; padding: 0 10px; }
+  .section-header h2 { font-size: 30px; font-weight: 900; margin-bottom: 6px; }
+  .section-header p { font-size: 18px; color: #a0c4ff; }
+  .section-divider { border: none; border-top: 2px solid rgba(255,255,255,0.15); max-width: 1300px; margin: 0 auto 30px; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 20px; max-width: 1300px; margin: 0 auto 20px; }
+  .card { border-radius: 18px; padding: 26px 22px; cursor: pointer; text-decoration: none; transition: transform 0.2s, box-shadow 0.2s; box-shadow: 0 4px 20px rgba(0,0,0,0.12); display: flex; flex-direction: column; gap: 8px; }
+  .card:hover { transform: translateY(-6px); box-shadow: 0 12px 35px rgba(0,0,0,0.22); }
+  .card-num { font-size: 13px; font-weight: 700; letter-spacing: 1px; text-transform: uppercase; }
+  .card-title { font-size: 21px; font-weight: 800; line-height: 1.25; color: #1a1a2e; }
+  .card-meta { font-size: 14px; color: #444; margin-top: 2px; }
+  .card-arrow { font-size: 20px; margin-top: auto; padding-top: 10px; font-weight: 700; }
+  footer { text-align: center; color: #a0c4ff; font-size: 16px; margin-top: 50px; }
+</style>
+</head>
+<body>
+<div class="header">
+  <h1>🎓 IELTS Speaking</h1>
+  <p>Interactive Vocabulary Practice</p>
+  <span class="badge">Q2 2026 · Part 1 · Part 2 · Part 3</span>
+</div>
+
+<div class="section-header">
+  <h2>🗣 Speaking Part 1 — Personal Questions</h2>
+  <p>36 topics · 81 questions · Phrasal verbs, collocations, Band 7+ answers &amp; interactive exercises</p>
+</div>
+<hr class="section-divider">
+<div class="grid">
+  <a class="card" href="topic_01.html" style="background:#EEF0FF; border-left:6px solid #6C63FF;">
+    <div class="card-num" style="color:#6C63FF">Topic 1</div>
+    <div class="card-title">Watch</div>
+    <div class="card-meta">4 Questions · 16 Phrasal Verbs · 20 Collocations</div>
+    <div class="card-arrow" style="color:#6C63FF">→ Practice Now</div>
+  </a>
+  <a class="card" href="topic_02.html" style="background:#FFF0F3; border-left:6px solid #FF6584;">
+    <div class="card-num" style="color:#FF6584">Topic 2</div>
+    <div class="card-title">Cars</div>
+    <div class="card-meta">3 Questions · 12 Phrasal Verbs · 15 Collocations</div>
+    <div class="card-arrow" style="color:#FF6584">→ Practice Now</div>
+  </a>
+  <a class="card" href="topic_03.html" style="background:#EDFAF6; border-left:6px solid #43B89C;">
+    <div class="card-num" style="color:#43B89C">Topic 3</div>
+    <div class="card-title">Websites</div>
+    <div class="card-meta">3 Questions · 12 Phrasal Verbs · 15 Collocations</div>
+    <div class="card-arrow" style="color:#43B89C">→ Practice Now</div>
+  </a>
+  <a class="card" href="topic_04.html" style="background:#FFF8EE; border-left:6px solid #F7A440;">
+    <div class="card-num" style="color:#F7A440">Topic 4</div>
+    <div class="card-title">Shopping</div>
+    <div class="card-meta">3 Questions · 12 Phrasal Verbs · 15 Collocations</div>
+    <div class="card-arrow" style="color:#F7A440">→ Practice Now</div>
+  </a>
+  <a class="card" href="topic_05.html" style="background:#EEF4FF; border-left:6px solid #5B8DEF;">
+    <div class="card-num" style="color:#5B8DEF">Topic 5</div>
+    <div class="card-title">Music</div>
+    <div class="card-meta">2 Questions · 8 Phrasal Verbs · 10 Collocations</div>
+    <div class="card-arrow" style="color:#5B8DEF">→ Practice Now</div>
+  </a>
+  <a class="card" href="topic_06.html" style="background:#FFF0F8; border-left:6px solid #E05C97;">
+    <div class="card-num" style="color:#E05C97">Topic 6</div>
+    <div class="card-title">Teachers</div>
+    <div class="card-meta">3 Questions · 12 Phrasal Verbs · 15 Collocations</div>
+    <div class="card-arrow" style="color:#E05C97">→ Practice Now</div>
+  </a>
+  <a class="card" href="topic_07.html" style="background:#EDFAFA; border-left:6px solid #3ECFCF;">
+    <div class="card-num" style="color:#3ECFCF">Topic 7</div>
+    <div class="card-title">Social Media</div>
+    <div class="card-meta">3 Questions · 13 Phrasal Verbs · 15 Collocations</div>
+    <div class="card-arrow" style="color:#3ECFCF">→ Practice Now</div>
+  </a>
+  <a class="card" href="topic_08.html" style="background:#FFF3EE; border-left:6px solid #FF7043;">
+    <div class="card-num" style="color:#FF7043">Topic 8</div>
+    <div class="card-title">Clothing</div>
+    <div class="card-meta">3 Questions · 12 Phrasal Verbs · 15 Collocations</div>
+    <div class="card-arrow" style="color:#FF7043">→ Practice Now</div>
+  </a>
+  <a class="card" href="topic_09.html" style="background:#F4FAEE; border-left:6px solid #7CB342;">
+    <div class="card-num" style="color:#7CB342">Topic 9</div>
+    <div class="card-title">Films / Cinemas</div>
+    <div class="card-meta">3 Questions · 12 Phrasal Verbs · 15 Collocations</div>
+    <div class="card-arrow" style="color:#7CB342">→ Practice Now</div>
+  </a>
+  <a class="card" href="topic_10.html" style="background:#F8EEFF; border-left:6px solid #AB47BC;">
+    <div class="card-num" style="color:#AB47BC">Topic 10</div>
+    <div class="card-title">Dream and Ambition</div>
+    <div class="card-meta">2 Questions · 8 Phrasal Verbs · 10 Collocations</div>
+    <div class="card-arrow" style="color:#AB47BC">→ Practice Now</div>
+  </a>
+  <a class="card" href="topic_11.html" style="background:#EDFAF8; border-left:6px solid #26A69A;">
+    <div class="card-num" style="color:#26A69A">Topic 11</div>
+    <div class="card-title">Outer Space and Stars</div>
+    <div class="card-meta">2 Questions · 8 Phrasal Verbs · 10 Collocations</div>
+    <div class="card-arrow" style="color:#26A69A">→ Practice Now</div>
+  </a>
+  <a class="card" href="topic_12.html" style="background:#FFF0EF; border-left:6px solid #EF5350;">
+    <div class="card-num" style="color:#EF5350">Topic 12</div>
+    <div class="card-title">Old Buildings</div>
+    <div class="card-meta">2 Questions · 8 Phrasal Verbs · 10 Collocations</div>
+    <div class="card-arrow" style="color:#EF5350">→ Practice Now</div>
+  </a>
+  <a class="card" href="topic_13.html" style="background:#EEEEFF; border-left:6px solid #5C6BC0;">
+    <div class="card-num" style="color:#5C6BC0">Topic 13</div>
+    <div class="card-title">Science</div>
+    <div class="card-meta">2 Questions · 8 Phrasal Verbs · 10 Collocations</div>
+    <div class="card-arrow" style="color:#5C6BC0">→ Practice Now</div>
+  </a>
+  <a class="card" href="topic_14.html" style="background:#FFF8EE; border-left:6px solid #FF8F00;">
+    <div class="card-num" style="color:#FF8F00">Topic 14</div>
+    <div class="card-title">Headphones</div>
+    <div class="card-meta">2 Questions · 8 Phrasal Verbs · 10 Collocations</div>
+    <div class="card-arrow" style="color:#FF8F00">→ Practice Now</div>
+  </a>
+  <a class="card" href="topic_15.html" style="background:#EDFAF8; border-left:6px solid #00897B;">
+    <div class="card-num" style="color:#00897B">Topic 15</div>
+    <div class="card-title">Jokes & Comedies</div>
+    <div class="card-meta">2 Questions · 8 Phrasal Verbs · 10 Collocations</div>
+    <div class="card-arrow" style="color:#00897B">→ Practice Now</div>
+  </a>
+  <a class="card" href="topic_16.html" style="background:#F8F3EF; border-left:6px solid #8D6E63;">
+    <div class="card-num" style="color:#8D6E63">Topic 16</div>
+    <div class="card-title">History</div>
+    <div class="card-meta">2 Questions · 8 Phrasal Verbs · 10 Collocations</div>
+    <div class="card-arrow" style="color:#8D6E63">→ Practice Now</div>
+  </a>
+  <a class="card" href="topic_17.html" style="background:#EEF8FF; border-left:6px solid #039BE5;">
+    <div class="card-num" style="color:#039BE5">Topic 17</div>
+    <div class="card-title">View / Scenery</div>
+    <div class="card-meta">2 Questions · 8 Phrasal Verbs · 10 Collocations</div>
+    <div class="card-arrow" style="color:#039BE5">→ Practice Now</div>
+  </a>
+  <a class="card" href="topic_18.html" style="background:#F3EEFF; border-left:6px solid #7E57C2;">
+    <div class="card-num" style="color:#7E57C2">Topic 18</div>
+    <div class="card-title">Childhood Activities</div>
+    <div class="card-meta">2 Questions · 8 Phrasal Verbs · 10 Collocations</div>
+    <div class="card-arrow" style="color:#7E57C2">→ Practice Now</div>
+  </a>
+  <a class="card" href="topic_19.html" style="background:#FFF0F5; border-left:6px solid #D81B60;">
+    <div class="card-num" style="color:#D81B60">Topic 19</div>
+    <div class="card-title">Building</div>
+    <div class="card-meta">2 Questions · 8 Phrasal Verbs · 10 Collocations</div>
+    <div class="card-arrow" style="color:#D81B60">→ Practice Now</div>
+  </a>
+  <a class="card" href="topic_20.html" style="background:#EDFAFF; border-left:6px solid #00ACC1;">
+    <div class="card-num" style="color:#00ACC1">Topic 20</div>
+    <div class="card-title">Reading</div>
+    <div class="card-meta">2 Questions · 8 Phrasal Verbs · 10 Collocations</div>
+    <div class="card-arrow" style="color:#00ACC1">→ Practice Now</div>
+  </a>
+  <a class="card" href="topic_21.html" style="background:#EDFAEE; border-left:6px solid #43A047;">
+    <div class="card-num" style="color:#43A047">Topic 21</div>
+    <div class="card-title">Sports Team</div>
+    <div class="card-meta">2 Questions · 8 Phrasal Verbs · 10 Collocations</div>
+    <div class="card-arrow" style="color:#43A047">→ Practice Now</div>
+  </a>
+  <a class="card" href="topic_22.html" style="background:#FFF8EE; border-left:6px solid #FB8C00;">
+    <div class="card-num" style="color:#FB8C00">Topic 22</div>
+    <div class="card-title">Walking</div>
+    <div class="card-meta">2 Questions · 8 Phrasal Verbs · 10 Collocations</div>
+    <div class="card-arrow" style="color:#FB8C00">→ Practice Now</div>
+  </a>
+  <a class="card" href="topic_23.html" style="background:#FFF0EF; border-left:6px solid #E53935;">
+    <div class="card-num" style="color:#E53935">Topic 23</div>
+    <div class="card-title">Typing</div>
+    <div class="card-meta">2 Questions · 8 Phrasal Verbs · 10 Collocations</div>
+    <div class="card-arrow" style="color:#E53935">→ Practice Now</div>
+  </a>
+  <a class="card" href="topic_24.html" style="background:#EEEEFF; border-left:6px solid #3949AB;">
+    <div class="card-num" style="color:#3949AB">Topic 24</div>
+    <div class="card-title">Food</div>
+    <div class="card-meta">2 Questions · 8 Phrasal Verbs · 10 Collocations</div>
+    <div class="card-arrow" style="color:#3949AB">→ Practice Now</div>
+  </a>
+  <a class="card" href="topic_25.html" style="background:#EDFAFC; border-left:6px solid #00838F;">
+    <div class="card-num" style="color:#00838F">Topic 25</div>
+    <div class="card-title">Hobby</div>
+    <div class="card-meta">2 Questions · 8 Phrasal Verbs · 10 Collocations</div>
+    <div class="card-arrow" style="color:#00838F">→ Practice Now</div>
+  </a>
+  <a class="card" href="topic_26.html" style="background:#F8F3EF; border-left:6px solid #6D4C41;">
+    <div class="card-num" style="color:#6D4C41">Topic 26</div>
+    <div class="card-title">Life Stages</div>
+    <div class="card-meta">2 Questions · 8 Phrasal Verbs · 10 Collocations</div>
+    <div class="card-arrow" style="color:#6D4C41">→ Practice Now</div>
+  </a>
+  <a class="card" href="topic_27.html" style="background:#EEF4FF; border-left:6px solid #1E88E5;">
+    <div class="card-num" style="color:#1E88E5">Topic 27</div>
+    <div class="card-title">Gifts</div>
+    <div class="card-meta">2 Questions · 8 Phrasal Verbs · 10 Collocations</div>
+    <div class="card-arrow" style="color:#1E88E5">→ Practice Now</div>
+  </a>
+  <a class="card" href="topic_28.html" style="background:#F8EEFF; border-left:6px solid #8E24AA;">
+    <div class="card-num" style="color:#8E24AA">Topic 28</div>
+    <div class="card-title">The City You Live In</div>
+    <div class="card-meta">2 Questions · 8 Phrasal Verbs · 10 Collocations</div>
+    <div class="card-arrow" style="color:#8E24AA">→ Practice Now</div>
+  </a>
+  <a class="card" href="topic_29.html" style="background:#FFF3EE; border-left:6px solid #F4511E;">
+    <div class="card-num" style="color:#F4511E">Topic 29</div>
+    <div class="card-title">Day Off</div>
+    <div class="card-meta">2 Questions · 8 Phrasal Verbs · 10 Collocations</div>
+    <div class="card-arrow" style="color:#F4511E">→ Practice Now</div>
+  </a>
+  <a class="card" href="topic_30.html" style="background:#EDFAFF; border-left:6px solid #0097A7;">
+    <div class="card-num" style="color:#0097A7">Topic 30</div>
+    <div class="card-title">Morning Time</div>
+    <div class="card-meta">2 Questions · 8 Phrasal Verbs · 10 Collocations</div>
+    <div class="card-arrow" style="color:#0097A7">→ Practice Now</div>
+  </a>
+  <a class="card" href="topic_31.html" style="background:#F4FAEE; border-left:6px solid #558B2F;">
+    <div class="card-num" style="color:#558B2F">Topic 31</div>
+    <div class="card-title">Dreams (Sleeping)</div>
+    <div class="card-meta">2 Questions · 8 Phrasal Verbs · 10 Collocations</div>
+    <div class="card-arrow" style="color:#558B2F">→ Practice Now</div>
+  </a>
+  <a class="card" href="topic_32.html" style="background:#F3EEFF; border-left:6px solid #6A1B9A;">
+    <div class="card-num" style="color:#6A1B9A">Topic 32</div>
+    <div class="card-title">Pets and Animals</div>
+    <div class="card-meta">2 Questions · 8 Phrasal Verbs · 10 Collocations</div>
+    <div class="card-arrow" style="color:#6A1B9A">→ Practice Now</div>
+  </a>
+  <a class="card" href="topic_33.html" style="background:#FFF0F5; border-left:6px solid #AD1457;">
+    <div class="card-num" style="color:#AD1457">Topic 33</div>
+    <div class="card-title">Work or Studies</div>
+    <div class="card-meta">2 Questions · 8 Phrasal Verbs · 10 Collocations</div>
+    <div class="card-arrow" style="color:#AD1457">→ Practice Now</div>
+  </a>
+  <a class="card" href="topic_34.html" style="background:#EDFAF8; border-left:6px solid #00695C;">
+    <div class="card-num" style="color:#00695C">Topic 34</div>
+    <div class="card-title">Home & Accommodation</div>
+    <div class="card-meta">2 Questions · 8 Phrasal Verbs · 10 Collocations</div>
+    <div class="card-arrow" style="color:#00695C">→ Practice Now</div>
+  </a>
+  <a class="card" href="topic_35.html" style="background:#EEEEFF; border-left:6px solid #4527A0;">
+    <div class="card-num" style="color:#4527A0">Topic 35</div>
+    <div class="card-title">Hometown</div>
+    <div class="card-meta">2 Questions · 8 Phrasal Verbs · 10 Collocations</div>
+    <div class="card-arrow" style="color:#4527A0">→ Practice Now</div>
+  </a>
+  <a class="card" href="topic_36.html" style="background:#EDFAEE; border-left:6px solid #2E7D32;">
+    <div class="card-num" style="color:#2E7D32">Topic 36</div>
+    <div class="card-title">The Area You Live In</div>
+    <div class="card-meta">2 Questions · 8 Phrasal Verbs · 10 Collocations</div>
+    <div class="card-arrow" style="color:#2E7D32">→ Practice Now</div>
+  </a>
+</div>
+
+<div class="section-header">
+  <h2>🗣 Speaking Part 2 — Cue Cards</h2>
+  <p>53 cue cards · Speech outline, preparation timer, vocabulary flashcards &amp; Band 7+ sample speeches</p>
+</div>
+<hr class="section-divider">
+<div class="grid">
+  <a class="card" href="cue_card_01.html" style="background:#FFF0F5; border-left:6px solid #E91E63;">
+    <div class="card-num" style="color:#E91E63">Cue Card 1</div>
+    <div class="card-title">Describe a special cake you received from others</div>
+    <div class="card-meta">Narrative / Personal Experience · 20 Vocab Items</div>
+    <div class="card-arrow" style="color:#E91E63">→ Practice Now</div>
+  </a>
+  <a class="card" href="cue_card_02.html" style="background:#F8EEFF; border-left:6px solid #9C27B0;">
+    <div class="card-num" style="color:#9C27B0">Cue Card 2</div>
+    <div class="card-title">Describe a time when you had a problem using an electronic device</div>
+    <div class="card-meta">Narrative / Problem-Solution · 22 Vocab Items</div>
+    <div class="card-arrow" style="color:#9C27B0">→ Practice Now</div>
+  </a>
+  <a class="card" href="cue_card_03.html" style="background:#EEEEFF; border-left:6px solid #673AB7;">
+    <div class="card-num" style="color:#673AB7">Cue Card 3</div>
+    <div class="card-title">Describe a TV show/online program you have watched recently</div>
+    <div class="card-meta">Descriptive / Opinion · 22 Vocab Items</div>
+    <div class="card-arrow" style="color:#673AB7">→ Practice Now</div>
+  </a>
+  <a class="card" href="cue_card_04.html" style="background:#EEF4FF; border-left:6px solid #3F51B5;">
+    <div class="card-num" style="color:#3F51B5">Cue Card 4</div>
+    <div class="card-title">Describe an advertisement with a famous person in it</div>
+    <div class="card-meta">Descriptive / Opinion · 21 Vocab Items</div>
+    <div class="card-arrow" style="color:#3F51B5">→ Practice Now</div>
+  </a>
+  <a class="card" href="cue_card_05.html" style="background:#E3F2FD; border-left:6px solid #2196F3;">
+    <div class="card-num" style="color:#2196F3">Cue Card 5</div>
+    <div class="card-title">Describe a place you have travelled to that you would like to</div>
+    <div class="card-meta">Descriptive / Recommendation · 22 Vocab Items</div>
+    <div class="card-arrow" style="color:#2196F3">→ Practice Now</div>
+  </a>
+  <a class="card" href="cue_card_06.html" style="background:#E0F7FA; border-left:6px solid #00BCD4;">
+    <div class="card-num" style="color:#00BCD4">Cue Card 6</div>
+    <div class="card-title">Describe a challenging technological problem you faced</div>
+    <div class="card-meta">Narrative / Problem-Solution · 22 Vocab Items</div>
+    <div class="card-arrow" style="color:#00BCD4">→ Practice Now</div>
+  </a>
+  <a class="card" href="cue_card_07.html" style="background:#E0F2F1; border-left:6px solid #009688;">
+    <div class="card-num" style="color:#009688">Cue Card 7</div>
+    <div class="card-title">Describe a person who is good at learning and speaking new</div>
+    <div class="card-meta">Descriptive / Person · 21 Vocab Items</div>
+    <div class="card-arrow" style="color:#009688">→ Practice Now</div>
+  </a>
+  <a class="card" href="cue_card_08.html" style="background:#E8F5E9; border-left:6px solid #4CAF50;">
+    <div class="card-num" style="color:#4CAF50">Cue Card 8</div>
+    <div class="card-title">Describe a person who works in a successful company</div>
+    <div class="card-meta">Descriptive / Person & Organisation · 21 Vocab Items</div>
+    <div class="card-arrow" style="color:#4CAF50">→ Practice Now</div>
+  </a>
+  <a class="card" href="cue_card_09.html" style="background:#F1F8E9; border-left:6px solid #8BC34A;">
+    <div class="card-num" style="color:#8BC34A">Cue Card 9</div>
+    <div class="card-title">Describe a place you would like to visit in your free time</div>
+    <div class="card-meta">Descriptive / Aspiration · 21 Vocab Items</div>
+    <div class="card-arrow" style="color:#8BC34A">→ Practice Now</div>
+  </a>
+  <a class="card" href="cue_card_10.html" style="background:#FFF8E1; border-left:6px solid #FF9800;">
+    <div class="card-num" style="color:#FF9800">Cue Card 10</div>
+    <div class="card-title">Describe a food that people eat on special occasions/events</div>
+    <div class="card-meta">Descriptive / Cultural · 22 Vocab Items</div>
+    <div class="card-arrow" style="color:#FF9800">→ Practice Now</div>
+  </a>
+  <a class="card" href="cue_card_11.html" style="background:#FBE9E7; border-left:6px solid #FF5722;">
+    <div class="card-num" style="color:#FF5722">Cue Card 11</div>
+    <div class="card-title">Describe a live sports event you watched and liked</div>
+    <div class="card-meta">Narrative / Personal Experience · 21 Vocab Items</div>
+    <div class="card-arrow" style="color:#FF5722">→ Practice Now</div>
+  </a>
+  <a class="card" href="cue_card_12.html" style="background:#EFEBE9; border-left:6px solid #795548;">
+    <div class="card-num" style="color:#795548">Cue Card 12</div>
+    <div class="card-title">Describe a person you know who would like to choose a career in the</div>
+    <div class="card-meta">Descriptive / Person · 16 Vocab Items</div>
+    <div class="card-arrow" style="color:#795548">→ Practice Now</div>
+  </a>
+  <a class="card" href="cue_card_13.html" style="background:#FFF0F5; border-left:6px solid #E91E63;">
+    <div class="card-num" style="color:#E91E63">Cue Card 13</div>
+    <div class="card-title">Describe a time when you worked in a group</div>
+    <div class="card-meta">Narrative / Personal Experience · 21 Vocab Items</div>
+    <div class="card-arrow" style="color:#E91E63">→ Practice Now</div>
+  </a>
+  <a class="card" href="cue_card_14.html" style="background:#F8EEFF; border-left:6px solid #9C27B0;">
+    <div class="card-num" style="color:#9C27B0">Cue Card 14</div>
+    <div class="card-title">Describe a person you know who has a successful business</div>
+    <div class="card-meta">Descriptive / Person & Business · 22 Vocab Items</div>
+    <div class="card-arrow" style="color:#9C27B0">→ Practice Now</div>
+  </a>
+  <a class="card" href="cue_card_15.html" style="background:#EEEEFF; border-left:6px solid #673AB7;">
+    <div class="card-num" style="color:#673AB7">Cue Card 15</div>
+    <div class="card-title">Describe a person who loves to grow plants at home or in the garden</div>
+    <div class="card-meta">Descriptive / Person & Hobby · 22 Vocab Items</div>
+    <div class="card-arrow" style="color:#673AB7">→ Practice Now</div>
+  </a>
+  <a class="card" href="cue_card_16.html" style="background:#EEF4FF; border-left:6px solid #3F51B5;">
+    <div class="card-num" style="color:#3F51B5">Cue Card 16</div>
+    <div class="card-title">Describe your favourite city that you have visited</div>
+    <div class="card-meta">Descriptive / Travel · 16 Vocab Items</div>
+    <div class="card-arrow" style="color:#3F51B5">→ Practice Now</div>
+  </a>
+  <a class="card" href="cue_card_17.html" style="background:#E3F2FD; border-left:6px solid #2196F3;">
+    <div class="card-num" style="color:#2196F3">Cue Card 17</div>
+    <div class="card-title">Describe an interesting video</div>
+    <div class="card-meta">Descriptive / Opinion · 21 Vocab Items</div>
+    <div class="card-arrow" style="color:#2196F3">→ Practice Now</div>
+  </a>
+  <a class="card" href="cue_card_18.html" style="background:#E0F7FA; border-left:6px solid #00BCD4;">
+    <div class="card-num" style="color:#00BCD4">Cue Card 18</div>
+    <div class="card-title">Describe a tall building you like or dislike</div>
+    <div class="card-meta">Descriptive / Opinion · 21 Vocab Items</div>
+    <div class="card-arrow" style="color:#00BCD4">→ Practice Now</div>
+  </a>
+  <a class="card" href="cue_card_19.html" style="background:#E0F2F1; border-left:6px solid #009688;">
+    <div class="card-num" style="color:#009688">Cue Card 19</div>
+    <div class="card-title">Describe a boring place</div>
+    <div class="card-meta">Descriptive / Opinion · 19 Vocab Items</div>
+    <div class="card-arrow" style="color:#009688">→ Practice Now</div>
+  </a>
+  <a class="card" href="cue_card_20.html" style="background:#E8F5E9; border-left:6px solid #4CAF50;">
+    <div class="card-num" style="color:#4CAF50">Cue Card 20</div>
+    <div class="card-title">Describe a plan that you had to change recently</div>
+    <div class="card-meta">Narrative / Personal Experience · 15 Vocab Items</div>
+    <div class="card-arrow" style="color:#4CAF50">→ Practice Now</div>
+  </a>
+  <a class="card" href="cue_card_21.html" style="background:#F1F8E9; border-left:6px solid #8BC34A;">
+    <div class="card-num" style="color:#8BC34A">Cue Card 21</div>
+    <div class="card-title">Describe a new law you would like to introduce in your country</div>
+    <div class="card-meta">Opinion / Hypothetical · 22 Vocab Items</div>
+    <div class="card-arrow" style="color:#8BC34A">→ Practice Now</div>
+  </a>
+  <a class="card" href="cue_card_22.html" style="background:#FFF8E1; border-left:6px solid #FF9800;">
+    <div class="card-num" style="color:#FF9800">Cue Card 22</div>
+    <div class="card-title">Describe an important decision that you made</div>
+    <div class="card-meta">Narrative / Personal Experience · 20 Vocab Items</div>
+    <div class="card-arrow" style="color:#FF9800">→ Practice Now</div>
+  </a>
+  <a class="card" href="cue_card_23.html" style="background:#FBE9E7; border-left:6px solid #FF5722;">
+    <div class="card-num" style="color:#FF5722">Cue Card 23</div>
+    <div class="card-title">Describe a friend from your childhood</div>
+    <div class="card-meta">Narrative / Descriptive · 21 Vocab Items</div>
+    <div class="card-arrow" style="color:#FF5722">→ Practice Now</div>
+  </a>
+  <a class="card" href="cue_card_24.html" style="background:#EFEBE9; border-left:6px solid #795548;">
+    <div class="card-num" style="color:#795548">Cue Card 24</div>
+    <div class="card-title">Describe a thing you did to learn another language</div>
+    <div class="card-meta">Narrative / Personal Experience · 21 Vocab Items</div>
+    <div class="card-arrow" style="color:#795548">→ Practice Now</div>
+  </a>
+  <a class="card" href="cue_card_25.html" style="background:#FFF0F5; border-left:6px solid #E91E63;">
+    <div class="card-num" style="color:#E91E63">Cue Card 25</div>
+    <div class="card-title">Describe a time when you got up early</div>
+    <div class="card-meta">Narrative / Personal Experience · 21 Vocab Items</div>
+    <div class="card-arrow" style="color:#E91E63">→ Practice Now</div>
+  </a>
+  <a class="card" href="cue_card_26.html" style="background:#F8EEFF; border-left:6px solid #9C27B0;">
+    <div class="card-num" style="color:#9C27B0">Cue Card 26</div>
+    <div class="card-title">Describe a home that you like to visit but do not want to live in</div>
+    <div class="card-meta">Descriptive / Opinion · 22 Vocab Items</div>
+    <div class="card-arrow" style="color:#9C27B0">→ Practice Now</div>
+  </a>
+  <a class="card" href="cue_card_27.html" style="background:#EEEEFF; border-left:6px solid #673AB7;">
+    <div class="card-num" style="color:#673AB7">Cue Card 27</div>
+    <div class="card-title">Describe an important river/lake in your country</div>
+    <div class="card-meta">Descriptive / Factual · 15 Vocab Items</div>
+    <div class="card-arrow" style="color:#673AB7">→ Practice Now</div>
+  </a>
+  <a class="card" href="cue_card_28.html" style="background:#EEF4FF; border-left:6px solid #3F51B5;">
+    <div class="card-num" style="color:#3F51B5">Cue Card 28</div>
+    <div class="card-title">Describe a city you enjoyed visiting</div>
+    <div class="card-meta">Descriptive / Travel · 22 Vocab Items</div>
+    <div class="card-arrow" style="color:#3F51B5">→ Practice Now</div>
+  </a>
+  <a class="card" href="cue_card_29.html" style="background:#E3F2FD; border-left:6px solid #2196F3;">
+    <div class="card-num" style="color:#2196F3">Cue Card 29</div>
+    <div class="card-title">Describe a person who likes to look after the natural world</div>
+    <div class="card-meta">Descriptive / Person · 22 Vocab Items</div>
+    <div class="card-arrow" style="color:#2196F3">→ Practice Now</div>
+  </a>
+  <a class="card" href="cue_card_30.html" style="background:#E0F7FA; border-left:6px solid #00BCD4;">
+    <div class="card-num" style="color:#00BCD4">Cue Card 30</div>
+    <div class="card-title">Describe a short-term job you want to have in a foreign country</div>
+    <div class="card-meta">Opinion / Aspiration · 22 Vocab Items</div>
+    <div class="card-arrow" style="color:#00BCD4">→ Practice Now</div>
+  </a>
+  <a class="card" href="cue_card_31.html" style="background:#E0F2F1; border-left:6px solid #009688;">
+    <div class="card-num" style="color:#009688">Cue Card 31</div>
+    <div class="card-title">Describe a time when you gave advice to others</div>
+    <div class="card-meta">Narrative / Personal Experience · 21 Vocab Items</div>
+    <div class="card-arrow" style="color:#009688">→ Practice Now</div>
+  </a>
+  <a class="card" href="cue_card_32.html" style="background:#E8F5E9; border-left:6px solid #4CAF50;">
+    <div class="card-num" style="color:#4CAF50">Cue Card 32</div>
+    <div class="card-title">Describe a person who often helps others</div>
+    <div class="card-meta">Descriptive / Person · 22 Vocab Items</div>
+    <div class="card-arrow" style="color:#4CAF50">→ Practice Now</div>
+  </a>
+  <a class="card" href="cue_card_33.html" style="background:#F1F8E9; border-left:6px solid #8BC34A;">
+    <div class="card-num" style="color:#8BC34A">Cue Card 33</div>
+    <div class="card-title">Describe an event you attended in which you did not enjoy the music</div>
+    <div class="card-meta">Narrative / Personal Experience · 22 Vocab Items</div>
+    <div class="card-arrow" style="color:#8BC34A">→ Practice Now</div>
+  </a>
+  <a class="card" href="cue_card_34.html" style="background:#FFF8E1; border-left:6px solid #FF9800;">
+    <div class="card-num" style="color:#FF9800">Cue Card 34</div>
+    <div class="card-title">Describe one of your friends who learned something without a</div>
+    <div class="card-meta">Descriptive / Person · 21 Vocab Items</div>
+    <div class="card-arrow" style="color:#FF9800">→ Practice Now</div>
+  </a>
+  <a class="card" href="cue_card_35.html" style="background:#FBE9E7; border-left:6px solid #FF5722;">
+    <div class="card-num" style="color:#FF5722">Cue Card 35</div>
+    <div class="card-title">Describe a piece of technology (not a phone) that you would like to</div>
+    <div class="card-meta">Opinion / Aspiration · 21 Vocab Items</div>
+    <div class="card-arrow" style="color:#FF5722">→ Practice Now</div>
+  </a>
+  <a class="card" href="cue_card_36.html" style="background:#EFEBE9; border-left:6px solid #795548;">
+    <div class="card-num" style="color:#795548">Cue Card 36</div>
+    <div class="card-title">Describe a perfect job you would like to have in the future</div>
+    <div class="card-meta">Opinion / Aspiration · 21 Vocab Items</div>
+    <div class="card-arrow" style="color:#795548">→ Practice Now</div>
+  </a>
+  <a class="card" href="cue_card_37.html" style="background:#FFF0F5; border-left:6px solid #E91E63;">
+    <div class="card-num" style="color:#E91E63">Cue Card 37</div>
+    <div class="card-title">Describe a child who loves drawing/painting</div>
+    <div class="card-meta">Descriptive / Person · 22 Vocab Items</div>
+    <div class="card-arrow" style="color:#E91E63">→ Practice Now</div>
+  </a>
+  <a class="card" href="cue_card_38.html" style="background:#F8EEFF; border-left:6px solid #9C27B0;">
+    <div class="card-num" style="color:#9C27B0">Cue Card 38</div>
+    <div class="card-title">Describe a program or app on your computer or phone</div>
+    <div class="card-meta">Descriptive / Opinion · 22 Vocab Items</div>
+    <div class="card-arrow" style="color:#9C27B0">→ Practice Now</div>
+  </a>
+  <a class="card" href="cue_card_39.html" style="background:#EEEEFF; border-left:6px solid #673AB7;">
+    <div class="card-num" style="color:#673AB7">Cue Card 39</div>
+    <div class="card-title">Describe a person who makes plans a lot and is good at planning</div>
+    <div class="card-meta">Descriptive / Person · 22 Vocab Items</div>
+    <div class="card-arrow" style="color:#673AB7">→ Practice Now</div>
+  </a>
+  <a class="card" href="cue_card_40.html" style="background:#EEF4FF; border-left:6px solid #3F51B5;">
+    <div class="card-num" style="color:#3F51B5">Cue Card 40</div>
+    <div class="card-title">Describe a famous person you would like to meet</div>
+    <div class="card-meta">Opinion / Aspiration · 15 Vocab Items</div>
+    <div class="card-arrow" style="color:#3F51B5">→ Practice Now</div>
+  </a>
+  <a class="card" href="cue_card_41.html" style="background:#E3F2FD; border-left:6px solid #2196F3;">
+    <div class="card-num" style="color:#2196F3">Cue Card 41</div>
+    <div class="card-title">Describe an interesting building</div>
+    <div class="card-meta">Descriptive / Opinion · 21 Vocab Items</div>
+    <div class="card-arrow" style="color:#2196F3">→ Practice Now</div>
+  </a>
+  <a class="card" href="cue_card_42.html" style="background:#E0F7FA; border-left:6px solid #00BCD4;">
+    <div class="card-num" style="color:#00BCD4">Cue Card 42</div>
+    <div class="card-title">Describe a movie you watched and enjoyed recently</div>
+    <div class="card-meta">Descriptive / Opinion · 22 Vocab Items</div>
+    <div class="card-arrow" style="color:#00BCD4">→ Practice Now</div>
+  </a>
+  <a class="card" href="cue_card_43.html" style="background:#E0F2F1; border-left:6px solid #009688;">
+    <div class="card-num" style="color:#009688">Cue Card 43</div>
+    <div class="card-title">Describe something that you cannot live without (not a</div>
+    <div class="card-meta">Descriptive / Personal · 21 Vocab Items</div>
+    <div class="card-arrow" style="color:#009688">→ Practice Now</div>
+  </a>
+  <a class="card" href="cue_card_44.html" style="background:#E8F5E9; border-left:6px solid #4CAF50;">
+    <div class="card-num" style="color:#4CAF50">Cue Card 44</div>
+    <div class="card-title">Describe a city that you think is very interesting/famous</div>
+    <div class="card-meta">Descriptive / Opinion · 21 Vocab Items</div>
+    <div class="card-arrow" style="color:#4CAF50">→ Practice Now</div>
+  </a>
+  <a class="card" href="cue_card_45.html" style="background:#F1F8E9; border-left:6px solid #8BC34A;">
+    <div class="card-num" style="color:#8BC34A">Cue Card 45</div>
+    <div class="card-title">Describe an item on which you spent more than expected</div>
+    <div class="card-meta">Narrative / Personal Experience · 20 Vocab Items</div>
+    <div class="card-arrow" style="color:#8BC34A">→ Practice Now</div>
+  </a>
+  <a class="card" href="cue_card_46.html" style="background:#FFF8E1; border-left:6px solid #FF9800;">
+    <div class="card-num" style="color:#FF9800">Cue Card 46</div>
+    <div class="card-title">Describe a time when you felt proud of a family member</div>
+    <div class="card-meta">Narrative / Personal Experience · 15 Vocab Items</div>
+    <div class="card-arrow" style="color:#FF9800">→ Practice Now</div>
+  </a>
+  <a class="card" href="cue_card_47.html" style="background:#FBE9E7; border-left:6px solid #FF5722;">
+    <div class="card-num" style="color:#FF5722">Cue Card 47</div>
+    <div class="card-title">Describe a bicycle/motorcycle/car trip you would like to go on</div>
+    <div class="card-meta">Opinion / Aspiration · 22 Vocab Items</div>
+    <div class="card-arrow" style="color:#FF5722">→ Practice Now</div>
+  </a>
+  <a class="card" href="cue_card_48.html" style="background:#EFEBE9; border-left:6px solid #795548;">
+    <div class="card-num" style="color:#795548">Cue Card 48</div>
+    <div class="card-title">Describe a person who solved a problem in a smart way</div>
+    <div class="card-meta">Narrative / Descriptive · 21 Vocab Items</div>
+    <div class="card-arrow" style="color:#795548">→ Practice Now</div>
+  </a>
+  <a class="card" href="cue_card_49.html" style="background:#FFF0F5; border-left:6px solid #E91E63;">
+    <div class="card-num" style="color:#E91E63">Cue Card 49</div>
+    <div class="card-title">Describe an occasion when many people were smiling</div>
+    <div class="card-meta">Narrative / Personal Experience · 20 Vocab Items</div>
+    <div class="card-arrow" style="color:#E91E63">→ Practice Now</div>
+  </a>
+  <a class="card" href="cue_card_50.html" style="background:#F8EEFF; border-left:6px solid #9C27B0;">
+    <div class="card-num" style="color:#9C27B0">Cue Card 50</div>
+    <div class="card-title">Describe an occasion when you were not allowed to use your mobile</div>
+    <div class="card-meta">Narrative / Personal Experience · 22 Vocab Items</div>
+    <div class="card-arrow" style="color:#9C27B0">→ Practice Now</div>
+  </a>
+  <a class="card" href="cue_card_51.html" style="background:#EEEEFF; border-left:6px solid #673AB7;">
+    <div class="card-num" style="color:#673AB7">Cue Card 51</div>
+    <div class="card-title">Describe a time when you encouraged someone to do something</div>
+    <div class="card-meta">Narrative / Personal Experience · 21 Vocab Items</div>
+    <div class="card-arrow" style="color:#673AB7">→ Practice Now</div>
+  </a>
+  <a class="card" href="cue_card_52.html" style="background:#EEF4FF; border-left:6px solid #3F51B5;">
+    <div class="card-num" style="color:#3F51B5">Cue Card 52</div>
+    <div class="card-title">Describe something important that has been kept in your family for a</div>
+    <div class="card-meta">Descriptive / Personal · 21 Vocab Items</div>
+    <div class="card-arrow" style="color:#3F51B5">→ Practice Now</div>
+  </a>
+  <a class="card" href="cue_card_53.html" style="background:#E3F2FD; border-left:6px solid #2196F3;">
+    <div class="card-num" style="color:#2196F3">Cue Card 53</div>
+    <div class="card-title">Describe a time you needed to use your imagination</div>
+    <div class="card-meta">Narrative / Personal Experience · 16 Vocab Items</div>
+    <div class="card-arrow" style="color:#2196F3">→ Practice Now</div>
+  </a>
+</div>
+
+<div class="section-header">
+  <h2>🗣 Speaking Part 3 — Discussion Questions</h2>
+  <p>22 topics · In-depth discussion questions with ideas, strategies &amp; Band 7+ model answers</p>
+</div>
+<hr class="section-divider">
+<div class="grid">
+  <a class="card" href="part3_01.html" style="background:#E3F2FD; border-left:6px solid #1565C0;">
+    <div class="card-num" style="color:#1565C0">Part 3 · Topic 1</div>
+    <div class="card-title">Food & Special Occasions</div>
+    <div class="card-meta">4 Discussion Questions · Ideas + Strategy + Band 7+ Answers</div>
+    <div class="card-arrow" style="color:#1565C0">→ Practice Now</div>
+  </a>
+  <a class="card" href="part3_02.html" style="background:#F3E5F5; border-left:6px solid #6A1B9A;">
+    <div class="card-num" style="color:#6A1B9A">Part 3 · Topic 2</div>
+    <div class="card-title">Electronic Devices & Technology</div>
+    <div class="card-meta">4 Discussion Questions · Ideas + Strategy + Band 7+ Answers</div>
+    <div class="card-arrow" style="color:#6A1B9A">→ Practice Now</div>
+  </a>
+  <a class="card" href="part3_03.html" style="background:#E0F2F1; border-left:6px solid #00695C;">
+    <div class="card-num" style="color:#00695C">Part 3 · Topic 3</div>
+    <div class="card-title">TV Programs & Media</div>
+    <div class="card-meta">2 Discussion Questions · Ideas + Strategy + Band 7+ Answers</div>
+    <div class="card-arrow" style="color:#00695C">→ Practice Now</div>
+  </a>
+  <a class="card" href="part3_04.html" style="background:#FBE9E7; border-left:6px solid #BF360C;">
+    <div class="card-num" style="color:#BF360C">Part 3 · Topic 4</div>
+    <div class="card-title">Advertising</div>
+    <div class="card-meta">3 Discussion Questions · Ideas + Strategy + Band 7+ Answers</div>
+    <div class="card-arrow" style="color:#BF360C">→ Practice Now</div>
+  </a>
+  <a class="card" href="part3_05.html" style="background:#E8F5E9; border-left:6px solid #1B5E20;">
+    <div class="card-num" style="color:#1B5E20">Part 3 · Topic 5</div>
+    <div class="card-title">Travel & Holidays</div>
+    <div class="card-meta">2 Discussion Questions · Ideas + Strategy + Band 7+ Answers</div>
+    <div class="card-arrow" style="color:#1B5E20">→ Practice Now</div>
+  </a>
+  <a class="card" href="part3_06.html" style="background:#EDE7F6; border-left:6px solid #4A148C;">
+    <div class="card-num" style="color:#4A148C">Part 3 · Topic 6</div>
+    <div class="card-title">Language Learning</div>
+    <div class="card-meta">3 Discussion Questions · Ideas + Strategy + Band 7+ Answers</div>
+    <div class="card-arrow" style="color:#4A148C">→ Practice Now</div>
+  </a>
+  <a class="card" href="part3_07.html" style="background:#E0F7FA; border-left:6px solid #006064;">
+    <div class="card-num" style="color:#006064">Part 3 · Topic 7</div>
+    <div class="card-title">Time Management & Daily Habits</div>
+    <div class="card-meta">2 Discussion Questions · Ideas + Strategy + Band 7+ Answers</div>
+    <div class="card-arrow" style="color:#006064">→ Practice Now</div>
+  </a>
+  <a class="card" href="part3_08.html" style="background:#FFF3E0; border-left:6px solid #E65100;">
+    <div class="card-num" style="color:#E65100">Part 3 · Topic 8</div>
+    <div class="card-title">Homes & Living Environments</div>
+    <div class="card-meta">2 Discussion Questions · Ideas + Strategy + Band 7+ Answers</div>
+    <div class="card-arrow" style="color:#E65100">→ Practice Now</div>
+  </a>
+  <a class="card" href="part3_09.html" style="background:#FCE4EC; border-left:6px solid #880E4F;">
+    <div class="card-num" style="color:#880E4F">Part 3 · Topic 9</div>
+    <div class="card-title">Environment & Natural World</div>
+    <div class="card-meta">3 Discussion Questions · Ideas + Strategy + Band 7+ Answers</div>
+    <div class="card-arrow" style="color:#880E4F">→ Practice Now</div>
+  </a>
+  <a class="card" href="part3_10.html" style="background:#F1F8E9; border-left:6px solid #33691E;">
+    <div class="card-num" style="color:#33691E">Part 3 · Topic 10</div>
+    <div class="card-title">Work, Careers & Business</div>
+    <div class="card-meta">3 Discussion Questions · Ideas + Strategy + Band 7+ Answers</div>
+    <div class="card-arrow" style="color:#33691E">→ Practice Now</div>
+  </a>
+  <a class="card" href="part3_11.html" style="background:#E8EAF6; border-left:6px solid #0D47A1;">
+    <div class="card-num" style="color:#0D47A1">Part 3 · Topic 11</div>
+    <div class="card-title">Education & Learning</div>
+    <div class="card-meta">3 Discussion Questions · Ideas + Strategy + Band 7+ Answers</div>
+    <div class="card-arrow" style="color:#0D47A1">→ Practice Now</div>
+  </a>
+  <a class="card" href="part3_12.html" style="background:#EFEBE9; border-left:6px solid #4E342E;">
+    <div class="card-num" style="color:#4E342E">Part 3 · Topic 12</div>
+    <div class="card-title">Cities & Urban Life</div>
+    <div class="card-meta">2 Discussion Questions · Ideas + Strategy + Band 7+ Answers</div>
+    <div class="card-arrow" style="color:#4E342E">→ Practice Now</div>
+  </a>
+  <a class="card" href="part3_13.html" style="background:#ECEFF1; border-left:6px solid #37474F;">
+    <div class="card-num" style="color:#37474F">Part 3 · Topic 13</div>
+    <div class="card-title">Arts, Creativity & Imagination</div>
+    <div class="card-meta">3 Discussion Questions · Ideas + Strategy + Band 7+ Answers</div>
+    <div class="card-arrow" style="color:#37474F">→ Practice Now</div>
+  </a>
+  <a class="card" href="part3_14.html" style="background:#E3F2FD; border-left:6px solid #1565C0;">
+    <div class="card-num" style="color:#1565C0">Part 3 · Topic 14</div>
+    <div class="card-title">Technology & Communication</div>
+    <div class="card-meta">2 Discussion Questions · Ideas + Strategy + Band 7+ Answers</div>
+    <div class="card-arrow" style="color:#1565C0">→ Practice Now</div>
+  </a>
+  <a class="card" href="part3_15.html" style="background:#F3E5F5; border-left:6px solid #6A1B9A;">
+    <div class="card-num" style="color:#6A1B9A">Part 3 · Topic 15</div>
+    <div class="card-title">Planning & Decision-Making</div>
+    <div class="card-meta">2 Discussion Questions · Ideas + Strategy + Band 7+ Answers</div>
+    <div class="card-arrow" style="color:#6A1B9A">→ Practice Now</div>
+  </a>
+  <a class="card" href="part3_16.html" style="background:#E0F2F1; border-left:6px solid #00695C;">
+    <div class="card-num" style="color:#00695C">Part 3 · Topic 16</div>
+    <div class="card-title">Social Behaviour & Interpersonal Skills</div>
+    <div class="card-meta">2 Discussion Questions · Ideas + Strategy + Band 7+ Answers</div>
+    <div class="card-arrow" style="color:#00695C">→ Practice Now</div>
+  </a>
+  <a class="card" href="part3_17.html" style="background:#FBE9E7; border-left:6px solid #BF360C;">
+    <div class="card-num" style="color:#BF360C">Part 3 · Topic 17</div>
+    <div class="card-title">Museums, Heritage & Cultural Preservation</div>
+    <div class="card-meta">2 Discussion Questions · Ideas + Strategy + Band 7+ Answers</div>
+    <div class="card-arrow" style="color:#BF360C">→ Practice Now</div>
+  </a>
+  <a class="card" href="part3_18.html" style="background:#E8F5E9; border-left:6px solid #1B5E20;">
+    <div class="card-num" style="color:#1B5E20">Part 3 · Topic 18</div>
+    <div class="card-title">Happiness, Emotions & Social Expression</div>
+    <div class="card-meta">2 Discussion Questions · Ideas + Strategy + Band 7+ Answers</div>
+    <div class="card-arrow" style="color:#1B5E20">→ Practice Now</div>
+  </a>
+  <a class="card" href="part3_19.html" style="background:#EDE7F6; border-left:6px solid #4A148C;">
+    <div class="card-num" style="color:#4A148C">Part 3 · Topic 19</div>
+    <div class="card-title">Mobile Phones & Digital Life</div>
+    <div class="card-meta">2 Discussion Questions · Ideas + Strategy + Band 7+ Answers</div>
+    <div class="card-arrow" style="color:#4A148C">→ Practice Now</div>
+  </a>
+  <a class="card" href="part3_20.html" style="background:#E0F7FA; border-left:6px solid #006064;">
+    <div class="card-num" style="color:#006064">Part 3 · Topic 20</div>
+    <div class="card-title">Rewards, Pride & Achievement</div>
+    <div class="card-meta">2 Discussion Questions · Ideas + Strategy + Band 7+ Answers</div>
+    <div class="card-arrow" style="color:#006064">→ Practice Now</div>
+  </a>
+  <a class="card" href="part3_21.html" style="background:#FFF3E0; border-left:6px solid #E65100;">
+    <div class="card-num" style="color:#E65100">Part 3 · Topic 21</div>
+    <div class="card-title">Transport & Environmental Impact</div>
+    <div class="card-meta">2 Discussion Questions · Ideas + Strategy + Band 7+ Answers</div>
+    <div class="card-arrow" style="color:#E65100">→ Practice Now</div>
+  </a>
+  <a class="card" href="part3_22.html" style="background:#FCE4EC; border-left:6px solid #880E4F;">
+    <div class="card-num" style="color:#880E4F">Part 3 · Topic 22</div>
+    <div class="card-title">Intelligence, Talent & Problem-Solving</div>
+    <div class="card-meta">2 Discussion Questions · Ideas + Strategy + Band 7+ Answers</div>
+    <div class="card-arrow" style="color:#880E4F">→ Practice Now</div>
+  </a>
+</div>
+<footer>IELTS PLUS Q2 2026 · Interactive Vocabulary Presentations · Part 1 · Part 2 · Part 3</footer>
+</body>
+</html>

@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Topic 12: Old Buildings – IELTS Speaking Part 1</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+:root{--accent:#EF5350;--al:#EF5350L;--am:#EF5350M}
+body{font-family:'Segoe UI',Arial,sans-serif;background:#f0f2f8;font-size:18px}
+.topnav{background:var(--accent);display:flex;align-items:center;justify-content:space-between;padding:14px 24px;position:sticky;top:0;z-index:200;box-shadow:0 2px 12px rgba(0,0,0,.2);gap:8px;flex-wrap:wrap}
+.topnav a{color:#fff;text-decoration:none;font-size:17px;font-weight:700;padding:7px 16px;border-radius:8px;background:rgba(255,255,255,.2);transition:background .2s;white-space:nowrap}
+.topnav a:hover{background:rgba(255,255,255,.35)}
+.ttitle{font-size:20px;font-weight:900;color:#fff;text-align:center;flex:1}
+.hero{background:linear-gradient(135deg,var(--accent) 0%,#EF535099 100%);color:#fff;padding:28px 24px 20px;text-align:center}
+.tnum{font-size:16px;font-weight:700;letter-spacing:2px;text-transform:uppercase;opacity:.8}
+.hero h1{font-size:40px;font-weight:900;margin:6px 0 10px}
+.stats{display:flex;justify-content:center;gap:16px;flex-wrap:wrap}
+.stat{background:rgba(255,255,255,.2);border-radius:10px;padding:6px 18px;font-size:17px;font-weight:600}
+.slide-dots-wrap{background:#fff;border-bottom:2px solid #e0e0e0;padding:14px 20px;display:flex;align-items:center;gap:8px;overflow-x:auto;justify-content:center;flex-wrap:wrap}
+.dot-btn{background:#e0e0e0;color:#555;border:none;font-size:15px;font-weight:700;padding:7px 16px;border-radius:20px;cursor:pointer;transition:all .2s;white-space:nowrap}
+.dot-btn.active{background:var(--accent);color:#fff;transform:scale(1.08)}
+.dot-btn:hover:not(.active){background:var(--am);color:#fff}
+.slide{display:none;animation:fadeIn .35s ease}
+.slide.active{display:block}
+@keyframes fadeIn{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:translateY(0)}}
+.slide-inner{max-width:900px;margin:30px auto;padding:0 20px 30px}
+.slide-header{display:flex;align-items:center;gap:12px;margin-bottom:18px;flex-wrap:wrap}
+.slide-badge{background:var(--accent);color:#fff;font-size:17px;font-weight:800;padding:6px 18px;border-radius:20px}
+.q-type-badge{background:var(--al);color:var(--accent);font-size:15px;font-weight:700;padding:5px 14px;border-radius:20px;border:1.5px solid var(--am)}
+.question-text{font-size:30px;font-weight:900;color:#1a1a2e;line-height:1.3;margin-bottom:24px;background:#fff;border-radius:16px;padding:24px 28px;box-shadow:0 3px 16px rgba(0,0,0,.08);border-left:6px solid var(--accent)}
+.vocab-row{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-bottom:22px}
+@media(max-width:600px){.vocab-row{grid-template-columns:1fr}}
+.vocab-group{background:#fff;border-radius:14px;padding:20px;box-shadow:0 2px 10px rgba(0,0,0,.07)}
+.vocab-group-title{font-size:15px;font-weight:800;color:#555;margin-bottom:12px;text-transform:uppercase;letter-spacing:.5px}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.vocab-chip{font-size:18px;font-weight:700;padding:8px 16px;border-radius:20px;transition:transform .15s;cursor:default}
+.vocab-chip:hover{transform:scale(1.06)}
+.pv-chip{background:#e3f2fd;color:#1565c0;border:1.5px solid #90caf9}
+.col-chip{background:#fce4ec;color:#c62828;border:1.5px solid #f48fb1}
+.show-answer-btn{background:var(--accent);color:#fff;border:none;font-size:20px;font-weight:700;padding:14px 30px;border-radius:12px;cursor:pointer;transition:opacity .2s,transform .15s}
+.show-answer-btn:hover{opacity:.88;transform:scale(1.02)}
+.answer-box{background:#f1fff3;border:2px solid #a5d6a7;border-radius:14px;padding:24px;margin-top:16px}
+.answer-label{font-size:16px;font-weight:800;color:#2e7d32;margin-bottom:10px}
+.answer-text{font-size:21px;line-height:1.75;color:#1a1a2e}
+.vocab-overview-block{background:#fff;border-radius:16px;padding:26px;margin-bottom:20px;box-shadow:0 3px 14px rgba(0,0,0,.08)}
+.vocab-overview-title{font-size:24px;font-weight:900;color:var(--accent);margin-bottom:16px}
+.vocab-overview-block .vocab-chip{font-size:20px;padding:10px 20px}
+.slide-nav{display:flex;justify-content:space-between;align-items:center;max-width:900px;margin:0 auto 40px;padding:0 20px;gap:12px}
+.nav-btn{background:var(--accent);color:#fff;border:none;font-size:20px;font-weight:800;padding:14px 32px;border-radius:14px;cursor:pointer;transition:opacity .2s,transform .15s}
+.nav-btn:hover{opacity:.85;transform:scale(1.03)}
+.nav-btn:disabled{background:#ccc;cursor:default;transform:none}
+.slide-counter{font-size:20px;font-weight:800;color:#555;text-align:center}
+.ex-desc{font-size:19px;color:#555;margin-bottom:22px;line-height:1.5}
+.action-btn{background:var(--accent);color:#fff;border:none;font-size:18px;font-weight:700;padding:12px 26px;border-radius:12px;cursor:pointer;transition:opacity .2s}
+.action-btn:hover{opacity:.85}
+.action-btn.grey{background:#888}
+.flashcard-wrap{display:flex;flex-direction:column;align-items:center;gap:18px}
+.progress-bar-wrap{width:100%;max-width:560px;background:#e0e0e0;border-radius:10px;height:10px;overflow:hidden}
+.progress-bar{height:100%;background:var(--accent);border-radius:10px;transition:width .4s}
+.flashcard{width:100%;max-width:560px;min-height:240px;perspective:1000px;cursor:pointer}
+.flashcard-inner{width:100%;height:100%;position:relative;transform-style:preserve-3d;transition:transform .55s;min-height:240px}
+.flashcard.flipped .flashcard-inner{transform:rotateY(180deg)}
+.flashcard-front,.flashcard-back{position:absolute;width:100%;min-height:240px;backface-visibility:hidden;border-radius:20px;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:28px 24px;text-align:center;gap:10px}
+.flashcard-front{background:var(--accent);color:#fff}
+.fc-label{font-size:15px;font-weight:700;opacity:.75;text-transform:uppercase;letter-spacing:1.5px;background:rgba(255,255,255,.2);padding:4px 14px;border-radius:20px}
+.fc-term{font-size:34px;font-weight:900;line-height:1.2}
+.fc-hint-tap{font-size:16px;opacity:.7;margin-top:6px}
+.flashcard-back{background:#fff;border:3px solid var(--accent);transform:rotateY(180deg);color:#1a1a2e;justify-content:flex-start;padding-top:24px}
+.fc-back-label{font-size:14px;font-weight:700;color:var(--accent);text-transform:uppercase;letter-spacing:1px;background:var(--al);padding:4px 14px;border-radius:20px;align-self:center}
+.fc-back-term{font-size:26px;font-weight:900;color:var(--accent);text-align:center;align-self:center}
+.fc-meaning{font-size:19px;font-weight:600;color:#333;line-height:1.5;text-align:center;padding:0 8px}
+.fc-example{font-size:17px;color:#555;font-style:italic;line-height:1.5;text-align:center;padding:10px 8px 0;border-top:1.5px solid #eee;width:100%}
+.fc-controls{display:flex;gap:14px;flex-wrap:wrap;justify-content:center;align-items:center}
+.fc-btn{background:var(--accent);color:#fff;border:none;font-size:18px;font-weight:700;padding:12px 26px;border-radius:12px;cursor:pointer;transition:opacity .2s}
+.fc-btn:hover{opacity:.85}
+.fc-btn.secondary{background:#ddd;color:#333}
+.fc-progress{font-size:19px;font-weight:800;color:#555}
+.shuffle-btn{background:#555}
+.fill-item{background:var(--al);border-radius:14px;padding:18px 22px;margin-bottom:14px;display:flex;align-items:center;gap:12px;flex-wrap:wrap}
+.fill-stem{font-size:22px;font-weight:700;color:#1a1a2e}
+.fill-input{font-size:22px;font-weight:700;border:2.5px solid var(--accent);border-radius:8px;padding:6px 14px;width:160px;outline:none;color:#1a1a2e;background:#fff}
+.fill-input:focus{box-shadow:0 0 0 3px var(--am)}
+.fill-feedback{font-size:20px;font-weight:700;min-width:30px}
+.fill-score{font-size:24px;font-weight:900;color:var(--accent);margin-top:14px;display:none}
+.scramble-item{background:#fff;border-radius:14px;padding:20px 22px;margin-bottom:16px;box-shadow:0 2px 10px rgba(0,0,0,.07)}
+.scramble-num{font-size:16px;font-weight:800;color:var(--accent);margin-bottom:10px}
+.scramble-words{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:12px}
+.scramble-word{background:var(--accent);color:#fff;font-size:20px;font-weight:700;padding:8px 18px;border-radius:10px;cursor:pointer;user-select:none;transition:transform .15s,opacity .15s}
+.scramble-word:hover{transform:scale(1.05)}
+.scramble-word.used{opacity:.25;pointer-events:none}
+.scramble-answer-area{min-height:50px;background:var(--al);border:2.5px dashed var(--accent);border-radius:10px;padding:10px 14px;display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin-bottom:10px}
+.scramble-placed{background:#fff;border:2px solid var(--accent);color:var(--accent);font-size:20px;font-weight:700;padding:6px 16px;border-radius:10px;cursor:pointer}
+.scramble-feedback{font-size:20px;font-weight:700;min-height:28px;margin-bottom:8px}
+.scramble-btn{background:var(--accent);color:#fff;border:none;font-size:17px;font-weight:700;padding:10px 20px;border-radius:10px;cursor:pointer;margin-right:8px;transition:opacity .2s}
+.scramble-btn:hover{opacity:.85}
+.scramble-btn.reset{background:#888}
+</style>
+</head>
+<body>
+<div class="topnav">
+  <a href="topic_11.html">← Topic 11</a>
+  <div class="ttitle">Topic 12: Old Buildings</div>
+  <a href="topic_13.html">Topic 13 →</a>
+</div>
+<div class="hero">
+  <div class="tnum">IELTS Speaking Part 1 · Topic 12 of 36</div>
+  <h1>📚 Old Buildings</h1>
+  <div class="stats">
+    <div class="stat">🗣 2 Questions</div>
+    <div class="stat">🔗 8 Phrasal Verbs</div>
+    <div class="stat">💡 10 Collocations</div>
+  </div>
+</div>
+<div class="slide-dots-wrap" id="slide-dots"><button class="dot-btn active" onclick="goToSlide(0)" id="dot-0">Q1</button><button class="dot-btn" onclick="goToSlide(1)" id="dot-1">Q2</button><button class="dot-btn" onclick="goToSlide(2)" id="dot-2">Vocab</button><button class="dot-btn" onclick="goToSlide(3)" id="dot-3">Cards</button><button class="dot-btn" onclick="goToSlide(4)" id="dot-4">Fill</button><button class="dot-btn" onclick="goToSlide(5)" id="dot-5">Scramble</button></div>
+<div class="slides-container">
+
+<div class="slide" id="slide-0">
+  <div class="slide-inner">
+    <div class="slide-header">
+      <span class="slide-badge">Question 1 of 2</span>
+      <span class="q-type-badge">Past Experience</span>
+    </div>
+    <div class="question-text">"Have you ever seen old buildings in the city?"</div>
+    <div class="vocab-row">
+      <div class="vocab-group">
+        <div class="vocab-group-title">🔗 Phrasal Verbs</div>
+        <div class="chips"><span class="vocab-chip pv-chip">come across</span><span class="vocab-chip pv-chip">be struck by</span><span class="vocab-chip pv-chip">stand in awe of</span><span class="vocab-chip pv-chip">look up at</span></div>
+      </div>
+      <div class="vocab-group">
+        <div class="vocab-group-title">💡 Collocations</div>
+        <div class="chips"><span class="vocab-chip col-chip">historical architecture</span><span class="vocab-chip col-chip">colonial building</span><span class="vocab-chip col-chip">ancient structure</span><span class="vocab-chip col-chip">architectural heritage</span><span class="vocab-chip col-chip">well-</span></div>
+      </div>
+    </div>
+    <div class="answer-section">
+      <button class="show-answer-btn" onclick="toggleAnswer(this)">👁 Show Sample Answer (Band 7+)</button>
+      <div class="answer-box" style="display:none">
+        <div class="answer-label">✅ Band 7+ Sample Answer</div>
+        <p class="answer-text">Yes, definitely. I live in a city that has a number of well-preserved colonial-era buildings from the French
+colonial period, and I find them absolutely fascinating. One that particularly stands out is the old post office
+in the city centre - it has a stunning yellow facade, high arched ceilings, and intricate ironwork that feels
+completely out of place in the modern urban landscape, in the best possible way. Every time I walk past it, I
+am struck by how much history it represents and how beautifully it has been maintained.</p>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="slide" id="slide-1">
+  <div class="slide-inner">
+    <div class="slide-header">
+      <span class="slide-badge">Question 2 of 2</span>
+      <span class="q-type-badge">Opinion</span>
+    </div>
+    <div class="question-text">"Do you think we should preserve old buildings in cities?"</div>
+    <div class="vocab-row">
+      <div class="vocab-group">
+        <div class="vocab-group-title">🔗 Phrasal Verbs</div>
+        <div class="chips"><span class="vocab-chip pv-chip">tear down</span><span class="vocab-chip pv-chip">restore</span><span class="vocab-chip pv-chip">preserve</span><span class="vocab-chip pv-chip">stand the test of time</span></div>
+      </div>
+      <div class="vocab-group">
+        <div class="vocab-group-title">💡 Collocations</div>
+        <div class="chips"><span class="vocab-chip col-chip">cultural heritage</span><span class="vocab-chip col-chip">architectural history</span><span class="vocab-chip col-chip">urban development</span><span class="vocab-chip col-chip">historical preservation</span><span class="vocab-chip col-chip">modern</span></div>
+      </div>
+    </div>
+    <div class="answer-section">
+      <button class="show-answer-btn" onclick="toggleAnswer(this)">👁 Show Sample Answer (Band 7+)</button>
+      <div class="answer-box" style="display:none">
+        <div class="answer-label">✅ Band 7+ Sample Answer</div>
+        <p class="answer-text">Absolutely, I believe old buildings should be preserved wherever possible. They are physical links to our
+history and cultural identity - once demolished, that connection is lost forever. Many old buildings also
+have remarkable architectural beauty that modern constructions often lack. From an economic
+perspective, well-preserved historical buildings attract tourists and contribute to local economies. Of
+course, there are cases where safety concerns or urban development needs make preservation
+impractical, but in those situations, I think we should at least document and commemorate what is being
+lost.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="slide" id="slide-2">
+  <div class="slide-inner">
+    <div class="slide-header"><span class="slide-badge">📖 All Vocabulary</span></div>
+    <div class="vocab-overview-block">
+      <div class="vocab-overview-title">🔗 Phrasal Verbs (8)</div>
+      <div class="chips"><span class="vocab-chip pv-chip">come across</span><span class="vocab-chip pv-chip">be struck by</span><span class="vocab-chip pv-chip">stand in awe of</span><span class="vocab-chip pv-chip">look up at</span><span class="vocab-chip pv-chip">tear down</span><span class="vocab-chip pv-chip">restore</span><span class="vocab-chip pv-chip">preserve</span><span class="vocab-chip pv-chip">stand the test of time</span></div>
+    </div>
+    <div class="vocab-overview-block">
+      <div class="vocab-overview-title">💡 Collocations (10)</div>
+      <div class="chips"><span class="vocab-chip col-chip">historical architecture</span><span class="vocab-chip col-chip">colonial building</span><span class="vocab-chip col-chip">ancient structure</span><span class="vocab-chip col-chip">architectural heritage</span><span class="vocab-chip col-chip">well-</span><span class="vocab-chip col-chip">cultural heritage</span><span class="vocab-chip col-chip">architectural history</span><span class="vocab-chip col-chip">urban development</span><span class="vocab-chip col-chip">historical preservation</span><span class="vocab-chip col-chip">modern</span></div>
+    </div>
+  </div>
+</div>
+
+<div class="slide" id="slide-3">
+  <div class="slide-inner">
+    <div class="slide-header"><span class="slide-badge">🃏 Flashcard Drill</span></div>
+    <p class="ex-desc">Click the card to reveal its <strong>meaning</strong> and an <strong>example sentence</strong>. Use buttons or ← → keys to navigate.</p>
+    <div class="flashcard-wrap">
+      <div class="progress-bar-wrap"><div class="progress-bar" id="fc-progress-bar" style="width:0%"></div></div>
+      <div class="flashcard" id="flashcard" onclick="flipCard()">
+        <div class="flashcard-inner">
+          <div class="flashcard-front">
+            <div class="fc-label" id="fc-label">Phrasal Verb</div>
+            <div class="fc-term" id="fc-term">Loading...</div>
+            <div class="fc-hint-tap">Tap to reveal meaning &amp; example →</div>
+          </div>
+          <div class="flashcard-back">
+            <div class="fc-back-label" id="fc-back-label">Phrasal Verb</div>
+            <div class="fc-back-term" id="fc-back-term"></div>
+            <div class="fc-meaning" id="fc-meaning"></div>
+            <div class="fc-example" id="fc-example"></div>
+          </div>
+        </div>
+      </div>
+      <div class="fc-controls">
+        <button class="fc-btn secondary" onclick="prevCard()">← Prev</button>
+        <span class="fc-progress" id="fc-progress">1 / 18</span>
+        <button class="fc-btn" onclick="nextCard()">Next →</button>
+      </div>
+      <button class="fc-btn shuffle-btn" onclick="shuffleCards()">🔀 Shuffle</button>
+    </div>
+  </div>
+</div>
+
+<div class="slide" id="slide-4">
+  <div class="slide-inner">
+    <div class="slide-header"><span class="slide-badge">✏️ Fill in the Blank</span></div>
+    <p class="ex-desc">Type the missing word to complete each collocation, then press <strong>Check Answers</strong>.</p>
+    <div id="fill-container"></div>
+    <div style="display:flex;gap:12px;flex-wrap:wrap;margin-top:16px">
+      <button class="action-btn" onclick="checkFill()">✅ Check Answers</button>
+      <button class="action-btn grey" onclick="resetFill()">🔄 Reset</button>
+    </div>
+    <div class="fill-score" id="fill-score"></div>
+  </div>
+</div>
+
+<div class="slide" id="slide-5">
+  <div class="slide-inner">
+    <div class="slide-header"><span class="slide-badge">🔀 Word Scramble</span></div>
+    <p class="ex-desc">Click the words in the correct order to rebuild each collocation.</p>
+    <div id="scramble-container"></div>
+  </div>
+</div>
+</div>
+<div class="slide-nav">
+  <button class="nav-btn" id="btn-prev" onclick="prevSlide()" disabled>← Previous</button>
+  <div class="slide-counter" id="slide-counter">Slide 1 / 6</div>
+  <button class="nav-btn" id="btn-next" onclick="nextSlide()">Next →</button>
+</div>
+<script>
+const TOTAL=6;
+let cur=0;
+function goToSlide(n){
+  document.querySelectorAll('.slide').forEach(s=>s.classList.remove('active'));
+  document.querySelectorAll('.dot-btn').forEach(b=>b.classList.remove('active'));
+  document.getElementById('slide-'+n).classList.add('active');
+  const dot=document.getElementById('dot-'+n);
+  dot.classList.add('active');
+  dot.scrollIntoView({behavior:'smooth',block:'nearest',inline:'center'});
+  cur=n;
+  document.getElementById('btn-prev').disabled=(n===0);
+  document.getElementById('btn-next').disabled=(n===TOTAL-1);
+  document.getElementById('slide-counter').textContent='Slide '+(n+1)+' / '+TOTAL;
+  window.scrollTo({top:0,behavior:'smooth'});
+}
+function nextSlide(){if(cur<TOTAL-1)goToSlide(cur+1);}
+function prevSlide(){if(cur>0)goToSlide(cur-1);}
+document.addEventListener('keydown',e=>{
+  if(e.key==='ArrowRight'||e.key==='ArrowDown')nextSlide();
+  if(e.key==='ArrowLeft'||e.key==='ArrowUp')prevSlide();
+});
+goToSlide(0);
+
+function toggleAnswer(btn){
+  const box=btn.nextElementSibling;
+  if(box.style.display==='none'){box.style.display='block';btn.textContent='🙈 Hide Sample Answer';}
+  else{box.style.display='none';btn.textContent='👁 Show Sample Answer (Band 7+)';}
+}
+
+// FLASHCARDS
+const CARDS=[{"type": "Phrasal Verb", "term": "come across", "meaning": "to find or encounter something by chance", "example": "I came across a beautiful park while exploring the neighbourhood."}, {"type": "Phrasal Verb", "term": "be struck by", "meaning": "to be struck by — a key action related to this topic", "example": "In IELTS Speaking, you might say: \"...be struck by...\""}, {"type": "Phrasal Verb", "term": "stand in awe of", "meaning": "to stand in awe of — to remain or be in a position", "example": "In IELTS Speaking, you might say: \"...stand in awe of...\""}, {"type": "Phrasal Verb", "term": "look up at", "meaning": "to look up at — to search for or observe something", "example": "In IELTS Speaking, you might say: \"...look up at...\""}, {"type": "Phrasal Verb", "term": "tear down", "meaning": "to tear down — a key action related to this topic", "example": "Using \"tear down\" shows strong vocabulary in IELTS Speaking."}, {"type": "Phrasal Verb", "term": "restore", "meaning": "to restore  — a key action related to this topic", "example": "Using \"restore\" shows strong vocabulary in IELTS Speaking."}, {"type": "Phrasal Verb", "term": "preserve", "meaning": "to preserve  — a key action related to this topic", "example": "I live in a city that has a number of well-preserved colonial-era buildings from the French\ncolonial period, and I find them absolutely fascinating."}, {"type": "Phrasal Verb", "term": "stand the test of time", "meaning": "to stand the test of time — a key action related to this topic", "example": "Using \"stand the test of time\" shows strong vocabulary in IELTS Speaking."}, {"type": "Collocation", "term": "historical architecture", "meaning": "\"historical architecture\" — a common expression used when discussing this topic in English", "example": "In IELTS Speaking, you might say: \"...historical architecture...\""}, {"type": "Collocation", "term": "colonial building", "meaning": "\"colonial building\" — a common expression used when discussing this topic in English", "example": "In IELTS Speaking, you might say: \"...colonial building...\""}, {"type": "Collocation", "term": "ancient structure", "meaning": "\"ancient structure\" — a common expression used when discussing this topic in English", "example": "In IELTS Speaking, you might say: \"...ancient structure...\""}, {"type": "Collocation", "term": "architectural heritage", "meaning": "buildings and structures of historical significance", "example": "We have a responsibility to protect our architectural heritage."}, {"type": "Collocation", "term": "well-", "meaning": "\"well-\" — a common expression used when discussing this topic in English", "example": "I live in a city that has a number of well-preserved colonial-era buildings from the French\ncolonial period, and I find them absolutely fascinating."}, {"type": "Collocation", "term": "cultural heritage", "meaning": "the traditions and artefacts passed down through generations", "example": "Protecting cultural heritage is a responsibility we all share."}, {"type": "Collocation", "term": "architectural history", "meaning": "\"architectural history\" — a common expression used when discussing this topic", "example": "Using \"architectural history\" shows strong vocabulary in IELTS Speaking."}, {"type": "Collocation", "term": "urban development", "meaning": "\"urban development\" — a common expression used when discussing this topic", "example": "Of\ncourse, there are cases where safety concerns or urban development needs make preservation\nimpractical, but in those situations, I think we should at least document and commemorate what is being\nlost."}, {"type": "Collocation", "term": "historical preservation", "meaning": "\"historical preservation\" — a common expression used when discussing this topic", "example": "Using \"historical preservation\" shows strong vocabulary in IELTS Speaking."}, {"type": "Collocation", "term": "modern", "meaning": "\"modern\" — a common expression used when discussing this topic", "example": "One that particularly stands out is the old post office\nin the city centre - it has a stunning yellow facade, high arched ceilings, and intricate ironwork that feels\ncompletely out of place in the modern urban landscape, in the best possible way."}];
+let fcIdx=0,fcList=[...CARDS];
+function updateCard(){
+  const card=document.getElementById('flashcard');
+  if(!card)return;
+  card.classList.remove('flipped');
+  const c=fcList[fcIdx];
+  document.getElementById('fc-label').textContent=c.type;
+  document.getElementById('fc-term').textContent=c.term;
+  document.getElementById('fc-back-label').textContent=c.type;
+  document.getElementById('fc-back-term').textContent=c.term;
+  document.getElementById('fc-meaning').textContent='📖 '+c.meaning;
+  document.getElementById('fc-example').textContent='💬 "'+c.example+'"';
+  document.getElementById('fc-progress').textContent=(fcIdx+1)+' / '+fcList.length;
+  document.getElementById('fc-progress-bar').style.width=((fcIdx+1)/fcList.length*100).toFixed(0)+'%';
+}
+function flipCard(){document.getElementById('flashcard').classList.toggle('flipped');}
+function nextCard(){fcIdx=(fcIdx+1)%fcList.length;updateCard();}
+function prevCard(){fcIdx=(fcIdx-1+fcList.length)%fcList.length;updateCard();}
+function shuffleCards(){
+  for(let i=fcList.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[fcList[i],fcList[j]]=[fcList[j],fcList[i]];}
+  fcIdx=0;updateCard();
+}
+updateCard();
+
+// FILL IN BLANK
+const FILL=[{"phrase": "historical architecture", "stem": "historical", "blank": "architecture"}, {"phrase": "colonial building", "stem": "colonial", "blank": "building"}, {"phrase": "ancient structure", "stem": "ancient", "blank": "structure"}, {"phrase": "architectural heritage", "stem": "architectural", "blank": "heritage"}, {"phrase": "cultural heritage", "stem": "cultural", "blank": "heritage"}, {"phrase": "architectural history", "stem": "architectural", "blank": "history"}, {"phrase": "urban development", "stem": "urban", "blank": "development"}, {"phrase": "historical preservation", "stem": "historical", "blank": "preservation"}];
+function buildFill(){
+  const c=document.getElementById('fill-container');
+  if(!c)return;
+  c.innerHTML='';
+  FILL.forEach((item,i)=>{
+    const d=document.createElement('div');
+    d.className='fill-item';
+    d.innerHTML=`<span class="fill-stem">${item.stem}</span>
+      <input class="fill-input" id="fi-${i}" type="text" placeholder="..." autocomplete="off" spellcheck="false">
+      <span class="fill-feedback" id="ff-${i}"></span>`;
+    c.appendChild(d);
+  });
+}
+function checkFill(){
+  let ok=0;
+  FILL.forEach((item,i)=>{
+    const v=(document.getElementById('fi-'+i).value||'').trim().toLowerCase();
+    const fb=document.getElementById('ff-'+i);
+    if(v===item.blank.toLowerCase()){fb.textContent='✅';ok++;}
+    else{fb.textContent='❌ '+item.blank;}
+  });
+  const s=document.getElementById('fill-score');
+  s.style.display='block';
+  s.textContent='Score: '+ok+' / '+FILL.length+' 🎯';
+}
+function resetFill(){buildFill();const s=document.getElementById('fill-score');if(s)s.style.display='none';}
+buildFill();
+
+// WORD SCRAMBLE
+const SC_ITEMS=[{"original": "historical architecture", "shuffled": ["architecture", "historical"]}, {"original": "colonial building", "shuffled": ["building", "colonial"]}, {"original": "ancient structure", "shuffled": ["structure", "ancient"]}, {"original": "architectural heritage", "shuffled": ["architectural", "heritage"]}, {"original": "well-", "shuffled": ["well-"]}, {"original": "cultural heritage", "shuffled": ["heritage", "cultural"]}];
+let scState=SC_ITEMS.map(item=>({...item,placed:[],available:[...item.shuffled]}));
+function buildScramble(){
+  const c=document.getElementById('scramble-container');
+  if(!c)return;
+  c.innerHTML='';
+  scState.forEach((item,i)=>{
+    const d=document.createElement('div');
+    d.className='scramble-item';
+    d.innerHTML=`<div class="scramble-num">Collocation ${i+1}</div>
+      <div class="scramble-words" id="sw-${i}"></div>
+      <div class="scramble-answer-area" id="sa-${i}"></div>
+      <div class="scramble-feedback" id="sf-${i}"></div>
+      <button class="scramble-btn" onclick="checkSc(${i})">✅ Check</button>
+      <button class="scramble-btn reset" onclick="resetSc(${i})">🔄 Reset</button>`;
+    c.appendChild(d);
+    renderSc(i);
+  });
+}
+function renderSc(i){
+  const item=scState[i];
+  const we=document.getElementById('sw-'+i);
+  we.innerHTML='';
+  item.available.forEach((w,wi)=>{
+    const s=document.createElement('span');
+    s.className='scramble-word';s.textContent=w;
+    s.onclick=()=>placeW(i,wi);we.appendChild(s);
+  });
+  const ae=document.getElementById('sa-'+i);
+  ae.innerHTML='';
+  if(item.placed.length===0){ae.innerHTML='<span style="color:#aaa;font-size:18px">Click words above...</span>';}
+  else{item.placed.forEach((w,pi)=>{
+    const s=document.createElement('span');s.className='scramble-placed';s.textContent=w;
+    s.onclick=()=>unplaceW(i,pi);ae.appendChild(s);
+  });}
+}
+function placeW(i,wi){const item=scState[i];item.placed.push(item.available[wi]);item.available.splice(wi,1);document.getElementById('sf-'+i).textContent='';renderSc(i);}
+function unplaceW(i,pi){const item=scState[i];item.available.push(item.placed[pi]);item.placed.splice(pi,1);document.getElementById('sf-'+i).textContent='';renderSc(i);}
+function checkSc(i){
+  const item=scState[i];const fb=document.getElementById('sf-'+i);
+  if(item.placed.join(' ')===item.original){fb.textContent='✅ Correct! "'+item.original+'"';fb.style.color='#2e7d32';}
+  else{fb.textContent='❌ Try again! ('+item.original.split(' ').length+' words)';fb.style.color='#c62828';}
+}
+function resetSc(i){scState[i].placed=[];scState[i].available=[...SC_ITEMS[i].shuffled];document.getElementById('sf-'+i).textContent='';renderSc(i);}
+buildScramble();
+</script>
+</body>
+</html>

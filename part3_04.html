@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Part 3: Advertising – IELTS Speaking</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+:root{--accent:#BF360C;--al:#BF360CL;--am:#BF360CM}
+body{font-family:'Segoe UI',Arial,sans-serif;background:#f0f2f8;font-size:18px}
+.topnav{background:var(--accent);display:flex;align-items:center;justify-content:space-between;padding:14px 24px;position:sticky;top:0;z-index:200;box-shadow:0 2px 12px rgba(0,0,0,.2);gap:8px;flex-wrap:wrap}
+.topnav a{color:#fff;text-decoration:none;font-size:17px;font-weight:700;padding:7px 16px;border-radius:8px;background:rgba(255,255,255,.2);transition:background .2s;white-space:nowrap}
+.topnav a:hover{background:rgba(255,255,255,.35)}
+.ttitle{font-size:20px;font-weight:900;color:#fff;text-align:center;flex:1}
+.hero{background:linear-gradient(135deg,var(--accent) 0%,#BF360C99 100%);color:#fff;padding:28px 24px 20px;text-align:center}
+.tnum{font-size:16px;font-weight:700;letter-spacing:2px;text-transform:uppercase;opacity:.8}
+.hero h1{font-size:38px;font-weight:900;margin:6px 0 10px;line-height:1.3}
+.stats{display:flex;justify-content:center;gap:16px;flex-wrap:wrap}
+.stat{background:rgba(255,255,255,.2);border-radius:10px;padding:6px 18px;font-size:17px;font-weight:600}
+.slide-dots-wrap{background:#fff;border-bottom:2px solid #e0e0e0;padding:14px 20px;display:flex;align-items:center;gap:8px;overflow-x:auto;justify-content:center;flex-wrap:wrap}
+.dot-btn{background:#e0e0e0;color:#555;border:none;font-size:15px;font-weight:700;padding:7px 16px;border-radius:20px;cursor:pointer;transition:all .2s;white-space:nowrap}
+.dot-btn.active{background:var(--accent);color:#fff;transform:scale(1.08)}
+.dot-btn:hover:not(.active){background:var(--am);color:#fff}
+.slide{display:none;animation:fadeIn .35s ease}
+.slide.active{display:block}
+@keyframes fadeIn{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:translateY(0)}}
+.slide-inner{max-width:900px;margin:30px auto;padding:0 20px 30px}
+.slide-header{display:flex;align-items:center;gap:12px;margin-bottom:18px;flex-wrap:wrap}
+.slide-badge{background:var(--accent);color:#fff;font-size:17px;font-weight:800;padding:6px 18px;border-radius:20px}
+.q-type-badge{background:var(--al);color:var(--accent);font-size:15px;font-weight:700;padding:5px 14px;border-radius:20px;border:1.5px solid var(--am)}
+/* QUESTION BOX */
+.question-text{font-size:28px;font-weight:900;color:#1a1a2e;line-height:1.3;margin-bottom:20px;background:#fff;border-radius:16px;padding:24px 28px;box-shadow:0 3px 16px rgba(0,0,0,.08);border-left:6px solid var(--accent)}
+/* STRATEGY BOX */
+.strategy-box{background:#fff3e0;border:2px solid #ffb74d;border-radius:14px;padding:20px 24px;margin-bottom:18px}
+.strategy-title{font-size:16px;font-weight:800;color:#e65100;margin-bottom:12px;text-transform:uppercase;letter-spacing:.5px;display:flex;align-items:center;gap:8px}
+.strategy-list{list-style:none;padding:0}
+.strategy-list li{font-size:19px;color:#1a1a2e;padding:7px 0 7px 28px;position:relative;border-bottom:1px solid #ffe0b2;line-height:1.5}
+.strategy-list li:last-child{border-bottom:none}
+.strategy-list li::before{content:"✦";position:absolute;left:0;color:#ff9800;font-size:16px;top:10px}
+/* IDEAS BOX */
+.ideas-box{background:#e8f5e9;border:2px solid #81c784;border-radius:14px;padding:20px 24px;margin-bottom:18px}
+.ideas-title{font-size:16px;font-weight:800;color:#2e7d32;margin-bottom:12px;text-transform:uppercase;letter-spacing:.5px;display:flex;align-items:center;gap:8px}
+.ideas-list{list-style:none;padding:0}
+.ideas-list li{font-size:19px;color:#1a1a2e;padding:7px 0 7px 28px;position:relative;border-bottom:1px solid #c8e6c9;line-height:1.5}
+.ideas-list li:last-child{border-bottom:none}
+.ideas-list li::before{content:"💡";position:absolute;left:0;font-size:16px;top:8px}
+/* VOCAB CHIPS */
+.vocab-row{background:#fff;border-radius:14px;padding:18px 22px;margin-bottom:18px;box-shadow:0 2px 10px rgba(0,0,0,.07)}
+.vocab-row-title{font-size:15px;font-weight:800;color:#555;margin-bottom:10px;text-transform:uppercase;letter-spacing:.5px}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.vocab-chip{font-size:17px;font-weight:700;padding:7px 14px;border-radius:20px;cursor:default;transition:transform .15s}
+.vocab-chip:hover{transform:scale(1.05)}
+.pv-chip{background:#e3f2fd;color:#1565c0;border:1.5px solid #90caf9}
+.col-chip{background:#fce4ec;color:#c62828;border:1.5px solid #f48fb1}
+/* ANSWER */
+.show-answer-btn{background:var(--accent);color:#fff;border:none;font-size:20px;font-weight:700;padding:14px 30px;border-radius:12px;cursor:pointer;transition:opacity .2s,transform .15s}
+.show-answer-btn:hover{opacity:.88;transform:scale(1.02)}
+.answer-box{background:#f1fff3;border:2px solid #a5d6a7;border-radius:14px;padding:24px;margin-top:16px}
+.answer-label{font-size:16px;font-weight:800;color:#2e7d32;margin-bottom:10px}
+.answer-text{font-size:21px;line-height:1.8;color:#1a1a2e}
+/* NAV */
+.slide-nav{display:flex;justify-content:space-between;align-items:center;max-width:900px;margin:0 auto 40px;padding:0 20px;gap:12px}
+.nav-btn{background:var(--accent);color:#fff;border:none;font-size:20px;font-weight:800;padding:14px 32px;border-radius:14px;cursor:pointer;transition:opacity .2s,transform .15s}
+.nav-btn:hover{opacity:.85;transform:scale(1.03)}
+.nav-btn:disabled{background:#ccc;cursor:default;transform:none}
+.slide-counter{font-size:20px;font-weight:800;color:#555;text-align:center}
+</style>
+</head>
+<body>
+<div class="topnav">
+  <a href="part3_03.html">← Part 3 3</a>
+  <div class="ttitle">Part 3: Advertising</div>
+  <a href="part3_05.html">Part 3 5 →</a>
+</div>
+<div class="hero">
+  <div class="tnum">IELTS Speaking Part 3 · Topic 4 of 22</div>
+  <h1>💬 Advertising</h1>
+  <div class="stats">
+    <div class="stat">❓ 3 Discussion Questions</div>
+    <div class="stat">💡 Ideas + 🎯 Strategy + ✅ Band 7+ Answers</div>
+  </div>
+</div>
+<div class="slide-dots-wrap"><button class="dot-btn active" onclick="goToSlide(0)" id="dot-0">Q1</button><button class="dot-btn" onclick="goToSlide(1)" id="dot-1">Q2</button><button class="dot-btn" onclick="goToSlide(2)" id="dot-2">Q3</button></div>
+<div class="slides-container">
+<div class="slide" id="slide-0">
+  <div class="slide-inner">
+    <div class="slide-header">
+      <span class="slide-badge">Question 1 of 3</span>
+      <span class="q-type-badge">Opinion / Analysis</span>
+    </div>
+    <div class="question-text">"What are the advantages and disadvantages of advertisements?"</div>
+    
+        <div class="strategy-box">
+          <div class="strategy-title">🎯 Answer Direction &amp; Strategy</div>
+          <ul class="strategy-list"><li>Present a balanced view with specific examples.</li><li>Consider economic, social, and psychological dimensions.</li><li>Use structured language for clarity.</li></ul>
+        </div>
+    
+        <div class="ideas-box">
+          <div class="ideas-title">💡 Ideas to Use in Your Answer</div>
+          <ul class="ideas-list"><li>Advantage: advertising informs consumers about products and services, enabling more informed</li><li>Advantage: advertising funds free media content - without advertising revenue, many websites, TV</li><li>Disadvantage: advertising can be manipulative, exploiting psychological vulnerabilities to create</li><li>Disadvantage: advertising contributes to overconsumption and materialism, encouraging people to buy</li></ul>
+        </div>
+    
+        <div class="vocab-row">
+          <div class="vocab-row-title">🔗 Key Vocabulary</div>
+          <div class="chips"><span class="vocab-chip col-chip">draw attention to</span><span class="vocab-chip col-chip">appeal to</span><span class="vocab-chip col-chip">be taken in by</span><span class="vocab-chip col-chip">stand out from</span><span class="vocab-chip col-chip">carry out (campaigns)</span><span class="vocab-chip col-chip">deal with</span><span class="vocab-chip col-chip">consumer behaviour</span><span class="vocab-chip col-chip">brand awareness</span><span class="vocab-chip col-chip">psychological manipulation</span><span class="vocab-chip col-chip">media funding</span><span class="vocab-chip col-chip">advertising ethics</span></div>
+        </div>
+    <button class="show-answer-btn" onclick="toggleAnswer(this)">👁 Show Band 7+ Answer</button>
+    <div class="answer-box" style="display:none">
+      <div class="answer-label">✅ Band 7+ Model Answer</div>
+      <p class="answer-text">Advertising has both genuine benefits and significant drawbacks. On the positive side, it serves an
+important informational function - it tells consumers about products and services that might genuinely
+improve their lives, and it funds a vast amount of free content that we all enjoy, from websites to television
+programmes. Without advertising revenue, much of the media landscape as we know it would not exist. On
+the negative side, advertising is often deliberately manipulative, exploiting psychological vulnerabilities -
+our insecurities, our desire for status, our fear of missing out - to create artificial desires for things we do not
+actually need. This contributes to overconsumption, environmental damage, and a culture of materialism
+that many people find deeply unsatisfying. The challenge is to preserve the legitimate informational and
+economic functions of advertising while developing stronger ethical standards around its more
+manipulative practices.</p>
+    </div>
+  </div>
+</div>
+<div class="slide" id="slide-1">
+  <div class="slide-inner">
+    <div class="slide-header">
+      <span class="slide-badge">Question 2 of 3</span>
+      <span class="q-type-badge">Opinion / Analysis</span>
+    </div>
+    <div class="question-text">"Why are many advertisements endorsed by celebrities? How useful are they?"</div>
+    
+        <div class="strategy-box">
+          <div class="strategy-title">🎯 Answer Direction &amp; Strategy</div>
+          <ul class="strategy-list"><li>Explain why companies use celebrity endorsements.</li><li>Assess their effectiveness from both the company&#x27;s and consumer&#x27;s perspective.</li><li>Mention any potential downsides of celebrity endorsements.</li></ul>
+        </div>
+    
+        <div class="ideas-box">
+          <div class="ideas-title">💡 Ideas to Use in Your Answer</div>
+          <ul class="ideas-list"><li>Celebrities bring instant recognition and credibility to a brand, reaching their large and loyal fan bases.</li><li>Consumers often aspire to emulate celebrities they admire, making them more receptive to products</li><li>Celebrity endorsements can be very effective for brand awareness but less so for driving actual</li><li>The risk is that a celebrity&#x27;s personal scandal can damage the brand they endorse.</li></ul>
+        </div>
+    
+        <div class="vocab-row">
+          <div class="vocab-row-title">🔗 Key Vocabulary</div>
+          <div class="chips"><span class="vocab-chip col-chip">endorse a product</span><span class="vocab-chip col-chip">appeal to</span><span class="vocab-chip col-chip">look up to</span><span class="vocab-chip col-chip">be taken in by</span><span class="vocab-chip col-chip">stand out from</span><span class="vocab-chip col-chip">build up (brand image)</span><span class="vocab-chip col-chip">celebrity endorsement</span><span class="vocab-chip col-chip">brand ambassador</span><span class="vocab-chip col-chip">consumer trust</span><span class="vocab-chip col-chip">aspirational marketing</span><span class="vocab-chip col-chip">brand association</span></div>
+        </div>
+    <button class="show-answer-btn" onclick="toggleAnswer(this)">👁 Show Band 7+ Answer</button>
+    <div class="answer-box" style="display:none">
+      <div class="answer-label">✅ Band 7+ Model Answer</div>
+      <p class="answer-text">Companies use celebrity endorsements primarily because celebrities bring instant recognition, credibility,
+and access to their enormous fan bases. When a beloved celebrity endorses a product, their fans are more
+likely to notice the advertisement, trust the product, and consider purchasing it. There is also a powerful
+aspirational dimension - people who admire a celebrity often want to emulate their lifestyle, and buying the
+products they endorse feels like a step in that direction. As for how useful they are - the evidence is mixed.
+Celebrity endorsements are generally very effective at building brand awareness and creating positive
+associations. However, they are less reliably effective at driving actual sales, particularly for products that
+require careful consideration. There is also a significant risk: if the celebrity becomes embroiled in a
+scandal, the brand they endorse can suffer serious reputational damage by association.</p>
+    </div>
+  </div>
+</div>
+<div class="slide" id="slide-2">
+  <div class="slide-inner">
+    <div class="slide-header">
+      <span class="slide-badge">Question 3 of 3</span>
+      <span class="q-type-badge">Opinion / Comparison</span>
+    </div>
+    <div class="question-text">"Which is more effective, online advertising or offline advertising?"</div>
+    
+        <div class="strategy-box">
+          <div class="strategy-title">🎯 Answer Direction &amp; Strategy</div>
+          <ul class="strategy-list"><li>Compare the two types with specific examples.</li><li>Consider targeting, cost-effectiveness, reach, and measurability.</li><li>Give a nuanced conclusion rather than a simple answer.</li></ul>
+        </div>
+    
+        <div class="ideas-box">
+          <div class="ideas-title">💡 Ideas to Use in Your Answer</div>
+          <ul class="ideas-list"><li>Online advertising offers precise targeting, real-time data, and measurable results at relatively low</li><li>Offline advertising (TV, billboards, print) reaches broader audiences and can create stronger emotional</li><li>Online advertising is generally more cost-effective for small businesses with limited budgets.</li><li>The most effective approach typically combines both, using each for what it does best.</li></ul>
+        </div>
+    
+        <div class="vocab-row">
+          <div class="vocab-row-title">🔗 Key Vocabulary</div>
+          <div class="chips"><span class="vocab-chip col-chip">reach out to</span><span class="vocab-chip col-chip">target specifically</span><span class="vocab-chip col-chip">measure the impact of</span><span class="vocab-chip col-chip">stand out from</span><span class="vocab-chip col-chip">carry out (campaigns)</span><span class="vocab-chip col-chip">build up (brand)</span><span class="vocab-chip col-chip">digital marketing</span><span class="vocab-chip col-chip">targeted advertising</span><span class="vocab-chip col-chip">brand awareness</span><span class="vocab-chip col-chip">return on investment</span><span class="vocab-chip col-chip">advertising channel</span></div>
+        </div>
+    <button class="show-answer-btn" onclick="toggleAnswer(this)">👁 Show Band 7+ Answer</button>
+    <div class="answer-box" style="display:none">
+      <div class="answer-label">✅ Band 7+ Model Answer</div>
+      <p class="answer-text">I think the honest answer is that it depends on the goal, the audience, and the budget. Online advertising
+has some significant advantages: it allows for extraordinarily precise targeting - you can reach specific
+demographics, interests, and behaviours - and it provides real-time, measurable data on performance. This
+makes it particularly cost-effective for businesses with limited budgets who need to maximise their return
+on investment. Offline advertising, on the other hand, excels at building broad brand awareness and
+creating emotional impact. A well-crafted television commercial or a striking billboard can reach millions of
+people and create a lasting impression in a way that a digital banner ad rarely achieves. For most
+businesses, the most effective approach is a thoughtful combination of both - using online channels for
+targeted, measurable campaigns and offline channels for brand-building and reaching audiences who are
+less active online.</p>
+    </div>
+  </div>
+</div></div>
+<div class="slide-nav">
+  <button class="nav-btn" id="btn-prev" onclick="prevSlide()" disabled>← Previous</button>
+  <div class="slide-counter" id="slide-counter">Slide 1 / 3</div>
+  <button class="nav-btn" id="btn-next" onclick="nextSlide()">Next →</button>
+</div>
+<script>
+const TOTAL=3;
+let cur=0;
+function goToSlide(n){
+  document.querySelectorAll('.slide').forEach(s=>s.classList.remove('active'));
+  document.querySelectorAll('.dot-btn').forEach(b=>b.classList.remove('active'));
+  document.getElementById('slide-'+n).classList.add('active');
+  const dot=document.getElementById('dot-'+n);
+  dot.classList.add('active');
+  dot.scrollIntoView({behavior:'smooth',block:'nearest',inline:'center'});
+  cur=n;
+  document.getElementById('btn-prev').disabled=(n===0);
+  document.getElementById('btn-next').disabled=(n===TOTAL-1);
+  document.getElementById('slide-counter').textContent='Slide '+(n+1)+' / '+TOTAL;
+  window.scrollTo({top:0,behavior:'smooth'});
+}
+function nextSlide(){if(cur<TOTAL-1)goToSlide(cur+1);}
+function prevSlide(){if(cur>0)goToSlide(cur-1);}
+document.addEventListener('keydown',e=>{
+  if(e.key==='ArrowRight'||e.key==='ArrowDown')nextSlide();
+  if(e.key==='ArrowLeft'||e.key==='ArrowUp')prevSlide();
+});
+goToSlide(0);
+function toggleAnswer(btn){
+  const box=btn.nextElementSibling;
+  if(box.style.display==='none'){box.style.display='block';btn.textContent='🙈 Hide Answer';}
+  else{box.style.display='none';btn.textContent='👁 Show Band 7+ Answer';}
+}
+</script>
+</body>
+</html>
